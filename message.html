@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentor and Mentee Chat</title>
+  <!-- Link to your external CSS file -->
+  <link rel="stylesheet" href="output.css" />
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Mada:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Link to Font Awesome icons -->
+  <script src="https://kit.fontawesome.com/a1b74e6bca.js" crossorigin="anonymous"></script>
+  <!-- External JavaScript file -->
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="flex justify-center w-full h-screen">
+    <!-- Left Sidebar with Buttons -->
+    <div class="w-1/5 bg-blue-950">
+      <div class="p-4">
+        <a href="index.html" aria-label="logo"><img src="assets/innoConnect 2.png" alt="" /></a>
+        <div class="p-2 mt-10 text-white text-base font-semibold text-left">
+          <button class="mb-8 flex items-center py-[8px] px-[16px] ">
+            <img src="assets/overview.png" alt="" class="mr-2  bg-white" />
+            Overview
+          </button>
+          <button class="mb-8 flex items-center whitespace-nowrap py-[8px] px-[16px]">
+            <img src="assets/programs.png" alt="" class="mr-2" />
+            Programs and courses
+          </button>
+          <button class="mb-8 flex items-center w-[216px] h-12  py-[8px] px-[16px] rounded-lg bg-white text-[#37627E]">
+            <img src="assets/message.png" alt="" class="mr-2  " />
+            Messages
+          </button>
+          <button class="mb-8 flex items-center py-[8px] px-[16px]">
+            <i class="fas fa-chalkboard-teacher mr-2 "></i>
+            Mentorship
+          </button>
+          <button class="mb-8 flex items-center py-[8px] px-[16px]">
+            <img src="assets/community.png" alt="" class="mr-2" />
+            Community
+          </button>
+          <div class="mt-[350px]">
+            <button class=" flex items-center py-[8px] px-[16px] ">
+              <img src="assets/logout.png" alt="" class="mr-2 " />
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chatbox -->
+
+    <div class="bg-white w-3/5">
+      <div id="chatbox" class="p-4 flex flex-col gap-6">
+        <div class="flex items-center justify-between w-full">
+          <div class="flex items-center mb-4">
+            <div>
+              <strong>Mentor</strong> <br />
+              <span>Abdulmalik Muhammed</span>
+            </div>
+          </div>
+          <!-- Search Box -->
+          <div class="mb-4 flex items-center justify-center">
+            <div class="relative">
+              <input type="text" class="border-2 border-gray-500 rounded-lg pl-7 pr-10 py-2 w-80"
+                placeholder="Search Chat..." />
+              <span class="absolute inset-y-0 left-0 flex items-center pr-3 pl-4">
+                <i class="fas fa-search text-gray-500"></i>
+              </span>
+            </div>
+          </div>
+          <!-- notification icon -->
+          <div class="flex justify-end pr-3 pl-4">
+            <img src="assets/notification.png" alt="" />
+            <div class=""></div>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <!-- mentor chat mb-4 mt-20 w-[566px] h-[132px]-->
+          <div class="flex items-center  rounded-lg mb-12 ">
+            <img src="./assets/mentor.png" class="rounded-lg w-[50px] h-[50px] mr-[17px]" alt="mentee" />
+            <div class="bg-slate-200 p-5 rounded-lg text-base font-medium text-[#29,53,87]">
+              <p>
+                Hello Mentee,You need to get to work ASAP. I'll be available for
+                at 7 o clock <br />
+                by noon. come ready with your learning materials.
+              </p>
+            </div>
+          </div>
+
+          <!-- mentee chat float-right mb-4 mt-20 w-[161px] h-[100px]-->
+          <div class=" flex items-center  rounded-lg my-12 justify-end">
+
+            <div class="bg-slate-200 p-5 rounded-lg text-base font-medium">
+              <p>
+                Okay sir, i'll do
+                that
+              </p>
+            </div>
+            <img src="./assets/menee.png" class="rounded-lg w-[50px] h-[50px] ml-[17px]" alt="mentee" />
+          </div>
+
+          <!-- mentor chat mb-4 mt-20 w-[491px] h-[90px]-->
+          <div class="flex items-center rounded-lg my-12">
+            <img src="./assets/mentor.png" class="rounded-lg w-[50px] h-[50px] mr-[17px]" alt="mentee" />
+            <div class="bg-slate-200 p-5 rounded-lg text-base font-medium text-[#29,53,87]">
+              <p>
+                Awesome,i am here for you in case you need clarity and purpose
+              </p>
+
+            </div>
+          </div>
+
+          <div class="flex items-center justify-end rounded-lg my-12">
+            <div class="relative bg-slate-200 p-5 rounded-lg text-base font-medium">
+              <p>I am confused about the perfect career path for me</p>
+              <div class="absolute inset-y-full"><span>March 28, 2023 8:04pm</span></div>
+            </div>
+            <div class="">
+              <img src="./assets/menee.png" class="rounded-lg w-[50px] h-[50px] ml-[17px]" alt="mentee" />
+            </div>
+          </div>
+        </div>
+        <!-- <div class="flex items-center rounded-lg my-12">
+          <div class="bg-slate-200 p-5 rounded-lg text-base font-medium text-[#29,53,87] ml-[500px]">
+            <p>I am confused about the perfect career path for me</p>
+          </div>
+          <div class="flex justify-between items-center w-[566px] ml-auto">
+            <span>March 28, 2023 8:04pm</span>
+            <img src="./assets/menee.png" class="rounded-lg w-[50px] h-[50px] ml-[17px]" alt="mentee" />
+          </div>
+        </div> -->
+
+
+        <!-- send message -->
+
+        <div class="flex items-center justify-between mt-4 h-[68px] p-6">
+          <div class="flex w-full p-6 justify-between items-center flex-shrink-0 rounded-2xl bg-[#EEF8F8]">
+            <div class="flex"><img src="assets/add.png" alt="">
+              <img src="assets/emoji-happy.png" alt="">
+            </div>
+            <div class=""><img src="assets/send.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-evenly text-right bg-blue-950 w-1/5">
+      <!-- rightbar -->
+      <div class="">
+        <h1 class="font-bold text-xl ml-6 mt-12 p-4 bg-(#34, 44, 44, 1) flex">
+          Profile
+        </h1>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

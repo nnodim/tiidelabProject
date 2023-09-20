@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="sticky top-0 z-50 bg-white">
+        <nav class="px-4 py-5">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html"><img class="w-40 md:w-full" src="assets/logo.svg" alt="innoConnect logo"></a>
+                <div class="hidden lg:flex items-center justify-evenly w-[600px]">
+                    <div class="dropdown group item relative">
+                        <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Mentorship <i class="ml-1 text-xs transition-all duration-100 fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div
+                            class="menu hidden shadow  absolute z-10 bg-white w-40 mt-1 rounded-b transition ease-linear duration-100">
+                            <a href="#" class="text-gray-800 px-4 py-2 block">Find a mentor</a>
+                            <a href="mentorForm.html" class="text-gray-800 px-4 py-2 block">Become a mentor</a>
+                        </div>
+                    </div>
+                    <div class="dropdown group relative">
+                        <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Jobs<i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i></div>
+                        <div
+                            class="menu hidden transition ease-linear duration-100 absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+                            <a href="#" class="text-gray-800 px-4 py-2 block">Post a job</a>
+                            <a href="#" class="text-gray-800 px-4 py-2 block">Find a job</a>
+                        </div>
+                    </div>
+                    <div class="dropdown group relative">
+                        <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Courses <i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div
+                            class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+                            <a href="#" class="text-gray-800 px-4 py-2 block">UI/UX</a>
+                            <a href="#" class="text-gray-800 px-4 py-2 block">Frontend Development</a>
+                            <a href="#" class="text-gray-800 px-4 py-2 block">Backend Development</a>
+                            <a href="course.html" class="text-gray-800 px-4 py-2 block">More </a>
+                        </div>
+                    </div>
+                    <div class="dropdown group relative">
+                        <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            More <i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i></div>
+                        <div
+                            class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+                            <a href="community-page.html" class="text-gray-800 px-4 py-2 block">Community</a>
+                            <a href="blog.html" class="text-gray-800 px-4 py-2 block">Articles</a>
+                            <a href="message.html" class="text-gray-800 px-4 py-2 block">Chat</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="hidden lg:flex space-x-4">
+                    <a href="login.html"
+                        class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
+                    <a href="register.html"
+                        class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
+                </div>
+
+                <!-- Hamburger menu for mobile -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="" aria-label="Search">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="px-4 container mx-auto">
+        <div>
+            <h2 class="text-primary-07 text-5xl my-10 font-bold font-Mada text-center leading-normal">Meet The Team</h2>
+        </div>
+        <div class="grid grid-cols-6 gap-10">
+            <div class="sm:col-span-3 flex justify-between flex-col items-center bg-[#fff]   w-full md:max-w-5xl mx-auto
+            font-Mada my-10 leading-normal">
+                <div class="p-4 w-full">
+                    <img class='md:w-80 rounded-full block' src="assets/team/lizzy.jpg" alt="">
+                </div>
+                <div class="p-4 w-full">
+                    <p class="text-primary-06 font-font text-3xl not-italic font-semibold ">Okwong Elizabeth</p>
+                    <p class="text-error-04 font-font text-2xl not-italic font-medium leading-normal">Team Lead</p>
+                    <p class="text-primary-04 font-font text-xl not-italic max-w-lg font-medium leading-normal py-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate hic vel, id
+                        necessitatibus beatae molestias ea aspernatur voluptatem voluptatum doloremque harum dolores
+                        repudiandae obcaecati nesciunt nisi assumenda. Laborum, quidem.</p>
+                    <div
+                        class="inline-flex p-3 text-white justify-center items-center gap-[10px] rounded-[10px] bg-secondary-06 leading-normal">
+                        <img class="" src="./assets/devicon_linkedin.svg" alt="icon">
+                        <button class="font-font text-[18px] font-medium">LinkedIn profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:col-span-3 flex justify-between flex-col items-center bg-[#fff]   w-full md:max-w-5xl mx-auto
+            font-Mada my-10 leading-normal">
+                <div class="p-4 w-full">
+                    <img class='md:w-80 rounded-full block' src="assets/team/anas.jpg" alt="">
+                </div>
+                <div class="p-4 w-full">
+                    <p class="text-primary-06 font-font text-3xl not-italic font-semibold ">Ahmad Anas</p>
+                    <p class="text-error-04 font-font text-2xl not-italic font-medium leading-normal">Team Lead</p>
+                    <p class="text-primary-04 font-font text-xl not-italic max-w-lg font-medium leading-normal py-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate hic vel, id
+                        necessitatibus beatae molestias ea aspernatur voluptatem voluptatum doloremque harum dolores
+                        repudiandae obcaecati nesciunt nisi assumenda. Laborum, quidem.</p>
+                    <div
+                        class="inline-flex p-3 text-white justify-center items-center gap-[10px] rounded-[10px] bg-secondary-06 leading-normal">
+                        <img class="" src="./assets/devicon_linkedin.svg" alt="icon">
+                        <button class="font-font text-[18px] font-medium">LinkedIn profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:col-span-3 flex justify-between flex-col items-center bg-[#fff]   w-full md:max-w-5xl mx-auto
+            font-Mada my-10 leading-normal">
+                <div class="p-4 w-full">
+                    <img class='md:w-80 rounded-full block' src="assets/team/lizzy.jpg" alt="">
+                </div>
+                <div class="p-4 w-full">
+                    <p class="text-primary-06 font-font text-3xl not-italic font-semibold ">Okwong Elizabeth</p>
+                    <p class="text-error-04 font-font text-2xl not-italic font-medium leading-normal">Team Lead</p>
+                    <p class="text-primary-04 font-font text-xl not-italic max-w-lg font-medium leading-normal py-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate hic vel, id
+                        necessitatibus beatae molestias ea aspernatur voluptatem voluptatum doloremque harum dolores
+                        repudiandae obcaecati nesciunt nisi assumenda. Laborum, quidem.</p>
+                    <div
+                        class="inline-flex p-3 text-white justify-center items-center gap-[10px] rounded-[10px] bg-secondary-06 leading-normal">
+                        <img class="" src="./assets/devicon_linkedin.svg" alt="icon">
+                        <button class="font-font text-[18px] font-medium">LinkedIn profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:col-span-3 flex justify-between flex-col items-center bg-[#fff]   w-full md:max-w-5xl mx-auto
+            font-Mada my-10 leading-normal">
+                <div class="p-4 w-full">
+                    <img class='md:w-80 rounded-full block' src="assets/team/lizzy.jpg" alt="">
+                </div>
+                <div class="p-4 w-full">
+                    <p class="text-primary-06 font-font text-3xl not-italic font-semibold ">Okwong Elizabeth</p>
+                    <p class="text-error-04 font-font text-2xl not-italic font-medium leading-normal">Team Lead</p>
+                    <p class="text-primary-04 font-font text-xl not-italic max-w-lg font-medium leading-normal py-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate hic vel, id
+                        necessitatibus beatae molestias ea aspernatur voluptatem voluptatum doloremque harum dolores
+                        repudiandae obcaecati nesciunt nisi assumenda. Laborum, quidem.</p>
+                    <div
+                        class="inline-flex p-3 text-white justify-center items-center gap-[10px] rounded-[10px] bg-secondary-06 leading-normal">
+                        <img class="" src="./assets/devicon_linkedin.svg" alt="icon">
+                        <button class="font-font text-[18px] font-medium">LinkedIn profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:col-span-3 flex justify-between flex-col items-center bg-[#fff]   w-full md:max-w-5xl mx-auto
+            font-Mada my-10 leading-normal">
+                <div class="p-4 w-full">
+                    <img class='md:w-80 rounded-full block' src="assets/team/lizzy.jpg" alt="">
+                </div>
+                <div class="p-4 w-full">
+                    <p class="text-primary-06 font-font text-3xl not-italic font-semibold ">Okwong Elizabeth</p>
+                    <p class="text-error-04 font-font text-2xl not-italic font-medium leading-normal">Team Lead</p>
+                    <p class="text-primary-04 font-font text-xl not-italic max-w-lg font-medium leading-normal py-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate hic vel, id
+                        necessitatibus beatae molestias ea aspernatur voluptatem voluptatum doloremque harum dolores
+                        repudiandae obcaecati nesciunt nisi assumenda. Laborum, quidem.</p>
+                    <div
+                        class="inline-flex p-3 text-white justify-center items-center gap-[10px] rounded-[10px] bg-secondary-06 leading-normal">
+                        <img class="" src="./assets/devicon_linkedin.svg" alt="icon">
+                        <button class="font-font text-[18px] font-medium">LinkedIn profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:col-span-3 flex justify-between flex-col items-center bg-[#fff]   w-full md:max-w-5xl mx-auto
+            font-Mada my-10 leading-normal">
+                <div class="p-4 w-full">
+                    <img class='md:w-80 rounded-full block' src="assets/team/lizzy.jpg" alt="">
+                </div>
+                <div class="p-4 w-full">
+                    <p class="text-primary-06 font-font text-3xl not-italic font-semibold ">Okwong Elizabeth</p>
+                    <p class="text-error-04 font-font text-2xl not-italic font-medium leading-normal">Team Lead</p>
+                    <p class="text-primary-04 font-font text-xl not-italic max-w-lg font-medium leading-normal py-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate hic vel, id
+                        necessitatibus beatae molestias ea aspernatur voluptatem voluptatum doloremque harum dolores
+                        repudiandae obcaecati nesciunt nisi assumenda. Laborum, quidem.</p>
+                    <div
+                        class="inline-flex p-3 text-white justify-center items-center gap-[10px] rounded-[10px] bg-secondary-06 leading-normal">
+                        <img class="" src="./assets/devicon_linkedin.svg" alt="icon">
+                        <button class="font-font text-[18px] font-medium">LinkedIn profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:col-span-3 flex justify-between flex-col items-center bg-[#fff]   w-full md:max-w-5xl mx-auto
+            font-Mada my-10 leading-normal">
+                <div class="p-4 w-full">
+                    <img class='md:w-80 rounded-full block' src="assets/team/lizzy.jpg" alt="">
+                </div>
+                <div class="p-4 w-full">
+                    <p class="text-primary-06 font-font text-3xl not-italic font-semibold ">Okwong Elizabeth</p>
+                    <p class="text-error-04 font-font text-2xl not-italic font-medium leading-normal">Team Lead</p>
+                    <p class="text-primary-04 font-font text-xl not-italic max-w-lg font-medium leading-normal py-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate hic vel, id
+                        necessitatibus beatae molestias ea aspernatur voluptatem voluptatum doloremque harum dolores
+                        repudiandae obcaecati nesciunt nisi assumenda. Laborum, quidem.</p>
+                    <div
+                        class="inline-flex p-3 text-white justify-center items-center gap-[10px] rounded-[10px] bg-secondary-06 leading-normal">
+                        <img class="" src="./assets/devicon_linkedin.svg" alt="icon">
+                        <button class="font-font text-[18px] font-medium">LinkedIn profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:col-span-3 flex justify-between flex-col items-center bg-[#fff]   w-full md:max-w-5xl mx-auto
+            font-Mada my-10 leading-normal">
+                <div class="p-4 w-full">
+                    <img class='md:w-80 rounded-full block' src="assets/team/lizzy.jpg" alt="">
+                </div>
+                <div class="p-4 w-full">
+                    <p class="text-primary-06 font-font text-3xl not-italic font-semibold ">Okwong Elizabeth</p>
+                    <p class="text-error-04 font-font text-2xl not-italic font-medium leading-normal">Team Lead</p>
+                    <p class="text-primary-04 font-font text-xl not-italic max-w-lg font-medium leading-normal py-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate hic vel, id
+                        necessitatibus beatae molestias ea aspernatur voluptatem voluptatum doloremque harum dolores
+                        repudiandae obcaecati nesciunt nisi assumenda. Laborum, quidem.</p>
+                    <div
+                        class="inline-flex p-3 text-white justify-center items-center gap-[10px] rounded-[10px] bg-secondary-06 leading-normal">
+                        <img class="" src="./assets/devicon_linkedin.svg" alt="icon">
+                        <button class="font-font text-[18px] font-medium">LinkedIn profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:col-span-3 flex justify-between flex-col items-center bg-[#fff]   w-full md:max-w-5xl mx-auto
+            font-Mada my-10 leading-normal">
+                <div class="p-4 w-full">
+                    <img class='md:w-80 rounded-full block' src="assets/team/lizzy.jpg" alt="">
+                </div>
+                <div class="p-4 w-full">
+                    <p class="text-primary-06 font-font text-3xl not-italic font-semibold ">Okwong Elizabeth</p>
+                    <p class="text-error-04 font-font text-2xl not-italic font-medium leading-normal">Team Lead</p>
+                    <p class="text-primary-04 font-font text-xl not-italic max-w-lg font-medium leading-normal py-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate hic vel, id
+                        necessitatibus beatae molestias ea aspernatur voluptatem voluptatum doloremque harum dolores
+                        repudiandae obcaecati nesciunt nisi assumenda. Laborum, quidem.</p>
+                    <div
+                        class="inline-flex p-3 text-white justify-center items-center gap-[10px] rounded-[10px] bg-secondary-06 leading-normal">
+                        <img class="" src="./assets/devicon_linkedin.svg" alt="icon">
+                        <button class="font-font text-[18px] font-medium">LinkedIn profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:col-span-3 flex justify-between flex-col items-center bg-[#fff]   w-full md:max-w-5xl mx-auto
+            font-Mada my-10 leading-normal">
+                <div class="p-4 w-full">
+                    <img class='md:w-80 rounded-full block' src="assets/team/lizzy.jpg" alt="">
+                </div>
+                <div class="p-4 w-full">
+                    <p class="text-primary-06 font-font text-3xl not-italic font-semibold ">Okwong Elizabeth</p>
+                    <p class="text-error-04 font-font text-2xl not-italic font-medium leading-normal">Team Lead</p>
+                    <p class="text-primary-04 font-font text-xl not-italic max-w-lg font-medium leading-normal py-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate hic vel, id
+                        necessitatibus beatae molestias ea aspernatur voluptatem voluptatum doloremque harum dolores
+                        repudiandae obcaecati nesciunt nisi assumenda. Laborum, quidem.</p>
+                    <div
+                        class="inline-flex p-3 text-white justify-center items-center gap-[10px] rounded-[10px] bg-secondary-06 leading-normal">
+                        <img class="" src="./assets/devicon_linkedin.svg" alt="icon">
+                        <button class="font-font text-[18px] font-medium">LinkedIn profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:col-span-3 flex justify-between flex-col items-center bg-[#fff]   w-full md:max-w-5xl mx-auto
+            font-Mada my-10 leading-normal">
+                <div class="p-4 w-full">
+                    <img class='md:w-80 rounded-full block' src="assets/team/lizzy.jpg" alt="">
+                </div>
+                <div class="p-4 w-full">
+                    <p class="text-primary-06 font-font text-3xl not-italic font-semibold ">Okwong Elizabeth</p>
+                    <p class="text-error-04 font-font text-2xl not-italic font-medium leading-normal">Team Lead</p>
+                    <p class="text-primary-04 font-font text-xl not-italic max-w-lg font-medium leading-normal py-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate hic vel, id
+                        necessitatibus beatae molestias ea aspernatur voluptatem voluptatum doloremque harum dolores
+                        repudiandae obcaecati nesciunt nisi assumenda. Laborum, quidem.</p>
+                    <div
+                        class="inline-flex p-3 text-white justify-center items-center gap-[10px] rounded-[10px] bg-secondary-06 leading-normal">
+                        <img class="" src="./assets/devicon_linkedin.svg" alt="icon">
+                        <button class="font-font text-[18px] font-medium">LinkedIn profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:col-span-3 flex justify-between flex-col items-center bg-[#fff]   w-full md:max-w-5xl mx-auto
+            font-Mada my-10 leading-normal">
+                <div class="p-4 w-full">
+                    <img class='md:w-80 rounded-full block' src="assets/team/lizzy.jpg" alt="">
+                </div>
+                <div class="p-4 w-full">
+                    <p class="text-primary-06 font-font text-3xl not-italic font-semibold ">Okwong Elizabeth</p>
+                    <p class="text-error-04 font-font text-2xl not-italic font-medium leading-normal">Team Lead</p>
+                    <p class="text-primary-04 font-font text-xl not-italic max-w-lg font-medium leading-normal py-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate hic vel, id
+                        necessitatibus beatae molestias ea aspernatur voluptatem voluptatum doloremque harum dolores
+                        repudiandae obcaecati nesciunt nisi assumenda. Laborum, quidem.</p>
+                    <div
+                        class="inline-flex p-3 text-white justify-center items-center gap-[10px] rounded-[10px] bg-secondary-06 leading-normal">
+                        <img class="" src="./assets/devicon_linkedin.svg" alt="icon">
+                        <button class="font-font text-[18px] font-medium">LinkedIn profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-primary-05  text-white ">
+        <div class="px-4 py-11 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div>
+                <h2 class="uppercase mb-4 font-bold tracking-[2px]">Legal</h2>
+                <ul>
+                    <li><a class="hover:underline" href="#">Terms & Conditions</a></li>
+                    <li><a class="hover:underline" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="uppercase mb-4 font-bold tracking-[2px]">Support</h2>
+                <ul>
+                    <li><a class="hover:underline" href="#">Help & Support</a></li>
+                    <li><a class="hover:underline" href="team.html">Our Team</a></li>
+                    <li><a class="hover:underline" href="faq.html">FAQ</a></li>
+                    <li><a class="hover:underline" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="uppercase mb-4 font-bold tracking-[2px]">Our Site</h2>
+                <ul>
+                    <li><a class="hover:underline" href="#">About Us</a></li>
+                    <li><a class="hover:underline" href="#">Find a mentor</a></li>
+                    <li><a class="hover:underline" href="mentorForm.html">Become a mentor</a></li>
+                    <li><a class="hover:underline" href="#">Post a job</a></li>
+                    <li><a class="hover:underline" href="#">Find a job</a></li>
+                    <li><a class="hover:underline" href="#">Courses</a></li>
+                    <li><a class="hover:underline" href="#">Resources</a></li>
+                    <li><a class="hover:underline" href="#">Articles</a></li>
+                    <li><a class="hover:underline" href="#">Community</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="uppercase mb-4 font-bold tracking-[2px]">Follow Us</h2>
+                <ul class="flex space-x-4">
+                    <li><a aria-label="facebook" class="hover:underline" href="#"><i><i
+                                    class="fa-brands fa-facebook"></i></i></a>
+                    </li>
+                    <li><a aria-label="twitter" class="hover:underline" href="#"><i
+                                class="fa-brands fa-twitter"></i></a></li>
+                    <li><a aria-label="instagram" class="hover:underline" href="#"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white">
+            <div class="container mx-auto px-4 py-5 flex justify-between items-center">
+                <a aria-label="logo" href="#">
+                    <img class="w-20 sm:w-full" src="assets/inno-connect-1.svg" alt="">
+                </a>
+                <p class="text-xs sm:text-sm text-center">Copyright © 2022. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

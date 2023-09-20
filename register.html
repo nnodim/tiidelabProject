@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body class="bg-[#f4f4f4]">
+  <!-- <div class="content h-screen flex justify-center items-center  bg-[#f4f4f4] overflow-none"> -->
+  <div class="flex flex-col md:flex-row min-h-screen">
+    <div class="md:absolute h-20 left-4 top-4 p-4 bg-[#112034]">
+      <a href="index.html" aria-label="logo"><img class="" src="assets/innoConnect 1.svg" alt=""></a>
+    </div>
+    
+    <div class="hidden md:flex  bg-[#112034] flex-1 justify-center items-center p-10">
+      <img src="./assets/Frame 102.png" alt="signup image" class="w-full max-w-md">
+    </div>
+    <div class="flex-1 flex justify-center items-center bg-[#fff] p-10">
+      <div class="w-full max-w-md">
+        <h1 class="text-center font-bold text-3xl md:text-5xl mt-3 mb-4 text-[#234270]">Sign Up</h1>
+        <form action="" class="bg-[#F6F9FA] p-10 rounded-2xl ">
+          <div class="my-4">
+            <label class="block text-gray-700 font-bold my-2 text-sm" for="fullname">
+              Full Name
+            </label>
+            <input class="rounded py-2 px-3  text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
+              id="fullname" type="text" placeholder="John Doe">
+          </div>
+          <div class="my-4">
+            <label class="block text-gray-700 font-bold my-2 text-sm" for="email">
+              Email
+            </label>
+            <input class="rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
+              id="email" type="email" placeholder="johndoe@gmail.com">
+          </div>
+          <div class="my-4">
+            <label class="block text-gray-700 font-bold my-2 text-sm" for="password">
+              Password
+            </label>
+            <input class="rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
+              id="password" type="password" placeholder="Password">
+          </div>
+          <div class="my-4">
+            <label class="block text-gray-700 font-bold my-2 text-sm" for="confirm-password">
+              Confirm Password
+            </label>
+            <input class="rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
+              id="confirm-password" type="password" placeholder="Confirm Password">
+          </div>
+
+          <button type="submit"
+            class="bg-[#234270] text-white font-semibold w-full rounded py-2 mt-4 hover:bg-[#0d304c] transition duration-300">Submit</button>
+          <div class="flex items-center mt-3">
+            <label for="remember">
+              <input type="checkbox" name="remember" id="remember" class="mr-2">
+              Remember Me
+            </label>
+          </div>
+          <p class="text-center my-2 text-[#234270] text-base font-bold">Or</p>
+          <button type="submit"
+            class="border border-[#234270] text-[#234270] w-full rounded p-2 my-2  transition duration-300 flex justify-center items-center gap-x-4"><img src="assets/GoogleLogo.png" class="" alt=""><span>Sign up with Google</span></button>
+          <button type="submit"
+            class="border border-[#234270] text-[#234270] w-full rounded p-2  transition duration-300 mt-1 flex justify-center items-center gap-x-4"><img src="assets/apple.svg" alt=""><span>signup with Apple</span></button>
+          <p class="text-base text-center mt-2">Already have an account? <span class="text-[#234270] font-medium"><a
+                href="./login.html">Login</a></span></p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+
+
+
+</body>
+
+</html>

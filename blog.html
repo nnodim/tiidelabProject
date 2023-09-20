@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="output.css" rel="stylesheet" />
+  <title>Innoconnect blog page</title>
+  <style>
+    #blog {
+      background-image: linear-gradient(to bottom,
+          rgba(151, 151, 151, 0.52),
+          rgba(139, 139, 139, 0.73)),
+        url('/assets/Blog-Popular-interview-questions.jpg');
+      width: 100%;
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="sticky top-0 z-50 bg-white">
+    <nav class="px-4 py-5">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html"><img class="w-40 md:w-full" src="assets/logo.svg" alt="innoConnect logo"></a>
+        <div class="hidden lg:flex items-center justify-evenly w-[600px]">
+          <div class="dropdown group item relative">
+            <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">Mentorship <i
+                class="ml-1 text-xs transition-all duration-100 fa-solid fa-chevron-down"></i></div>
+            <div
+              class="menu hidden shadow  absolute z-10 bg-white w-40 mt-1 rounded-b transition ease-linear duration-100">
+              <a href="#" class="text-gray-800 px-4 py-2 block">Find a mentor</a>
+              <a href="mentorForm.html" class="text-gray-800 px-4 py-2 block">Become a mentor</a>
+            </div>
+          </div>
+          <div class="dropdown group relative">
+            <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">Jobs<i
+                class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i></div>
+            <div
+              class="menu hidden transition ease-linear duration-100 absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+              <a href="#" class="text-gray-800 px-4 py-2 block">Post a job</a>
+              <a href="#" class="text-gray-800 px-4 py-2 block">Find a job</a>
+            </div>
+          </div>
+          <div class="dropdown group relative">
+            <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">Courses <i
+                class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i></div>
+            <div
+              class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+              <a href="#" class="text-gray-800 px-4 py-2 block">UI/UX</a>
+              <a href="#" class="text-gray-800 px-4 py-2 block">Frontend Development</a>
+              <a href="#" class="text-gray-800 px-4 py-2 block">Backend Development</a>
+              <a href="course.html" class="text-gray-800 px-4 py-2 block">More </a>
+            </div>
+          </div>
+          <div class="dropdown group relative">
+            <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">More <i
+                class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i></div>
+            <div
+              class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+              <a href="community-page.html" class="text-gray-800 px-4 py-2 block">Community</a>
+              <a href="blog.html" class="text-gray-800 px-4 py-2 block">Articles</a>
+              <a href="message.html" class="text-gray-800 px-4 py-2 block">Chat</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="hidden lg:flex space-x-4">
+          <a href="login.html"
+            class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
+          <a href="register.html"
+            class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
+        </div>
+
+        <!-- Hamburger menu for mobile -->
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="" aria-label="Search">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="blog" class="py-4 w-full h-[860px] flex flex-col sm:flex-row">
+    <div class="herosection container flex flex-wrap items-center justify-center mx-auto mt-10 md:px-12 md:flex-row">
+      <div class="mb-14 px-5 lg:mb-0 lg:w-1/2">
+        <h1
+          class="max-w-wl text-[1.9rem] leading-none text-gray-100 font-bold font-sans text-center lg:text-5l lg:text-left lg:leading-tight mb-5">
+          Insightful Experience
+        </h1>
+        <p class="max-w-xl text-center text-blue-400 lg:text-left lg:max-w-md">
+          Get the best of mentorship and career news, internship and land the
+          dream job doloribus, placeat nisi autem similique nulla aperiam,
+          neque vero quo harum ipsa deserunt odio!
+        </p>
+        <div class="flex justify-center mt-14 lg:justify-start">
+          <button
+            class="bg-red-500 hover:bg-blue-400 hover:drop-shadow-md transition-duration-300 ease-in-out text-white font-bold py-2 px-4 border border-blue-700 font-medium- rounded-lg">
+            Read the Latest Blog
+          </button>
+        </div>
+      </div>
+      <div class="lg:w-1/2"></div>
+    </div>
+  </section>
+  <h1 class="py-6 text-center font-extrabold text-[2.9rem]">
+    Latest Articles
+  </h1>
+  <section class="">
+    <div class="card flex flex-col lg:flex-row px-4 container mx-auto">
+      <div class="w-1/2">
+        <h3 class="mx-1 my-3 p-2 w-1/2 md:w1/2 bg-gray-200 font-medium text-left">
+          Internship
+        </h3>
+        <img src="./assets/carr.jpg" alt="thumbnail" height="400" width="500" class="rounded-[22px]" />
+      </div>
+      <div class="w-1/2">
+        <h1 class="font-normal my-4 text-[1.8rem]">
+          Are unpaid internships worth it? Experts weigh
+        </h1>
+        <p>
+          In the fast-paced, ever-evolving landscape of the modern workplace,
+          the importance of employee connections and team member connections
+          cannot be overstated. These connections play a pivotal role in
+          facilitating engagement, which, in turn, contributes significantly
+          to individual and organizational growth. Blueboard found “85% of HR
+          professionals strongly agree that it’s important for employees In
+          the fast-paced,that it’s important for employees In the fast-paced
+          work and which, in turn, contributes significantly to individual and
+          organizational growth. Blueboard found “85% of HR professionals
+          strongly agree that it’s important for employees In the
+          fast-paced,that it’s important for employees In the fast-paced work
+          and 77%77%....<span><a href="www.google.com" class="text-red-400"> .Read more ></a>
+          </span>
+        </p>
+
+        <div class="my-5 flex justify-normal">
+          <img src="./assets/team/edet.jpg" alt="thumbnail" height="45" width="45" class="rounded-full object-cover" />
+          <h2 class="mx-4 my-2">By Edet Effiong | September 2023</h2>
+        </div>
+      </div>
+    </div>
+    <hr class="my-12 h-0.5 border-t-0 bg-neutral-300 opacity-100 dark:opacity-50" />
+    <div class="card flex flex-col lg:flex-row mx-5 md:mx-10 lg:mx-23 -lg p-0">
+      <div class="w-1/2">
+        <h3 class="mx-1 my-3 p-2 w-1/2 md:w1/2 bg-gray-200 font-medium text-left">
+          Explore
+        </h3>
+        <img src="./assets/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg" alt="thumbnail"
+          height="400" width="500" class="rounded-[22px]" />
+      </div>
+      <div class="w-1/2">
+        <h1 class="font-normal my-4 text-[1.8rem]">
+          The best city in Africa in 2023
+        </h1>
+        <p>
+          Tanzania’s capital is also one of the most developed cities, which
+          will probably surprise many people. Dar Es Salaam, however, has
+          experienced significant growth over the past few years, culminating
+          in its emergence as one of Africa’s most impressive cities.
+          Beautiful Dar Es Salaam is situated around a body of water. One of
+          the unique port towns where one can exit a skyscraper and then take
+          a boat to another area of the city to attend a conference in another
+          skyscraper is this one. Large hotels and stunning commercial
+          structures line the city’s main thoroughfare. The city’s
+          transportation system is efficient; you can take a bus, taxi, or
+          travel by boat....<span><a href="www.google.com" class="text-red-400"> .Read more ></a>
+          </span>
+        </p>
+        <div class="my-5 flex justify-normal">
+          <img src="./assets/team/pat.jpg" alt="thumbnail" height="45" width="45" class="rounded-full object-cover" />
+          <h2 class="mx-4 my-2">By Patience Bassey | September 2023</h2>
+        </div>
+      </div>
+    </div>
+    <hr class="my-12 h-0.5 border-t-0 bg-neutral-300 opacity-100 dark:opacity-50" />
+
+    <div class="card flex flex-col lg:flex-row mx-5 md:mx-10 lg:mx-23 -lg p-0">
+      <div class="w-1/2">
+        <h3 class="mx-1 my-3 p-2 w-1/2 md:w1/2 bg-gray-200 font-medium text-left">
+          Interviews
+        </h3>
+        <img src="./assets/technology-customer-support1.jpg" alt="thumbnail" height="400" width="500"
+          class="rounded-[22px]" />
+      </div>
+      <div class="w-1/2">
+        <h1 class="font-normal my-4 text-[1.8rem]">
+          Resources to help you prepare for interviews
+        </h1>
+        <p>
+          Prepare for interviews jobs internships Interviews are only really
+          stressful when you’re starting out. Eventually, with the help of
+          some experience and light reading, you start seeing the patterns and
+          making improvements to how you handle interviews. This guide aims to
+          be part of the light reading you need to prepare for interviews
+          (along with part one, of course). Below, you’ll find a list of blogs
+          to help you navigate five major interview obstacles. work and which,
+          in turn, contributes significantly to individual and organizational
+          growth. Blueboard found “85% of HR professionals strongly agree that
+          it’s important for employees In the fast-paced,that it’s important
+          for employees In the fast-paced work and 77%77%....<span><a href="www.google.com" class="text-red-400"> .Read
+              more ></a>
+          </span>
+        </p>
+        <div class="my-5 flex justify-normal">
+          <img src="./assets/team/dan.jpg" alt="thumbnail" height="45" width="45" class="rounded-full object-cover" />
+          <h2 class="mx-4 my-2">By Daniel Omoanon | September 2023</h2>
+        </div>
+      </div>
+    </div>
+    <hr class="my-12 h-0.5 border-t-0 bg-neutral-300 opacity-100 dark:opacity-50" />
+
+    <div class="card flex flex-col lg:flex-row mx-5 md:mx-10 lg:mx-23 -lg p-0">
+      <div class="w-1/2">
+        <h3 class="mx-1 my-3 p-2 w-1/2 md:w1/2 bg-gray-200 font-medium text-left">
+          Internship
+        </h3>
+        <img src="./assets/technology.jpg" alt="thumbnail" height="400" width="500" class="rounded-[22px]" />
+      </div>
+      <div class="w-1/2">
+        <h1 class="font-normal my-4 text-[1.8rem]">
+          Are unpaid internships worth it? Experts weigh
+        </h1>
+        <p>
+          In the fast-paced, ever-evolving landscape of the modern workplace,
+          the importance of employee connections and team member connections
+          cannot be overstated. These connections play a pivotal role in
+          facilitating engagement, which, in turn, contributes significantly
+          to individual and organizational growth. Blueboard found “85% of HR
+          professionals strongly agree that it’s important for employees In
+          the fast-paced,that it’s important for employees In the fast-paced
+          work and which, in turn, contributes significantly to individual and
+          organizational growth. Blueboard found “85% of HR professionals
+          strongly agree that it’s important for employees In the
+          fast-paced,that it’s important for employees In the fast-paced work
+          and 77%77%....<span><a href="www.google.com" class="text-red-400"> .Read more ></a>
+          </span>
+        </p>
+        <div class="my-5 flex justify-normal">
+          <img src="./assets/team/lizzy.jpg" alt="thumbnail" height="45" width="45" class="rounded-full object-cover" />
+          <h2 class="mx-4 my-2">By Elizabeth Okpong | September 2023</h2>
+        </div>
+      </div>
+    </div>
+    <hr class="my-12 h-0.5 border-t-0 bg-neutral-300 opacity-100 dark:opacity-50" />
+
+    <div class="card flex flex-col lg:flex-row mx-5 md:mx-10 lg:mx-23 -lg p-0">
+      <div class="w-1/2">
+        <h3 class="mx-1 my-3 p-2 w-1/2 md:w1/2 bg-gray-200 font-medium text-left">
+          Career Development
+        </h3>
+        <img src="./assets/team/efe.jpg" alt="thumbnail" height="400" width="500" class="rounded-[22px]" />
+      </div>
+      <div class="w-1/2">
+        <h1 class="font-normal my-4 text-[1.8rem]">
+          What is Career Development?
+        </h1>
+        <p>
+          Career development is the process of building knowledge, experience,
+          and skills that will help an employee reach long-term career goals.
+          Career development is different from employee development, which is
+          more focused simply on gaining skills and experience, often in areas
+          that will benefit the employer. Career development, on the other
+          hand, is guided by the employee’s vision of their future
+          career.....<span><a href="www.google.com" class="text-red-400"> .Read more ></a>
+          </span>
+        </p>
+        <div class="my-5 flex justify-normal">
+          <img src="./assets/team/efe.jpg" alt="thumbnail" height="45" width="45" class="rounded-full object-cover" />
+          <h2 class="mx-4 my-2">By Efe Salube | September 2023</h2>
+        </div>
+      </div>
+    </div>
+    <div class="fixed z-30 bottom-0 right-0 mr-4 mb-7">
+      <a id="back2Top" href="#" class="text-gray-900">
+        <span class="hidden">Back to top</span>
+        <?xml version="1.0" ?>
+        <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+        <svg enable-background="new 0 0 32 32" height="42px" id="Layer_1" class="border-2 bg-opacity-50 rounded-full"
+          version="1.1" viewBox="0 0 32 32" width="42px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path
+            d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z"
+            fill="#515151" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  
+  <div class="max-w-fit mx-auto my-20" aria-label="Page navigation">
+    <ul class="inline-flex">
+      <li><button
+          class="h-10 px-5 text-black transition-colors duration-150 bg-white border border-r-0 border-secondary-05  focus:shadow-outline hover:bg-secondary-01">Prev</button>
+      </li>
+      <li><button
+          class="h-10 px-5 text-black transition-colors duration-150 bg-white border border-r-0 border-secondary-05 focus:shadow-outline hover:bg-secondary-01">1</button>
+      </li>
+      <li><button
+          class="h-10 px-5 text-black transition-colors duration-150 bg-white border border-r-0 border-secondary-05 focus:shadow-outline hover:bg-secondary-01">2</button>
+      </li>
+      <li><button
+          class="h-10 px-5 text-white transition-colors duration-150 bg-primary-06 border border-r-0 border-secondary-05 focus:shadow-outline">3</button>
+      </li>
+      <li><button
+          class="h-10 px-5 text-black transition-colors duration-150 bg-white border border-secondary-05 focus:shadow-outline hover:bg-secondary-01">Next</button>
+      </li>
+    </ul>
+  </div>
+  <footer class="bg-primary-05  text-white ">
+    <div class="px-4 py-11 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div>
+        <h2 class="uppercase mb-4 font-bold tracking-[2px]">Legal</h2>
+        <ul>
+          <li><a class="hover:underline" href="#">Terms & Conditions</a></li>
+          <li><a class="hover:underline" href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="uppercase mb-4 font-bold tracking-[2px]">Support</h2>
+        <ul>
+          <li><a class="hover:underline" href="#">Help & Support</a></li>
+          <li><a class="hover:underline" href="team.html">Our Team</a></li>
+          <li><a class="hover:underline" href="faq.html">FAQ</a></li>
+          <li><a class="hover:underline" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="uppercase mb-4 font-bold tracking-[2px]">Our Site</h2>
+        <ul>
+          <li><a class="hover:underline" href="#">About Us</a></li>
+          <li><a class="hover:underline" href="#">Find a mentor</a></li>
+          <li><a class="hover:underline" href="mentorForm.html">Become a mentor</a></li>
+          <li><a class="hover:underline" href="#">Post a job</a></li>
+          <li><a class="hover:underline" href="#">Find a job</a></li>
+          <li><a class="hover:underline" href="#">Courses</a></li>
+          <li><a class="hover:underline" href="#">Resources</a></li>
+          <li><a class="hover:underline" href="#">Articles</a></li>
+          <li><a class="hover:underline" href="#">Community</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="uppercase mb-4 font-bold tracking-[2px]">Follow Us</h2>
+        <ul class="flex space-x-4">
+          <li><a aria-label="facebook" class="hover:underline" href="#"><i><i class="fa-brands fa-facebook"></i></i></a>
+          </li>
+          <li><a aria-label="twitter" class="hover:underline" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a aria-label="instagram" class="hover:underline" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white">
+      <div class="container mx-auto px-4 py-5 flex justify-between items-center">
+        <a aria-label="logo" href="#">
+          <img class="w-20 sm:w-full" src="assets/inno-connect-1.svg" alt="">
+        </a>
+        <p class="text-xs sm:text-sm text-center">Copyright © 2022. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="blog.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

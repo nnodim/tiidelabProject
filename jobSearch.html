@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ecee866c05.js" crossorigin="anonymous"></script>
+
+
+  <title>Job Search</title>
+</head>
+
+<body>
+  <!-- <select>
+    <option>
+      Apply Filters
+    </option>
+    <option>
+      Apply Filters
+    </option>
+    <option>
+      Apply Filters
+    </option>
+  </select> -->
+
+  <header class="sticky top-0 z-50 bg-white">
+    <nav class="px-4 py-5">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html"><img class="w-40 md:w-full" src="assets/logo.svg" alt="innoConnect logo"></a>
+        <div class="hidden lg:flex items-center justify-evenly w-[600px]">
+          <div class="dropdown group item relative">
+            <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">Mentorship <i
+                class="ml-1 text-xs transition-all duration-100 fa-solid fa-chevron-down"></i></div>
+            <div
+              class="menu hidden shadow  absolute z-10 bg-white w-40 mt-1 rounded-b transition ease-linear duration-100">
+              <a href="#" class="text-gray-800 px-4 py-2 block">Find a mentor</a>
+              <a href="mentorForm.html" class="text-gray-800 px-4 py-2 block">Become a mentor</a>
+            </div>
+          </div>
+          <div class="dropdown group relative">
+            <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">Jobs<i
+                class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i></div>
+            <div
+              class="menu hidden transition ease-linear duration-100 absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+              <a href="#" class="text-gray-800 px-4 py-2 block">Post a job</a>
+              <a href="#" class="text-gray-800 px-4 py-2 block">Find a job</a>
+            </div>
+          </div>
+          <div class="dropdown group relative">
+            <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">Courses <i
+                class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i></div>
+            <div
+              class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+              <a href="#" class="text-gray-800 px-4 py-2 block">UI/UX</a>
+              <a href="#" class="text-gray-800 px-4 py-2 block">Frontend Development</a>
+              <a href="#" class="text-gray-800 px-4 py-2 block">Backend Development</a>
+              <a href="course.html" class="text-gray-800 px-4 py-2 block">More </a>
+            </div>
+          </div>
+          <div class="dropdown group relative">
+            <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">More <i
+                class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i></div>
+            <div
+              class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+              <a href="community-page.html" class="text-gray-800 px-4 py-2 block">Community</a>
+              <a href="blog.html" class="text-gray-800 px-4 py-2 block">Articles</a>
+              <a href="message.html" class="text-gray-800 px-4 py-2 block">Chat</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="hidden lg:flex space-x-4">
+          <a href="login.html"
+            class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
+          <a href="register.html"
+            class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
+        </div>
+
+        <!-- Hamburger menu for mobile -->
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="" aria-label="Search">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="jobsearch-section flex flex-column md-flex-row md-flex-column w-full h-full bg-[#F7FCF5]">
+    <div class="flex-row flex-column w-[80%] md:w-[75%]  mx-auto">
+
+      <div class="job-filters md:flex md:justify-evenly w-full h-full">
+
+        <div class="job-cards md:w-[75%] h-full p-3 md:py-5 md:px-8 mb-5 md:mb-0">
+
+          <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
+            <div class="job_brand-image bg-rose-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
+              <img src="./assets/flutter.jpg" alt="job_brand-image" class="w-full rounded-md">
+            </div>
+
+            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4">
+              <h2 class="font-bold text-xl">Web Developer</h2>
+              <p>Fliqpay Technologies</p>
+              <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
+              <div class="my-4">
+                <button class="bg-red-400 px-4 py-1 text-white rounded-md">Part Time</button>
+                <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
+                <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
+              </div>
+
+              <div class="md:flex md:justify-between md:items-center">
+                <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
+                <p class="text-gray-400">Join by: immediate </p>
+                <a href="jobDetails.html" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details </a>
+                <button class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
+            <div class="job_brand-image bg-rose-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
+              <img src="./assets/tesla.png" alt="job_brand-image" class="w-full rounded-md">
+            </div>
+
+            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4">
+              <h2 class="font-bold text-xl">Fullstack Developer</h2>
+              <p>Fliqpay Technologies</p>
+              <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
+              <div class="my-4">
+                <button class="bg-red-400 px-4 py-1 text-white rounded-md">Part Time</button>
+                <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
+                <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
+              </div>
+
+              <div class="md:flex md:justify-between md:items-center">
+                <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
+                <p class="text-gray-400">Join by: immediate </p>
+                <a href="#" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details ></a>
+                <button class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
+            <div class="job_brand-image bg-yellow-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
+              <img src="./assets/mtn.png" alt="job_brand-image" class="w-full rounded-md">
+            </div>
+
+            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4">
+              <h2 class="font-bold text-xl">Blockchain Developer</h2>
+              <p>Fliqpay Technologies</p>
+              <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
+              <div class="my-4">
+                <button class="bg-red-400 px-4 py-1 text-white rounded-md">Part Time</button>
+                <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
+                <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
+              </div>
+
+              <div class="md:flex md:justify-between md:items-center">
+                <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
+                <p class="text-gray-400">Join by: immediate </p>
+                <a href="#" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details ></a>
+                <button class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
+            <div class="job_brand-image bg-red-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
+              <img src="./assets/airtel.png" alt="job_brand-image" class="w-full rounded-md">
+            </div>
+
+            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4">
+              <h2 class="font-bold text-xl">Mobile app Developer</h2>
+              <p>Fliqpay Technologies</p>
+              <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
+              <div class="my-4">
+                <button class="bg-red-400 px-4 py-1 text-white rounded-md">Part Time</button>
+                <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
+                <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
+              </div>
+
+              <div class="md:flex md:justify-between md:items-center">
+                <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
+                <p class="text-gray-400">Join by: immediate </p>
+                <a href="#" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details ></a>
+                <button class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="ads-cards md:w-[25%] flex justify-between flex-wrap md:justify-center md:flex-col h-full p-3">
+          <div class="bg-white w-[48%] md:w-full rounded-md shadow-lg p-3 md:mb-5">
+            <p class="text-lg font-bold text-gray-800">Try out our mentorship program and land that job of your dreams
+            </p>
+            <div class="mt-2">
+              <button class="bg-indigo-950 rounded-md px-4 py-2 text-center font-semibold text-white">Explore
+                Now</button>
+            </div>
+          </div>
+
+          <div class="bg-indigo-950 w-[48%] md:w-full rounded-md shadow-lg p-3 md:mb-5">
+            <p class="text-lg font-bold text-white">Try out our mentorship program and land that job of your dreams</p>
+            <div class="mt-2">
+              <button class="bg-white rounded-md px-4 py-2 text-center font-semibold ">Explore Now</button>
+            </div>
+          </div>
+          <img src="./assets/ads.jpg" alt="">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <footer class="bg-primary-05  text-white ">
+    <div class="px-4 py-11 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div>
+        <h2 class="uppercase mb-4 font-bold tracking-[2px]">Legal</h2>
+        <ul>
+          <li><a class="hover:underline" href="#">Terms & Conditions</a></li>
+          <li><a class="hover:underline" href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="uppercase mb-4 font-bold tracking-[2px]">Support</h2>
+        <ul>
+          <li><a class="hover:underline" href="#">Help & Support</a></li>
+          <li><a class="hover:underline" href="team.html">Our Team</a></li>
+          <li><a class="hover:underline" href="faq.html">FAQ</a></li>
+          <li><a class="hover:underline" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="uppercase mb-4 font-bold tracking-[2px]">Our Site</h2>
+        <ul>
+          <li><a class="hover:underline" href="#">About Us</a></li>
+          <li><a class="hover:underline" href="#">Find a mentor</a></li>
+          <li><a class="hover:underline" href="mentorForm.html">Become a mentor</a></li>
+          <li><a class="hover:underline" href="#">Post a job</a></li>
+          <li><a class="hover:underline" href="#">Find a job</a></li>
+          <li><a class="hover:underline" href="#">Courses</a></li>
+          <li><a class="hover:underline" href="#">Resources</a></li>
+          <li><a class="hover:underline" href="#">Articles</a></li>
+          <li><a class="hover:underline" href="#">Community</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="uppercase mb-4 font-bold tracking-[2px]">Follow Us</h2>
+        <ul class="flex space-x-4">
+          <li><a aria-label="facebook" class="hover:underline" href="#"><i><i class="fa-brands fa-facebook"></i></i></a>
+          </li>
+          <li><a aria-label="twitter" class="hover:underline" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a aria-label="instagram" class="hover:underline" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white">
+      <div class="container mx-auto px-4 py-5 flex justify-between items-center">
+        <a aria-label="logo" href="#">
+          <img class="w-20 sm:w-full" src="assets/inno-connect-1.svg" alt="">
+        </a>
+        <p class="text-xs sm:text-sm text-center">Copyright © 2022. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
