@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/e27ec5c147.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-Mada">
+    <header class="sticky top-0 z-50 bg-white">
+        <nav class="px-4 py-5">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html"><img class="w-40 md:w-full" src="assets/logo.svg" alt="innoConnect logo"></a>
+                <div class="hidden lg:flex items-center justify-evenly w-[600px]">
+                    <div class="dropdown group item relative">
+                        <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Mentorship <i class="ml-1 text-xs transition-all duration-100 fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div
+                            class="menu hidden shadow  absolute z-10 bg-white w-40 mt-1 rounded-b transition ease-linear duration-100">
+                            <a href="#" class="text-gray-800 px-4 py-2 block">Find a mentor</a>
+                            <a href="mentorForm.html" class="text-gray-800 px-4 py-2 block">Become a mentor</a>
+                        </div>
+                    </div>
+                    <div class="dropdown group relative">
+                        <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Jobs<i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i></div>
+                        <div
+                            class="menu hidden transition ease-linear duration-100 absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+                            <a href="#" class="text-gray-800 px-4 py-2 block">Post a job</a>
+                            <a href="jobSearch.html" class="text-gray-800 px-4 py-2 block">Find a job</a>
+                        </div>
+                    </div>
+                    <div class="dropdown group relative">
+                        <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Courses <i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div
+                            class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+                            <a href="#" class="text-gray-800 px-4 py-2 block">UI/UX</a>
+                            <a href="#" class="text-gray-800 px-4 py-2 block">Frontend Development</a>
+                            <a href="#" class="text-gray-800 px-4 py-2 block">Backend Development</a>
+                            <a href="course.html" class="text-gray-800 px-4 py-2 block">More </a>
+                        </div>
+                    </div>
+                    <div class="dropdown group relative">
+                        <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            More <i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i></div>
+                        <div
+                            class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+                            <a href="community-page.html" class="text-gray-800 px-4 py-2 block">Community</a>
+                            <a href="blog.html" class="text-gray-800 px-4 py-2 block">Articles</a>
+                            <a href="message.html" class="text-gray-800 px-4 py-2 block">Chat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:flex space-x-4">
+                    <a href="login.html"
+                        class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
+                    <a href="register.html"
+                        class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
+                </div>
+
+                <!-- Hamburger menu for mobile -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="" aria-label="Search">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="py-8">
+        <div class="container mx-auto px-4">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="course.html"
+                            class="inline-flex items-center text-sm font-medium text-primary-03 hover:text-blue-600 ">
+                            <i class="mx-1 fas fa-home"></i>
+                            Course
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <a href="#"
+                                class="ml-1 text-sm font-medium text-Primary-03 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">Programming
+                            </a>
+                        </div>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center">
+                            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Intro to
+                                javascript</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <section class="hero container mx-auto flex flex-col lg:flex-row gap-x-8 px-4 py-8">
+            <div class="mb-2 lg:mb-0">
+                <img src="assets/technology.jpg" alt="" class="rounded-md w-full object-cover">
+            </div>
+            <div>
+                <a href="#" class="tracking-wide text-error-04 text-sm font-semibold pb-4">
+                    Programming
+                </a>
+                <h1 class="text-2xl md:text-5xl font-bold mb-2 md:mb-4 text-primary-06">
+                    Intro to Javascript
+                </h1>
+                <p class="font-medium text-primary-05 pb-4">Unlock the Power of JavaScript: From Fundamentals to
+                    <br>Advanced Techniques - Master the Language that Powers the Web.
+                </p>
+                <div class="flex items-center gap-x-4">
+                    <img src="assets/team/lizzy.jpg" alt="" class="h-10 w-10 rounded-full">
+                    <p class="text-primary-05 font-semibold ">
+                        by Innoconnect
+                    </p>
+                </div>
+                <div class="flex gap-4 my-2 md:my-4">
+                    <div class="flex gap-x-1 my-4">
+                        <img src="assets/signal-cellular-alt.svg" alt="">
+                        <p class="font-medium ">Beginner</p>
+                    </div>
+                    <div class="flex gap-x-1 my-4">
+                        <img src="assets/avg-pace.svg" alt="">
+                        <p class="font-medium ">5+ Hours</p>
+                    </div>
+                    <div class="flex gap-x-1 my-4">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <p class="font-medium ">Coming Soon</p>
+                    </div>
+                </div>
+                <button type="button"
+                    class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn  md:my-4">
+                    Enroll Now
+                </button>
+            </div>
+        </section>
+        <hr />
+        <section class="px-4 py-8">
+            <div class="container mx-auto flex flex-col lg:flex-row gap-4 justify-between px-4">
+                <div class="w-full lg:w-3/5">
+                    <div class="">
+                        <ul class="flex gap-6 flex-row text-[rgb(29,53,87)]">
+                            <li class="group ">
+                                <button type="button" onclick="openTab(event,'tab1')" id="defaultOpen"
+                                    class="tabLinks inline-block py-2 text-lg font-bold">
+                                    About Course
+                                    <div
+                                        class="bar bg-black scale-x-0 h-[2px] group-hover:scale-x-100 transition-all duration-100">
+                                    </div>
+                                </button>
+
+                            </li>
+                            <li class="group">
+                                <button type="button" onclick="openTab(event,'tab2')"
+                                    class="tabLinks inline-block  py-2 text-lg font-semibold">
+                                    Course content
+                                    <div
+                                        class="bar bg-black scale-x-0 h-[2px] group-hover:scale-x-100 transition-all duration-100">
+                                    </div>
+                                </button>
+
+                            </li>
+                            <li class="group ">
+                                <button type="button" class="tabLinks inline-block  py-2 text-lg font-semibold"
+                                    onclick="openTab(event,'tab3')">
+                                    Requirements<div
+                                        class="bar bg-black scale-x-0 h-[2px] group-hover:scale-x-100 transition-all duration-100">
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab1" class="mt-4 tabContent ">
+                        <div class="">
+                            <h3 class="text-primary-05 text-2xl font-bold">
+                                About
+                            </h3>
+                            <p class="text-lg font-semibold text-primary-05">JavaScript lets you add interactive
+                                features to
+                                your Web sites,
+                                including dynamically updated
+                                content, controlled multimedia, animated images, and much more. This introductory course
+                                has
+                                been designed to help Web developers have an understanding of the basic concepts of the
+                                language. We present JavaScript best practices by means of many interactive examples,
+                                some
+                                of
+                                which being demonstrated in live coding videos.</p>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-primary-05 text-2xl font-bold">What youll learn</h3>
+                            <ul class="list-disc py-4">
+                                <li class="text-lg font-semibold text-primary-05">How to add JavaScript code in your Web
+                                    site/Web app, and how to debug it
+                                </li>
+                                <li class="text-lg font-semibold text-primary-05">
+                                    How to make interactive Web sites through the DOM API
+                                </li>
+                                <li class="text-lg font-semibold text-primary-05">
+                                    How to change the CSS styles of HTML5 elements from JavaScript
+                                </li>
+                                <li class="text-lg font-semibold text-primary-05">
+                                    How to deal with HTML5 forms
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-primary-05 text-2xl font-bold">Who should take the course</h3>
+                            <ul class="list-disc py-4">
+                                <li class="text-lg font-semibold text-primary-05">
+                                    <b>Aspiring Web Developers:</b>
+                                    Individuals
+                                    looking to start a career in web development often begin with learning JavaScript as
+                                    it's a fundamental language for building interactive websites.
+                                </li>
+                                <li class="text-lg font-semibold text-primary-05">
+                                    <b>Students:</b> High school or college students studying computer science or web
+                                    development can take a beginner JS course to strengthen their programming skills.
+                                </li>
+                                <li class="text-lg font-semibold text-primary-05">
+                                    <b>Career Changers:</b> Individuals transitioning to a tech career from another
+                                    field
+                                    can start with a beginner JS course to build a solid foundation.
+                                </li>
+                                <li class="text-lg font-semibold text-primary-05">
+                                    <b>Anyone Curious About Coding:</b> People with a general interest in coding and
+                                    technology who want to explore the world of programming can begin with JavaScript.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tabContent mt-4 " id="tab2">
+                        <h3 class="text-primary-05 text-2xl font-bold mb-4">Syllabus</h3>
+                        <div class="relative  w-full border-t border-b border-black">
+                            <input type="checkbox" id="input1" class="absolute peer opacity-0">
+                            <label for="input1"
+                                class="font-semibold tracking-[1px] text-secondary-07 h-14 flex items-center justify-between cursor-pointer">Module
+                                1: Introduction to JavaScript
+                                <span class="rotate-0 peer-checked:rotate-180 duration-200 cursor-pointer">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </label>
+                            <div
+                                class="max-h-0 opacity-0 overflow-hidden peer-checked:opacity-100 peer-checked:max-h-full transition-all duration-200">
+                                <p class="py-4 text-base">
+                                    There are many benefits of using a CSS framework like Tailwind. Below are the major
+                                    ones.
+                                    You
+                                    write
+                                    less custom CSS. With Tailwind, you style elements by applying pre-existing classes
+                                    directly
+                                    in
+                                    your
+                                    HTML. By using utility classes in this way, you can build custom designs without
+                                    writing
+                                    CSS.
+                                    You
+                                    keep CSS files small.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative  w-full border-t border-b border-black">
+                            <input type="checkbox" id="input2" class="absolute peer opacity-0">
+                            <label for="input2"
+                                class="font-semibold tracking-[1px] text-secondary-07 h-14 flex items-center justify-between cursor-pointer">Module
+                                2: Adding interactivity to HTML
+                                <span class="rotate-0 peer-checked:rotate-180 duration-200 cursor-pointer">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </label>
+                            <div
+                                class="max-h-0 opacity-0 overflow-hidden peer-checked:opacity-100 peer-checked:max-h-full transition-all duration-200">
+                                <p class="py-4 text-base">
+                                    There are many benefits of using a CSS framework like Tailwind. Below are the major
+                                    ones.
+                                    You
+                                    write
+                                    less custom CSS. With Tailwind, you style elements by applying pre-existing classes
+                                    directly
+                                    in
+                                    your
+                                    HTML. By using utility classes in this way, you can build custom designs without
+                                    writing
+                                    CSS.
+                                    You
+                                    keep CSS files small.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative  w-full border-t border-b border-black">
+                            <input type="checkbox" id="input3" class="absolute peer opacity-0">
+                            <label for="input3"
+                                class="font-semibold tracking-[1px] text-secondary-07 h-14 flex items-center justify-between cursor-pointer">Module
+                                3: Playing with HTML5
+                                <span class="rotate-0 peer-checked:rotate-180 duration-200 cursor-pointer">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </label>
+                            <div
+                                class="max-h-0 opacity-0 overflow-hidden peer-checked:opacity-100 peer-checked:max-h-full transition-all duration-200">
+                                <p class="py-4 text-base">
+                                    There are many benefits of using a CSS framework like Tailwind. Below are the major
+                                    ones.
+                                    You
+                                    write
+                                    less custom CSS. With Tailwind, you style elements by applying pre-existing classes
+                                    directly
+                                    in
+                                    your
+                                    HTML. By using utility classes in this way, you can build custom designs without
+                                    writing
+                                    CSS.
+                                    You
+                                    keep CSS files small.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative  w-full border-t border-b border-black">
+                            <input type="checkbox" id="input4" class="absolute peer opacity-0">
+                            <label for="input4"
+                                class="font-semibold tracking-[1px] text-secondary-07 h-14 flex items-center justify-between cursor-pointer">Module
+                                4: Structuring data
+                                <span class="rotate-0 peer-checked:rotate-180 duration-200 cursor-pointer">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </label>
+                            <div
+                                class="max-h-0 opacity-0 overflow-hidden peer-checked:opacity-100 peer-checked:max-h-full transition-all duration-200">
+                                <p class="py-4 text-base">
+                                    There are many benefits of using a CSS framework like Tailwind. Below are the major
+                                    ones.
+                                    You
+                                    write
+                                    less custom CSS. With Tailwind, you style elements by applying pre-existing classes
+                                    directly
+                                    in
+                                    your
+                                    HTML. By using utility classes in this way, you can build custom designs without
+                                    writing
+                                    CSS.
+                                    You
+                                    keep CSS files small.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabContent mt-4 " id="tab3"></div>
+                </div>
+                <div>
+                    <h3 class="text-primary-05 text-2xl font-bold mt-4 md:mt-0 mb-4">Related Courses</h3>
+                    <div>
+                        <div class="max-w-xs">
+                            <div class="w-full mb-4">
+                                <img src="assets/pexels-photo-by-pixabay.png" alt=""
+                                    class="w-full object-cover rounded-md">
+                            </div>
+                            <div>
+                                <a href="#" class="tracking-wide text-error-04 text-sm font-semibold">
+                                    Professional
+                                    Development
+                                </a>
+                                <p class="text-lg font-bold text-primary-06 mt-2">How to be forever employable</p>
+                                <p class="font-medium text-primary-05 text-sm">
+                                    Learn how to Acquire essential competencies for
+                                    enhancing both your personal and professional development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-primary-05  text-white ">
+        <div class="px-4 py-11 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div>
+                <h2 class="uppercase mb-4 font-bold tracking-[2px]">Legal</h2>
+                <ul>
+                    <li><a class="hover:underline" href="#">Terms & Conditions</a></li>
+                    <li><a class="hover:underline" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="uppercase mb-4 font-bold tracking-[2px]">Support</h2>
+                <ul>
+                    <li><a class="hover:underline" href="#">Help & Support</a></li>
+                    <li><a class="hover:underline" href="faq.html">FAQ</a></li>
+                    <li><a class="hover:underline" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="uppercase mb-4 font-bold tracking-[2px]">Our Site</h2>
+                <ul>
+                    <li><a class="hover:underline" href="#">About Us</a></li>
+                    <li><a class="hover:underline" href="#">Find a mentor</a></li>
+                    <li><a class="hover:underline" href="mentorForm.html">Become a mentor</a></li>
+                    <li><a class="hover:underline" href="#">Post a job</a></li>
+                    <li><a class="hover:underline" href="#">Find a job</a></li>
+                    <li><a class="hover:underline" href="#">Courses</a></li>
+                    <li><a class="hover:underline" href="#">Resources</a></li>
+                    <li><a class="hover:underline" href="#">Articles</a></li>
+                    <li><a class="hover:underline" href="#">Community</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="uppercase mb-4 font-bold tracking-[2px]">Follow Us</h2>
+                <ul class="flex space-x-4">
+                    <li><a aria-label="facebook" class="hover:underline" href="#"><i><i
+                                    class="fa-brands fa-facebook"></i></i></a>
+                    </li>
+                    <li><a aria-label="twitter" class="hover:underline" href="#"><i
+                                class="fa-brands fa-twitter"></i></a></li>
+                    <li><a aria-label="instagram" class="hover:underline" href="#"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white">
+            <div class="container mx-auto px-4 py-5 flex justify-between items-center">
+                <a aria-label="logo" href="#">
+                    <img class="w-20 sm:w-full" src="assets/inno-connect-1.svg" alt="">
+                </a>
+                <p class="text-xs sm:text-sm text-center">Copyright © 2022. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openTab(evt, pageName) {
+            const tabContents = document.querySelectorAll('.tabContent');
+            const tabButtons = document.querySelectorAll('.tabLinks');
+            document
+
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            tabButtons.forEach(button => {
+                button.querySelector('.bar').classList.add('scale-x-0');
+            });
+
+            const tab = document.getElementById(pageName)
+            tab.classList.remove('hidden');
+            event.currentTarget.querySelector('.bar').classList.remove('scale-x-0');
+        }
+
+        // Set the initial active tab (e.g., the first tab)
+        document.querySelector('#defaultOpen').click();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
