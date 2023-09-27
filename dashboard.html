@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Mentee's Dashboard</title>
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <!-- fontawesome link -->
+    <script 
+        src="https://kit.fontawesome.com/3fff25e001.js" 
+        crossorigin="anonymous">
+    </script>
+
+</head>
+<body>
+    <div class="flex relative">
+        <aside class="sticky top-0 left-0 w-1/5 z-10 bg-[#1c2434] h-screen text-[#d2d8e2] items-center justify-around p-4 ">
+            <!-- brand logo -->
+            <div class=" my-3">
+              <div class="m-1 p-2">
+                <span class=" text-2xl">
+                  <a href="#">
+                    <img src="./assets/logo.png" alt="">
+                  </a>
+                </span>
+              </div>
+            </div>
+            <!-- side buttons -->
+            <div class="mt-7 p-3">
+                <div>
+                    <ul>
+                    <li class="p-2 m-2 mb-3 text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
+                        <a href="dashboard.html">
+                            <i class="fa-solid fa-house pr-1" ></i>
+                            <span class="font-semibold"> Overview</span>
+                        </a>
+                    </li>
+    
+    
+                    <li class="p-2 m-2 my-7 text-white justify-center items-center hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
+                        <a href="" class="flex">
+                            <i class="fa-solid fa-book-open pr-2"></i>
+                            <span class="font-semibold">Courses</span>
+                        </a>
+                    </li>
+                    <li class="p-2 m-2 my-7  text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
+                        <a href="message.html">
+                            <i class="fa-regular fa-comments pr-1"></i>
+                            <span class="font-semibold">Messages</span>
+                        </a>
+                    </li>
+                    <li class="p-2 m-2 my-7  text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
+                        <a href="">
+                            <i class="fa-solid fa-graduation-cap pr-1"></i>
+                            <span class="font-semibold"> Mentorship</span>
+                        </a>
+                    </li>
+                    <li class="p-2 m-2 my-7  text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
+                        <a href="">
+                            <i class="fa-solid fa-user-group pr-1"></i>
+                            <span class="font-semibold"> Community</span>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+    
+    
+            <!-- sign out button -->
+            <div>
+                <button class="p-1 m-2 text-center justify-center  text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2 hover:pr-5">
+                    <a href="">
+                        <i class="fa-regular fa-circle-left pr-1"></i>
+                        <span class="font-semibold">Logout</span>
+                    </a>
+                </button>
+            </div>
+          </aside>
+
+
+      <!-- dashbaord body -->
+        <main class="relative flex flex-col w-4/5 bg-zinc-100">
+            <header class="sticky top-0 right-0 z-50 flex py-2 items-center justify-between drop-shadow-sm bg-[#ffffff]">
+                <!-- user greeting -->
+                <div class="flex-col ml-2 pl-9">
+                    <div class="">
+                        <h3 class="font-bold">
+                            Hi,
+                            <span>Edet Effiong</span>
+                        </h3>
+                    </div>
+                    <div class="font-light text-xs">
+                        What are we learning today?
+                    </div>
+                </div>
+
+                <!-- search bar -->
+                <div class="mb-4 flex items-center justify-center mt-1 ml-[35px]">
+                    <div class="flex border-2 border-gray-300 rounded-xl px-2 py-1 w-80">
+                        <i 
+                        class="fas fa-search text-xl text-slate-500 align-center p-1"></i>
+                        <input
+                            type="text"
+                            class="text-gray-500  py-1 pr-2 w-72 focus:outline-none"
+                            placeholder="Search for courses"
+                        />
+                    </div>
+                </div>
+
+
+                <!-- notification bell and profile  -->
+                <div class="flex items-center">
+                    <!-- bell -->
+                    <div class="px-2">
+                        <a href="" class="w-5 text-xl">
+                            <i class="fa-solid fa-bell text-gray-700"></i>
+                        </a>
+                    </div>
+
+
+                    <div class="dropdown group item relative z-50">
+                        <div href="#" class="dropdownbtn flex items-center cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            <img class="w-14" src="./assets/menee.png" alt="">
+                            <i class="ml-3 text-xs transition-all duration-100 fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="menu hidden absolute right-2 bg-white w-52 mt-4 rounded-b transition ease-linear duration-100 divide-y divide-slate-300">
+                            <a href="dashboard.html" class="text-gray-800 px-4  py-2 block hover:bg-slate-200 ">Dashboard</a>
+                            <a href="profile.html" class="text-gray-800 px-4  py-2 block hover:bg-slate-200">My Profile</a>
+                            <a href="settings.html" class="text-gray-800 px-4  py-2 block hover:bg-slate-200">Account Settingsr</a>
+                         
+                        </div>
+                    </div>               
+                </div>          
+            </header>
+
+
+
+
+            <!-- main body -->
+            <div class="px-6 z-0">
+                <!-- courses boxes -->
+                <div class="grid grid-cols-3 gap-6 my-4 py-2 text-center">
+                    <div class="bg-[#ffffff] rounded-lg py-10 h-40 pr-10 pl-10 hover:bg-[#1C2434] hover:text-white">
+                        <h2 class="rounded-full text-xl text-center font-semibold ">A</h2>
+                        <p class="font-semibold">Adobe Suit and Pack</p>
+                    </div>
+                    <div class="bg-[#ffffff] rounded-lg py-10 h-40 pr-10 pl-10 hover:bg-[#1C2434] hover:text-white">
+                        <h2 class= "rounded-full text-xl text-center font-semibold ">B</h2>
+                        <p class="font-semibold ">Basic HTML and CSS</p>
+                    </div>
+                    <div class="bg-[#ffffff] rounded-lg py-10 h-40 pr-12 pl-12 hover:bg-[#1C2434]">
+                        <h2 class= "rounded-full text-xl text-center font-semibold">C</h2>
+                        <p class="font-semibold ">CSS Renewed</p>
+                    </div>
+                    
+                </div>
+    
+                <!-- chart container -->
+                <div class="flex max-w-full bg-card py-3 rounded-sm">
+                    <!-- chart -->
+                    <div class="w-4/6 pl-2">            
+                        <img src="./assets/charts.png" 
+                            class="w-full h-full" alt="chart-img">    
+                    </div>
+                    <!-- to do -->
+                    <div class="w-2/6 bg-zinc-100 mx-3 p-4 divide-y divide-slate-300">
+                        <h2 class="text-heading text-lg font-bold text-start py-2">To-Do</h2>
+                        <div class="text-zinc-500 px-3 py-3">
+                            <p class="text-sm font-semibold">Submit UI/UX Assignment</p>
+                        </div>
+                        <div class="text-zinc-500 px-3 py-3">
+                            <p class="text-sm font-semibold">Build style guild Components for Jewelry e-Commerse Website</p>
+                        </div>
+                        <div class="text-zinc-500 px-3 py-3">
+                            <p class="text-sm font-semibold">Watch a Movie and sleep</p>
+                        </div>
+                        <div class="text-zinc-500 px-3 py-3">
+                            <p class="text-sm font-semibold">Watch a React tutorial</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- upcoming preview -->
+                <div class="flex justify-evenly bg-white mt-8 mb-14 py-5 rounded-md">
+                    <div class="">
+                        <img class="max-h-96" src="./assets/upcoming-meetings.png" alt="">
+                    </div>
+                    <div>
+                        <img class="max-h-96 max-w-5xl" src="./assets/interview.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            
+        </main>
+
+    </div>
+        
+    <script src="./JS/index.js"></script>
+</body>
+</html>

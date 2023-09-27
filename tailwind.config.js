@@ -27,7 +27,9 @@ module.exports = {
         'secondary-09': '#0E191F',
         'error-04': '#EB616B',
         'success-06': '#55D09D',
-        'accent-03': '#658384'
+        'accent-03': '#658384',
+        heading: '#1f2937',
+        card: '#ffffff'
       },
       boxShadow: {
         btn: '2px 2px 8px 0px rgba(0, 0, 0, 0.16);',
