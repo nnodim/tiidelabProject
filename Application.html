@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Application Form</title>
+</head>
+<body class="bg-[#F7FCF5]">
+    <section class="applicationform-section bg-[#F7FCF5] px-5">
+        <div class="bg-white justify-between rounded-xl shadow-lg mb-4">
+            <img alt="" src="./assets/pc.png" class="w-full h-[600px] object-cover" />
+        </div>
+        <div class="text-center font-bold text-2xl"><h1>APPLICATION FORM</h1> </div>
+        <div class="text-center mb-12">
+            Provide the required information and we’ll get back to you if you’re qualified
+        </div>
+        <div class="flex items-center flex-col w-[90%] md:w-[85%] mx-auto">
+            <div class="text-start flex items-start flex-col">
+                <div class="w-full text-black flex font-bold font-['Mada'] mb-3">
+                    <h2>Role:</h2>
+                    <h4 class="font-normal">Fullstack Developers</h4>
+                </div>
+                <div class="w-full text-black font-bold flex font-['Mada']">
+                    <h3>Company:</h3>
+                    <h6 class="font-normal flex gap-2"> <img alt="" src="./assets/Frame.svg">
+                        Fliqpay Technology</h6>
+                </div>
+            </div>
+            <form class="flex flex-col items-start gap-4 mt-8">
+                <div class="w-full md:w-[528px] px-4 py-2 bg-gray-100 rounded-lg justify-start items-center">
+                    <label for="fullname" class="text-slate-500 text-[15px] font-normal font-['Mada']">
+                        Fullname
+                    </label>
+                    <input type="text" id="fullname" placeholder="John Doe" class="w-full py-1 pl-2 focus:outline-none focus:ring focus:border-cyan-800 rounded-md">
+                </div>
+                <div class="w-full md:w-[528px] px-4 py-2 bg-gray-100 rounded-lg justify-start items-center">
+                    <label for="email" class="text-slate-500 text-[15px] font-normal font-['Mada']">
+                        Email
+                    </label>
+                    <input type="email" id="email" placeholder="john@example.com" class="w-full py-1 pl-2 focus:outline-none focus:ring focus:border-cyan-800 rounded-md">
+                </div>
+                <div class="w-full md:w-[528px] px-4 py-2 bg-gray-100 rounded-lg justify-start items-center">
+                    <label for="phone" class="text-slate-500 text-[15px] font-normal font-['Mada']">
+                        Phone Number
+                    </label>
+                    <input type="tel" id="phone" placeholder="081-006-000" class="w-full py-1 pl-2 focus:outline-none focus:ring focus:border-cyan-800 rounded-md">
+                </div>
+            </form>
+            
+                <div class="w-full md:w-[528px] h-[174px] px-[52px] py-6 bg-zinc-100 rounded-lg border border-stone-300 flex-col justify-center items-center gap-6 inline-flex">
+                    <label for="file-upload" class="cursor-pointer">
+                        <div class="text-center">
+                            <span class="text-slate-500 font-normal font-['Mada'] leading-[18px]">
+                                Click to upload
+                            </span>
+                            <br>
+                            or drag and drop PNG, JPG, or PDF (max 5MB)
+                        </div>
+                    </label>
+                    <input type="file" id="file-upload" style="display: none;" accept=".png, .jpg, .jpeg, .pdf" />
+                </div>
+                <div class="text-white text-base font-bold font-['Mada'] tracking-wide mt-4">
+                    Submit Application
+                </div>
+            </form>
+            <div class="my-4 flex justify-center w-full">
+                <button id="submit-button" class="bg-cyan-800 px-6 py-1 text-white rounded-md">Submit Application</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for file upload -->
+    <script>
+        document.getElementById("file-upload").addEventListener("change", function (e) {
+            const fileInput = e.target;
+            const file = fileInput.files[0];
+
+            if (file) {
+                //'file' here to access the selected file.
+                console.log("Selected file:", file.name);
+
+                // Store the file name in local storage
+                localStorage.setItem("uploadedFileName", file.name);
+                
+                // alert with the uploaded file name
+                alert("File uploaded: " + file.name);
+            }
+        });
+    </script>
+</body>
+</html>
