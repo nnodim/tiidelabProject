@@ -79,12 +79,11 @@
         return;
       }
       sessionStorage.setItem("user", JSON.stringify({ email: email.value }));
-      window.location = "index.html";
+      window.location = "dashboard.html";
     }
     formLogin.addEventListener("submit", (e) => {
       e.preventDefault();
       validateForm();
-      alert("login successful")
     });
   </script>
 </body>
