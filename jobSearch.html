@@ -86,43 +86,64 @@
       </div>
     </nav>
   </header>
-  <section class="jobsearch-section flex flex-column md-flex-row md-flex-column w-full h-full bg-[#F7FCF5]">
-    <div class="flex-row flex-column w-[80%] md:w-[75%]  mx-auto">
+  <section class="container mx-auto flex justify-between flex-col md:flex-row">
+    <!-- Job Filters Column
+    <section class="w-full md:w-1/4 p-3 md:pr-6">
+      <div class="bg-white rounded-lg shadow-lg p-4">
+        <div class="text-white text-base font-bold font-['Mada']">Apply Filters</div>
+        <div class="text-slate-900 text-base font-bold font-['Mada']">Job roles</div>
+        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Web Developer</div>
+        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Fullstack Developer</div>
+        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">UI/UX</div>
+        <div class="text-slate-900 text-base font-bold font-['Mada']">Experience Level</div>
+        Add your Experience Level content here 
+        <div class="text-slate-900 text-base font-bold font-['Mada']">Work Type</div>
+        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Internship</div>
+        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Part Time</div>
+        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Full Time</div>
+        <div class="text-slate-900 text-base font-bold font-['Mada']">Location</div>
+        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Abuja</div>
+        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Lagos</div>
+        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Kano</div>
+      </div>
+    </section> -->
 
-      <div class="job-filters md:flex md:justify-evenly w-full h-full">
+    <!-- Job Search Column -->
+    <section class=" p-3">
+      <div class="job-cards">
+        <!-- Job Search Content Here -->
+        <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
+          <div class="job_brand-image bg-rose-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
+            <img src="./assets/flutter.jpg" alt="job_brand-image" class="w-full rounded-md">
+          </div>
 
-        <div class="job-cards md:w-[75%] h-full p-3 md:py-5 md:px-8 mb-5 md:mb-0">
+          <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4"> 
+            <h2 class="font-bold text-xl">Web Developer</h2>
+            <p>Fliqpay Technologies</p>
+            <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
+            <div class="my-4">
+              <button class="bg-red-400 px-4 py-1 text-white rounded-md">Part Time</button>
+              <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
+              <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
+            </div>
 
-          <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
+            <div class="md:flex md:justify-between md:items-center">
+              <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
+              <p class="text-gray-400">Join by: immediate </p>
+              <a href="jobDetails.html" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details </a>
+              <button class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more job search cards here -->
+        
+        <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
             <div class="job_brand-image bg-rose-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
               <img src="./assets/flutter.jpg" alt="job_brand-image" class="w-full rounded-md">
             </div>
-
-            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4">
-              <h2 class="font-bold text-xl">Web Developer</h2>
-              <p>Fliqpay Technologies</p>
-              <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
-              <div class="my-4">
-                <button class="bg-red-400 px-4 py-1 text-white rounded-md">Part Time</button>
-                <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
-                <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
-              </div>
-
-              <div class="md:flex md:justify-between md:items-center">
-                <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
-                <p class="text-gray-400">Join by: immediate </p>
-                <a href="jobDetails.html" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details </a>
-                <button class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
-            <div class="job_brand-image bg-rose-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
-              <img src="./assets/tesla.png" alt="job_brand-image" class="w-full rounded-md">
-            </div>
-
-            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4">
+  
+            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4"> 
               <h2 class="font-bold text-xl">Fullstack Developer</h2>
               <p>Fliqpay Technologies</p>
               <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
@@ -131,24 +152,24 @@
                 <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
                 <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
               </div>
-
+  
               <div class="md:flex md:justify-between md:items-center">
                 <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
                 <p class="text-gray-400">Join by: immediate </p>
-                <a href="#" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details ></a>
+                <a href="jobDetails.html" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details </a>
                 <button class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</button>
               </div>
             </div>
-
           </div>
-
-          <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
-            <div class="job_brand-image bg-yellow-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
+  
+                
+        <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
+            <div class="job_brand-image bg-rose-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
               <img src="./assets/mtn.png" alt="job_brand-image" class="w-full rounded-md">
             </div>
-
-            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4">
-              <h2 class="font-bold text-xl">Blockchain Developer</h2>
+  
+            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4"> 
+              <h2 class="font-bold text-xl">UI/UX</h2>
               <p>Fliqpay Technologies</p>
               <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
               <div class="my-4">
@@ -156,22 +177,23 @@
                 <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
                 <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
               </div>
-
+  
               <div class="md:flex md:justify-between md:items-center">
                 <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
                 <p class="text-gray-400">Join by: immediate </p>
-                <a href="#" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details ></a>
+                <a href="#" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details </a>
                 <button class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</button>
               </div>
             </div>
-
           </div>
-          <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
-            <div class="job_brand-image bg-red-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
+
+          
+        <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
+            <div class="job_brand-image bg-rose-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
               <img src="./assets/airtel.png" alt="job_brand-image" class="w-full rounded-md">
             </div>
-
-            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4">
+  
+            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4"> 
               <h2 class="font-bold text-xl">Mobile app Developer</h2>
               <p>Fliqpay Technologies</p>
               <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
@@ -180,43 +202,32 @@
                 <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
                 <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
               </div>
-
+  
               <div class="md:flex md:justify-between md:items-center">
                 <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
                 <p class="text-gray-400">Join by: immediate </p>
-                <a href="#" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details ></a>
+                <a href="#" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details </a>
                 <button class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</button>
               </div>
             </div>
           </div>
-        </div>
-
-
-
-        <div class="ads-cards md:w-[25%] flex justify-between flex-wrap md:justify-center md:flex-col h-full p-3">
-          <div class="bg-white w-[48%] md:w-full rounded-md shadow-lg p-3 md:mb-5">
-            <p class="text-lg font-bold text-gray-800">Try out our mentorship program and land that job of your dreams
-            </p>
-            <div class="mt-2">
-              <button class="bg-indigo-950 rounded-md px-4 py-2 text-center font-semibold text-white">Explore
-                Now</button>
-            </div>
-          </div>
-
-          <div class="bg-indigo-950 w-[48%] md:w-full rounded-md shadow-lg p-3 md:mb-5">
-            <p class="text-lg font-bold text-white">Try out our mentorship program and land that job of your dreams</p>
-            <div class="mt-2">
-              <button class="bg-white rounded-md px-4 py-2 text-center font-semibold ">Explore Now</button>
-            </div>
-          </div>
-          <img src="./assets/ads.jpg" alt="">
-
-        </div>
-
+  
       </div>
+    </section>
 
-    </div>
-
+    <!-- Job Ads Column -->
+    <section class="mx-auto max-w-xs">
+      <div class="ads-cards">
+        <!-- Job Ads Content Here -->
+        <div class="bg-white rounded-md shadow-lg p-3 md:mb-5">
+          <p class="text-lg font-bold text-gray-800">Try out our mentorship program and land that job of your dreams</p>
+          <div class="mt-2">
+            <button class="bg-indigo-950 rounded-md px-4 py-2 text-center font-semibold text-white">Explore Now</button>
+          </div>
+        </div>
+        <img src="./assets/ads.jpg" alt="" >
+      </div>
+    </section>
   </section>
   <footer class="bg-primary-05  text-white ">
     <div class="px-4 py-11 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
