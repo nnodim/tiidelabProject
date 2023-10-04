@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ecee866c05.js" crossorigin="anonymous"></script>
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mada:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <title>jobDetails</title>
 </head>
 
-<body class="bg-[#F7FCF5]">
+<body class="font-mada">
   <header class="sticky top-0 z-50 bg-white">
     <nav class="px-4 py-5">
       <div class="container mx-auto flex justify-between items-center">
@@ -73,64 +75,76 @@
       </div>
     </nav>
   </header>
-  <section class="container mx-auto px-4">
-    <div class="p-4 md:p-8 lg:p-16">
-      <div class="flex flex-col md:flex-row items-center mb-4 md:mb-10 space-y-4 md:space-y-0 md:space-x-2">
-        <img src="./assets/vector.png" alt="" class="w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">Fliqpay</h1>
+  <hr>
+  <section class="max-w-3xl mx-auto my-8 px-4">
+    <div class="flex justify-between items-center gap-x-8">
+      <div class="text-primary-05">
+        <h2 class="text-xl md:text-3xl font-bold text-primary-06">Fullstack Developer</h2>
+        <p class="mt-2"><i class="fa-solid fa-building mr-1"></i> Fliqpay Technologies</p>
+        <p class="mt-2"><i class="fa-solid fa-location-dot mr-1"></i> Abuja, Nigeria</p>
+        <p class="mt-2"><i class="fa-solid fa-briefcase mr-1"></i> Full-time</p>
+        <p class="mt-2"><i class="fa-solid fa-clock mr-1"></i> Job posted: <span>1d ago</span></p>
+        <div class="my-2">
+          <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">Part Time</button>
+          <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">Remote</button>
+          <button class="w-20 bg-cyan-800 px-2 py-1 text-white rounded-sm text-sm">S-J</button>
+        </div>
       </div>
-      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-8">Fullstack Developer</h1>
-      <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
-        <img src="./assets/vector.png" alt="" class="w-5 h-8 md:w-8 md:h-12 lg:w-10 lg:h-16">
-        <p class="text-xl md:text-2xl lg:text-3xl font-bold">
-          Fliqpay Technologies
-        </p>
-      </div>
-      <div class="my-2 md:my-4 space-y-2 md:space-y-0 md:space-x-2">
-        <button
-          class="bg-red-400 px-3 md:px-4 lg:px-6 py-1 md:py-2 lg:py-3 text-white rounded-md text-sm md:text-base lg:text-lg">Part
-          Time</button>
-        <button
-          class="bg-green-400 px-3 md:px-4 lg:px-6 py-1 md:py-2 lg:py-3 text-white rounded-md text-sm md:text-base lg:text-lg">Remote</button>
-        <button
-          class="bg-cyan-800 px-4 md:px-6 lg:px-8 py-1 md:py-2 lg:py-3 text-white rounded-md text-sm md:text-base lg:text-lg">S-J</button>
-      </div>
-      <div
-        class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 text-sm md:text-base lg:text-lg text-[#1D3557] font-medium">
-        <p>Job posted: recent jobs</p>
-        <p class="text-black-400">Join by: immediate</p>
-      </div>
-      <div class="text-2xl md:text-3xl lg:text-4xl font-bold font-['Mada'] my-5">
-        About Fliqpay
-      </div>
-      <div class="text-lg md:text-xl lg:text-2xl text-justify text-[#1D3557] font-medium">
-        <p>Our full-stack internship offers hands-on experience in both front-end and back-end web development.
-          Expect to work with HTML, CSS, JavaScript, and frameworks like React or Node.js.
-          You'll learn database management, version control (Git), and deployment while developing problem-solving
-          skills. Collaboration, communication, and continuous learning are vital aspects of this internship.
-        </p>
-      </div>
-      <div class="text-2xl md:text-3xl lg:text-4xl font-bold font-['Mada'] mt-10">
-        Job description
-      </div>
-      <div class="text-lg md:text-xl lg:text-2xl text-justify text-[#1D3557] font-medium">
-        <ol type="1">
-          <li>1. Job posted: immediate Create responsive user interfaces with HTML, CSS, and JavaScript, optimizing for
-            performance
-            and cross-browser compatibility</li>
-          <li>2. Develop server-side logic and APIs using multiple programming languages while ensuring data integrity
-            and security.</li>
-          <li>3. Manage databases, both SQL and NoSQL, optimizing queries and maintaining data consistency.</li>
-          <li>4. Set up CI/CD pipelines for deployment to cloud platforms or servers, monitoring application
-            performance, and troubleshooting issues.</li>
-          <li>5. Write tests, implement security measures, and maintain documentation
-            to ensure code quality and ongoing improvement.</li>
-        </ol>
-      </div>
-      <div class="mt-7">
-        <a href="Application.html" class="bg-cyan-800 px-6 py-2 text-white rounded-md text-lg">Apply</a>
+      <div>
+        <img src="./assets/vector.png" alt="" class="w-full object-cover h-30 w-30 md:h-auto md:w-auto">
       </div>
     </div>
+    <hr class="mt-8">
+    <div class="mt-8 text-primary-05">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-y-8">
+        <p class="font-bold text-lg uppercase md:col-span-1">About:</p>
+        <p class="text-lg md:col-span-3">
+          Fliqpay is a leading provider of payment technology solutions. We are a dynamic and innovative tech company
+          dedicated to providing the best payment solutions. We're on the lookout for a talented Full Stack Developer to
+          join our growing team. If you are passionate about creating cutting-edge applications and thrive in a
+          collaborative environment, we want to hear from you!
+        </p>
+        <hr class="col-span-full">
+        <p class="font-bold text-lg uppercase md:col-span-1">Requirements:</p>
+        <div class="text-lg md:col-span-3">
+          <ul class="list-disc list-inside">
+            <li>3+ years of experience in JavaScript</li>
+            <li>3+ years of experience in React</li>
+            <li>Bachelor's degree in Computer Science, Engineering, or a related field.</li>
+            <li>Proficiency in front-end technologies such as HTML, CSS, JavaScript, and frameworks like React, Angular,
+              or Vue.</li>
+            <li>Strong understanding of back-end technologies, including but not limited to Node.js, Python, Ruby, or
+              Java.</li>
+            <li>Experience with SQL and NoSQL databases.</li>
+            <li>Experience with version control systems such as Git.</li>
+            <li>Experience in designing and developing RESTful APIs.</li>
+          </ul>
+        </div>
+        <hr class="col-span-full">
+        <p class="font-bold text-lg uppercase md:col-span-1">Responsibilities:</p>
+        <div class="text-lg md:col-span-3">
+          <ul class="list-disc list-inside">
+            <li>Develop new features and enhancements to existing applications.</li>
+            <li>Collaborate with cross-functional teams to define, design, and ship new features.</li>
+            <li>Identify opportunities for process improvements and automation.</li>
+            <li>Write well-designed, testable, efficient code.</li>
+          </ul>
+        </div>
+        <hr class="col-span-full">
+        <p class="font-bold text-lg uppercase md:col-span-1">Benefits:
+        </p>
+        <div class="text-lg md:col-span-3">
+          <ul class="list-disc list-inside">
+            <li>Competitive salary</li>
+            <li>Flexible working hours</li>
+            <li>Remote work</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-8">
+    <a href="Application.html"
+      class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn mt-8">Apply</a>
   </section>
   <footer class="bg-primary-05  text-white ">
     <div class="px-4 py-11 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

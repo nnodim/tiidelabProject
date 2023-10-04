@@ -6,24 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ecee866c05.js" crossorigin="anonymous"></script>
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mada:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <title>Job Search</title>
 </head>
 
-<body>
-  <!-- <select>
-    <option>
-      Apply Filters
-    </option>
-    <option>
-      Apply Filters
-    </option>
-    <option>
-      Apply Filters
-    </option>
-  </select> -->
-
+<body class="font-Mada">
   <header class="sticky top-0 z-50 bg-white">
     <nav class="px-4 py-5">
       <div class="container mx-auto flex justify-between items-center">
@@ -86,139 +77,207 @@
       </div>
     </nav>
   </header>
-  <section class="container mx-auto flex justify-between flex-col md:flex-row">
-    <!-- Job Filters Column
-    <section class="w-full md:w-1/4 p-3 md:pr-6">
-      <div class="bg-white rounded-lg shadow-lg p-4">
-        <div class="text-white text-base font-bold font-['Mada']">Apply Filters</div>
-        <div class="text-slate-900 text-base font-bold font-['Mada']">Job roles</div>
-        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Web Developer</div>
-        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Fullstack Developer</div>
-        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">UI/UX</div>
-        <div class="text-slate-900 text-base font-bold font-['Mada']">Experience Level</div>
-        Add your Experience Level content here 
-        <div class="text-slate-900 text-base font-bold font-['Mada']">Work Type</div>
-        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Internship</div>
-        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Part Time</div>
-        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Full Time</div>
-        <div class="text-slate-900 text-base font-bold font-['Mada']">Location</div>
-        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Abuja</div>
-        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Lagos</div>
-        <div class="text-neutral-400 text-sm font-normal font-['Mada'] leading-[18.20px]">Kano</div>
-      </div>
-    </section> -->
+  <section class="bg-primary-05 px-4 py-5 mt-7">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-semibold text-white">Find a Job</h1>
+      <p class="text-lg text-white pt-3">Find your dream job and apply</p>
 
-    <!-- Job Search Column -->
-    <section class=" p-3">
-      <div class="job-cards">
-        <!-- Job Search Content Here -->
-        <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
-          <div class="job_brand-image bg-rose-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
-            <img src="./assets/flutter.jpg" alt="job_brand-image" class="w-full rounded-md">
+      <form action="" class="flex gap-x-2 items-center mt-5 over">
+        <div class="relative inline-block">
+          <input class="w-full md:max-w-sm rounded px-2 py-1 placeholder:text-base focus:outline-none" type="text"
+            placeholder="Search jobs" aria-label="Search">
+          <i class="absolute right-2 top-[0.4rem] text-sm text-primary-06 fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="relative inline-block">
+          <input class="w-full md:max-w-sm rounded px-2 py-1 placeholder:text-base focus:outline-none" type="text"
+            placeholder="Location" aria-label="Search">
+          <i class="absolute right-2 top-[0.4rem] text-primary-06 text-sm fa-solid fa-location-dot"></i>
+        </div>
+        <button type="submit"
+          class="bg-white inline-block rounded-3xl text-sm hover:text-white text-primary-06 py-1 px-4 hover:bg-[#6A95B1] transition-all">Search</button>
+      </form>
+    </div>
+  </section>
+  <section class="container mx-auto flex gap-y-4 gap-x-8 flex-col md:flex-row py-4 relative">
+    <div class="relative px-4" id="filterCol">
+      <button aria-label="Filter" type="button" class="md:hidden mb-3" id="filterbutton"><i
+          class="fa-solid fa-filter mr-2"></i> Filters <i class="ml-2 text-xs transition-all fa-solid fa-chevron-down"
+          id="chevron"></i></button>
+      <div id="filter" class="px-6 hidden absolute md:relative md:block rounded-lg shadow border z-50 h-fit bg-white ">
+        <p class="text-base font-bold tracking-wider text-black uppercase my-2">Filters</p>
+        <hr>
+        <form action="">
+          <div>
+            <p class="text-base font-bold tracking-wider text-black my-4">Date Posted</p>
+            <label for="24hr" class="block  my-2 text-sm">
+              <input type="checkbox" name="24hr" id="24hr" class="mr-2">
+              Past 24 hours
+            </label>
+            <label for="week" class="block  my-2 text-sm">
+              <input type="checkbox" name="week" id="week" class="mr-2">
+              Past week
+            </label>
+            <label for="month" class="block  my-2 text-sm">
+              <input type="checkbox" name="month" id="month" class="mr-2">
+              Past month
+            </label>
+            <label for="any" class="block  my-2 text-sm">
+              <input type="checkbox" name="any" id="any" class="mr-2">
+              Any time
+            </label>
           </div>
-
-          <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4"> 
-            <h2 class="font-bold text-xl">Web Developer</h2>
+          <div>
+            <p class="text-base font-bold tracking-wider text-black my-4">Job type</p>
+            <label for="full" class="block  my-2 text-sm">
+              <input type="checkbox" name="full" id="full" class="mr-2">
+              Full-time
+            </label>
+            <label for="part" class="block  my-2 text-sm">
+              <input type="checkbox" name="part" id="part" class="mr-2">
+              Part-time
+            </label>
+            <label for="contract" class="block  my-2 text-sm">
+              <input type="checkbox" name="contract" id="contract" class="mr-2">
+              Contract
+            </label>
+            <label for="internship" class="block  my-2 text-sm">
+              <input type="checkbox" name="internship" id="internship" class="mr-2">
+              Internship
+            </label>
+            <label for="anyType" class="block  my-2 text-sm">
+              <input type="checkbox" name="anyType" id="anyType" class="mr-2">
+              Any
+            </label>
+          </div>
+          <div>
+            <p class="text-base font-bold tracking-wider text-black my-4">on-site/remote</p>
+            <label for="on-site" class="block  my-2 text-sm">
+              <input type="checkbox" name="on-site" id="on-site" class="mr-2">
+              On-site
+            </label>
+            <label for="remote" class="block  my-2 text-sm">
+              <input type="checkbox" name="remote" id="remote" class="mr-2">
+              Remote
+            </label>
+            <label for="Hybrid" class="block  my-2 text-sm">
+              <input type="checkbox" name="Hybrid" id="Hybrid" class="mr-2">
+              Hybrid
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Job Search Column -->
+    <div class="border shadow rounded-lg py-3 px-6">
+      <h2 class="u text-primary-06 text-lg mb-2 font-bold">Recommended Jobs</h2>
+      <hr>
+      <div class="job-cards">
+        <div class="relative bg-white flex items-center gap-4 my-4 text-primary-05">
+          <div class="hidden  md:block h-32 w-32">
+            <img src="./assets/flutter.jpg" alt="job_brand-image" class="w-full object-cover rounded-full">
+          </div>
+          <div class="w-full rounded-md leading-8 ">
+            <h2 class="font-bold text-xl">Fullstack Developer</h2>
             <p>Fliqpay Technologies</p>
+            <div class="my-2">
+              <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">Part Time</button>
+              <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">Remote</button>
+              <button class="w-20 bg-cyan-800 px-2 py-1 text-white rounded-sm text-sm">S-J</button>
+            </div>
             <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
-            <div class="my-4">
-              <button class="bg-red-400 px-4 py-1 text-white rounded-md">Part Time</button>
-              <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
-              <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
-            </div>
-
-            <div class="md:flex md:justify-between md:items-center">
-              <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
-              <p class="text-gray-400">Join by: immediate </p>
-              <a href="jobDetails.html" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details </a>
-              <button class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</button>
-            </div>
+            <p class="text-[#1D3557] text-sm my-3"><i class="fas fa-clock mr-1"></i> Job posted: <span>24hr ago</span>
+            </p>
+            <a href="jobDetails.html"
+              class="bg-primary-06 px-8 py-1 inline-flex items-center text-white  rounded-sm shadow">Details</a>
+          </div>
+          <div class="p-4 flex gap-3 absolute top-0 right-0 lg:relative">
+            <i class="fas fa-bookmark text-primary-06"></i>
+            <i class="fas fa-share-alt text-primary-06"></i>
           </div>
         </div>
 
-        <!-- Add more job search cards here -->
-        
-        <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
-            <div class="job_brand-image bg-rose-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
-              <img src="./assets/flutter.jpg" alt="job_brand-image" class="w-full rounded-md">
-            </div>
-  
-            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4"> 
-              <h2 class="font-bold text-xl">Fullstack Developer</h2>
-              <p>Fliqpay Technologies</p>
-              <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
-              <div class="my-4">
-                <button class="bg-red-400 px-4 py-1 text-white rounded-md">Part Time</button>
-                <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
-                <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
-              </div>
-  
-              <div class="md:flex md:justify-between md:items-center">
-                <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
-                <p class="text-gray-400">Join by: immediate </p>
-                <a href="jobDetails.html" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details </a>
-                <a href="Application.html" class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</a>
-              </div>
-            </div>
+        <hr />
+        <div class="relative bg-white flex items-center gap-4 my-4 text-primary-05">
+          <div class="hidden  md:block h-32 w-32">
+            <img src="./assets/flutter.jpg" alt="job_brand-image" class="w-full object-cover rounded-full">
           </div>
-  
-                
-        <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
-            <div class="job_brand-image bg-rose-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
-              <img src="./assets/mtn.png" alt="job_brand-image" class="w-full rounded-md">
+          <div class="w-full rounded-md leading-8 ">
+            <h2 class="font-bold text-xl">Fullstack Developer</h2>
+            <p>Fliqpay Technologies</p>
+            <div class="my-2">
+              <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">Part Time</button>
+              <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">Remote</button>
+              <button class="w-20 bg-cyan-800 px-2 py-1 text-white rounded-sm text-sm">S-J</button>
             </div>
-  
-            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4"> 
-              <h2 class="font-bold text-xl">UI/UX</h2>
-              <p>Fliqpay Technologies</p>
-              <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
-              <div class="my-4">
-                <button class="bg-red-400 px-4 py-1 text-white rounded-md">Part Time</button>
-                <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
-                <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
-              </div>
-  
-              <div class="md:flex md:justify-between md:items-center">
-                <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
-                <p class="text-gray-400">Join by: immediate </p>
-                <a href="#" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details </a>
-                <button class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</button>
-              </div>
-            </div>
+            <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
+            <p class="text-[#1D3557] text-sm my-3"><i class="fas fa-clock mr-1"></i> Job posted: <span>24hr ago</span>
+            </p>
+            <a href="Application.html"
+              class="bg-primary-06 px-8 py-1 inline-flex items-center text-white  rounded-sm shadow">Details</a>
           </div>
+          <div class="p-4 flex gap-3 absolute top-0 right-0 lg:relative">
+            <i class="fas fa-bookmark text-primary-06"></i>
+            <i class="fas fa-share-alt text-primary-06"></i>
+          </div>
+        </div>
 
-          
-        <div class="bg-white flex justify-between rounded-xl shadow-lg p-5 mb-4">
-            <div class="job_brand-image bg-rose-400 w-[20%] hidden h-[30vh] rounded-md md:flex items-center">
-              <img src="./assets/airtel.png" alt="job_brand-image" class="w-full rounded-md">
-            </div>
-  
-            <div class="job_brand-post w-full md:w-[75%] h-full rounded-md leading-8 px-4"> 
-              <h2 class="font-bold text-xl">Mobile app Developer</h2>
-              <p>Fliqpay Technologies</p>
-              <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
-              <div class="my-4">
-                <button class="bg-red-400 px-4 py-1 text-white rounded-md">Part Time</button>
-                <button class="bg-green-400 px-4 py-1 text-white rounded-md">Remote</button>
-                <button class="bg-cyan-800 px-6 py-1 text-white rounded-md">S-J</button>
-              </div>
-  
-              <div class="md:flex md:justify-between md:items-center">
-                <p class="text-[#1D3557] font-medium">Job posted: recent jobs </p>
-                <p class="text-gray-400">Join by: immediate </p>
-                <a href="#" class="text-[#1D3557] block my-3 md:my-0 text-sm">View Details </a>
-                <button class="bg-[#1D3557] px-6 py-1 text-white rounded-md">Apply</button>
-              </div>
-            </div>
+        <hr />
+        <div class="relative bg-white flex items-center gap-4 my-4 text-primary-05">
+          <div class="hidden  md:block h-32 w-32">
+            <img src="./assets/airtel.png" alt="job_brand-image" class="w-full object-cover rounded-full">
           </div>
-  
+          <div class="w-full rounded-md leading-8 ">
+            <h2 class="font-bold text-xl">Fullstack Developer</h2>
+            <p>Fliqpay Technologies</p>
+            <div class="my-2">
+              <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">Part Time</button>
+              <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">Remote</button>
+              <button class="w-20 bg-cyan-800 px-2 py-1 text-white rounded-sm text-sm">S-J</button>
+            </div>
+            <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
+            <p class="text-[#1D3557] text-sm my-3"><i class="fas fa-clock mr-1"></i> Job posted: <span>24hr ago</span>
+            </p>
+            <a href="Application.html"
+              class="bg-primary-06 px-8 py-1 inline-flex items-center text-white  rounded-sm shadow">Details</a>
+          </div>
+          <div class="p-4 flex gap-3 absolute top-0 right-0 lg:relative">
+            <i class="fas fa-bookmark text-primary-06"></i>
+            <i class="fas fa-share-alt text-primary-06"></i>
+          </div>
+        </div>
+
+        <hr />
+        <div class="relative bg-white flex items-center gap-4 my-4 text-primary-05">
+          <div class="hidden  md:block h-32 w-32">
+            <img src="./assets/mtn.png" alt="job_brand-image" class="w-full object-cover rounded-full">
+          </div>
+          <div class="w-full rounded-md leading-8 ">
+            <h2 class="font-bold text-xl">Fullstack Developer</h2>
+            <p>Fliqpay Technologies</p>
+            <div class="my-2">
+              <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">Part Time</button>
+              <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">Remote</button>
+              <button class="w-20 bg-cyan-800 px-2 py-1 text-white rounded-sm text-sm">S-J</button>
+            </div>
+            <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
+            <p class="text-[#1D3557] text-sm my-3"><i class="fas fa-clock mr-1"></i> Job posted: <span>24hr ago</span>
+            </p>
+            <a href="Application.html"
+              class="bg-primary-06 px-8 py-1 inline-flex items-center text-white  rounded-sm shadow">Details</a>
+          </div>
+          <div class="p-4 flex gap-3 absolute top-0 right-0 lg:relative">
+            <i class="fas fa-bookmark text-primary-06"></i>
+            <i class="fas fa-share-alt text-primary-06"></i>
+          </div>
+        </div>
+        <hr>
       </div>
-    </section>
+    </div>
 
     <!-- Job Ads Column -->
-    <section class="mx-auto max-w-xs">
+    <!-- <section class="mx-auto max-w-xs">
       <div class="ads-cards">
-        <!-- Job Ads Content Here -->
+        <!-- Job Ads Content Here
         <div class="bg-white rounded-md shadow-lg p-3 md:mb-5">
           <p class="text-lg font-bold text-gray-800">Try out our mentorship program and land that job of your dreams</p>
           <div class="mt-2">
@@ -227,7 +286,7 @@
         </div>
         <img src="./assets/ads.jpg" alt="" >
       </div>
-    </section>
+    </section> -->
   </section>
   <footer class="bg-primary-05  text-white ">
     <div class="px-4 py-11 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -282,5 +341,27 @@
   </footer>
   <script src="script.js"></script>
 </body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButton = document.getElementById('filterbutton')
+    const filter = document.getElementById('filter')
+    const chevron = document.getElementById('chevron')
+    filterButton.addEventListener('click', () => {
+      filter.classList.toggle('hidden')
+      chevron.classList.toggle('rotate-180')
+    })
+  })
+
+  document.addEventListener('click', (e) => {
+    const filterCol = document.getElementById('filterCol')
+    const filter = document.getElementById('filter')
+
+    if (!filterCol.contains(e.target) && !filter.contains(e.target)) {
+      filter.classList.add('hidden')
+      chevron.classList.remove('rotate-180')
+    }
+  })
+</script>
 
 </html>

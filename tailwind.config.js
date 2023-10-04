@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       Mada: ['Mada', 'sans-serif'],
+      monst: ['monsterrat', 'sans-serif'],
     },
     extend: {
       colors: {
@@ -29,21 +30,23 @@ module.exports = {
         'success-06': '#55D09D',
         'accent-03': '#658384',
         heading: '#1f2937',
-        card: '#ffffff'
+        card: '#ffffff',
       },
       boxShadow: {
         btn: '2px 2px 8px 0px rgba(0, 0, 0, 0.16);',
         card: '0px 4px 4px 0px rgba(0, 0, 0, 0.25);',
       },
       screens: {
-        xlg: { max: "1800px" },
-        xmd: { max: "990px" },
-        xsm: { max: "600px" },
-        xxs: { max: "400px" },
-        minmd: "1700px",
-        minlg: "2100px",
+        xlg: { max: '1800px' },
+        xmd: { max: '990px' },
+        xsm: { max: '600px' },
+        xxs: { max: '400px' },
+        minmd: '1700px',
+        minlg: '2100px',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
 };
