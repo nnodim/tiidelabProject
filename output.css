@@ -1273,6 +1273,10 @@ video {
   width: 14rem;
 }
 
+.w-11\/12{
+  width: 91.666667%;
+}
+
 .max-w-2xl{
   max-width: 42rem;
 }

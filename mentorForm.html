@@ -14,12 +14,12 @@
 
 <body class="font-Mada">
     <header class="sticky top-0 z-50 bg-white">
-        <nav class="py-5">
-            <div class="container mx-auto flex justify-between items-center relative px-4">
+        <nav class="relative z-50 py-5">
+            <div class="container mx-auto flex justify-between items-center px-4">
                 <a href="index.html"><img class="w-40 md:w-full" src="assets/logo.svg" alt="innoConnect logo"></a>
                 <div id="navMenu"
-                    class="bg-white absolute top-0 right-0 lg:static lg:flex flex-col lg:flex-row h-screen w-56 lg:h-auto lg:w-3/4 justify-between">
-                    <button aria-label="Close" id="close" type="button" class="mb-8 px-4 lg:hidden"><i
+                    class="bg-white hidden absolute top-0 right-0 lg:static lg:flex flex-col lg:flex-row h-screen w-56 lg:h-auto lg:w-3/4 justify-between">
+                    <button aria-label="Close" id="close" type="button" class="mb-8 p-4 lg:hidden"><i
                             class="text-2xl text-primary-06 fa-solid fa-close"></i></button>
                     <div class="flex flex-col lg:flex-row gap-x-4">
                         <div class="dropdown group item relative">
@@ -46,18 +46,16 @@
                             </div>
                         </div>
                         <div class="dropdown group relative">
-                            <div href="#"
-                                class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
-                                Courses <i
-                                    class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i>
-                            </div>
-                            <div
-                                class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
-                                <a href="#" class="text-gray-800 px-4 py-2 block">UI/UX</a>
-                                <a href="#" class="text-gray-800 px-4 py-2 block">Frontend Development</a>
-                                <a href="#" class="text-gray-800 px-4 py-2 block">Backend Development</a>
-                                <a href="course.html" class="text-gray-800 px-4 py-2 block">More </a>
-                            </div>
+                            <a href="course.html"
+                                class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                                Courses
+                            </a>
+                        </div>
+                        <div class="dropdown group relative">
+                            <a href="pricing.html"
+                                class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                                Pricing
+                            </a>
                         </div>
                         <div class="dropdown group relative">
                             <div href="#"
