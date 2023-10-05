@@ -1,6 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('navMenu');
+  const closeMenuButton = document.getElementById('close');
   const dropdownElements = document.querySelectorAll('.dropdown');
 
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  closeMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+  
   dropdownElements.forEach((dropdown) => {
     const dropdownButton = dropdown.querySelector('.dropdownbtn');
     const dropdownMenu = dropdown.querySelector('.menu');
