@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Become a mentor</title>
+  <script src="https://kit.fontawesome.com/ecee866c05.js" crossorigin="anonymous"></script>
+  <script src="landing.js"></script>
+  <link rel="stylesheet" href="slider.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+  <header class="sticky top-0 z-50 bg-white">
+    <nav class="relative z-50 py-5">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-10 flex justify-between">
+        <a href="index.html"><img class="w-40 md:w-full" src="assets/logo.svg" alt="innoConnect logo"></a>
+        <div id="navMenu"
+          class="mx-auto bg-white hidden absolute top-0 right-0 lg:static lg:flex flex-col lg:flex-row h-screen w-56 lg:h-auto lg:w-auto">
+          <button aria-label="Close" id="close" type="button" class="mb-8 p-4 lg:hidden"><i
+              class="text-2xl text-primary-06 fa-solid fa-close"></i></button>
+          <div class="flex flex-col lg:flex-row">
+            <div class="dropdown group item relative">
+              <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                Mentorship <i class="ml-1 text-xs transition-all duration-100 fa-solid fa-chevron-down"></i>
+              </div>
+              <div
+                class="menu hidden shadow  absolute z-10 bg-white w-40 mt-1 rounded-b transition ease-linear duration-100">
+                <a href="#" class="text-gray-800 px-4 py-2 block">Find a mentor</a>
+                <a href="mentor.html" class="text-gray-800 px-4 py-2 block">Become a mentor</a>
+              </div>
+            </div>
+            <div class="dropdown group relative">
+              <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                Jobs<i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i>
+              </div>
+              <div
+                class="menu hidden transition ease-linear duration-100 absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+                <a href="#" class="text-gray-800 px-4 py-2 block">Post a job</a>
+                <a href="jobSearch.html" class="text-gray-800 px-4 py-2 block">Find a job</a>
+              </div>
+            </div>
+            <div class="group relative">
+              <a href="course.html" class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                Courses
+              </a>
+            </div>
+            <div class="group relative">
+              <a href="pricing.html" class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                Pricing
+              </a>
+            </div>
+            <div class="dropdown group relative">
+              <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                More <i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i>
+              </div>
+              <div
+                class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+                <a href="community-page.html" class="text-gray-800 px-4 py-2 block">Community</a>
+                <a href="blog.html" class="text-gray-800 px-4 py-2 block">Articles</a>
+                <a href="dashboard.html" class="text-gray-800 px-4 py-2 block">dashboard</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col lg:hidden px-4 mt-4 gap-4">
+            <a href="login.html"
+              class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
+            <a href="register.html"
+              class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
+          </div>
+        </div>
+        <div class="lg:flex lg:px-0 hidden gap-4">
+          <a href="login.html"
+            class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
+          <a href="register.html"
+            class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
+        </div>
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="" aria-label="Open Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="mb-10">
+    <section>
+      <div
+        class="overflow-hidden bg-cover bg-no-repeat text-center flex flex-col items-center justify-center h-screen md:h-screen md:w-[100%]"
+        style="background-image: url('assets/hero.png')">
+        <div class="">
+          <div class="mb-14">
+            <h1 class="text-white text-[64px] font-bold">Become a Mentor</h1>
+            <p class="text-white text-[22px]">
+              Guide our mentees bring their dreams to fruition
+            </p>
+          </div>
+
+          <div class="flex gap-4 justify-center">
+            <a href="mentorForm.html" class="bg-white w-[180px] font-bold text-[#37627E] px-1 py-2 rounded">
+              Become A Mentor
+            </a>
+            <a href="mentors.html"
+              class="bg-transparent border-solid text-white font-bold border-2 border-white w-[180px] px-1 py-2 rounded">
+              FAQs
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class=" w-[90%] m-auto mb-24">
+      <div class="text-center py-14">
+        <h1 class="text-[64px] text-[#222C2C] font-semibold">How It works</h1>
+        <p class="text-[32px] text-[#37627E]">You can follow these steps to become a Mentor</p>
+      </div>
+
+      <div class="flex gap-10">
+        <div class="bg-[#37627E]  pb-10 pt-10 px-4 rounded-lg">
+          <div class="flex flex-col items-center">
+            <img src="assets/icon.png" alt="">
+            <div class="w-48 text-center pt-3 text-[#fff]">
+              <h1 class="text-[20px] ">Sign Up</h1>
+              <p class="text-[12px]">Start your mentorship journey <br>by creating an account on our platform.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#37627E]  pb-10 pt-10 px-4 rounded-lg">
+          <div class="flex flex-col items-center">
+            <img src="assets/icon.png" alt="">
+            <div class="w-48 text-center pt-3 text-[#fff]">
+              <h1 class="text-[20px] ">Set Availability</h1>
+              <p class="text-[12px]">Let mentees know when you're available<br>for mentorship sessions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#37627E]  pb-10 pt-10 px-4 rounded-lg">
+          <div class="flex flex-col items-center">
+            <img src="assets/icon.png" alt="">
+            <div class="w-48 text-center pt-3 text-[#fff]">
+              <h1 class="text-[20px] ">Mentee Matching</h1>
+              <p class="text-[12px]">Our algorithm matches you with suitable mentees<br>based on your profile.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#37627E]  pb-10 pt-10 px-4 rounded-lg">
+          <div class="flex flex-col items-center">
+            <img src="assets/icon.png" alt="">
+            <div class="w-48 text-center pt-3 text-[#fff]">
+              <h1 class="text-[20px] ">Start Mentoring</h1>
+              <p class="text-[12px]">Once matched, begin mentoring<br>through our platform.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#37627E]  pb-10 pt-10 px-4 rounded-lg">
+          <div class="flex flex-col items-center">
+            <img src="assets/icon.png" alt="">
+            <div class="w-48 text-center pt-3 text-[#fff]">
+              <h1 class="text-[20px] ">Track Progress</h1>
+              <p class="text-[12px]">Track your mentee's progress<br>and offer feedback on their career goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#EEF8F8]">
+      <div class="w-[80%] m-auto py-16 flex gap-8">
+        <div>
+          <h1 class="text-[50px] text-[#222C2C] font-bold pb-6">
+            The requirements for becoming a mentor
+          </h1>
+          <ul class="list-disc gap-4 pl-6 pt-10">
+            <li class="text-[20px] dec pb-4">
+              Your extensive knowledge and experience are valuable assets for mentoring.
+            </li>
+            <li class="text-[20px] dec pb-4">
+              Mentorship is driven by a genuine desire to inspire and help others reach their full potential.
+            </li>
+            <li class="text-[20px] dec">
+              Effective communication is essential for conveying your ideas and guiding your mentee effectively.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="assets/book.png" alt="image" />
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#FCFEFC]">
+      <div class="w-[80%] m-auto py-16 flex gap-8">
+        <div>
+          <img src="assets/benefits.png" alt="image" />
+        </div>
+        <div>
+          <h1 class="text-[50px] text-[#222C2C] font-bold pb-6">
+            Benefits of becoming a mentor
+          </h1>
+          <ul class="list-disc gap-4">
+            <li class="text-[20px] dec pb-4">
+              Mentoring others encourages self-reflection and personal growth, helping you refine your skills and
+              perspectives.
+            </li>
+            <li class="text-[20px] dec pb-4">
+              It's a chance to give back to your community and industry, leaving a lasting legacy.
+            </li>
+            <li class="text-[20px] dec pb-4">
+              Mentorship hones your leadership skills, making you a more effective leader.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#FCFEFC] h-[1000px] mb-60">
+      <div>
+        <div class="text-center pb-24">
+          <h1 class="text-[40px] text-[#222C2C] font-semibold">The amazing things that mentoring can do for you</h1>
+          <p class="text-[#37627E]">
+            Senior Designers, Senior Developers and Leaders agree that
+            mentoring is one of<br> the impactful ways to spend your time. In
+            return you're building crucial<br> leadership qualities.
+          </p>
+        </div>
+        <div class="flex justify-center gap-6 relative">
+          <div class="w-[18%] bg-[#37627E] rounded-md absolute left-80">
+            <img src="assets/people.png" alt="" />
+            <div class="px-2 py-3">
+              <p class="text-[#FFFFFF] mb-4">
+                “Ensure people don't make the same mistake”
+              </p>
+              <p class="text-[#F9ED7B] text-[14px]">
+                Adebayo Adetayo, Senior Designer at NASA
+              </p>
+            </div>
+          </div>
+          <div class="w-[18%] bg-[#37627E] rounded-md absolute mt-10">
+            <img src="assets/people.png" alt="" />
+            <div class="px-2 py-3">
+              <p class="text-[#FFFFFF] mb-4">
+                “Ensure people don't make the same mistake”
+              </p>
+              <p class="text-[#F9ED7B] text-[14px]">
+                Adebayo Adetayo, Senior Designer at NASA
+              </p>
+            </div>
+          </div>
+          <div class="w-[18%] bg-[#37627E] rounded-md a absolute right-80">
+            <img src="assets/people.png" alt="" />
+            <div class="px-2 py-3">
+              <p class="text-[#FFFFFF] mb-4">
+                “Ensure people don't make the same mistake”
+              </p>
+              <p class="text-[#F9ED7B] text-[14px]">
+                Adebayo Adetayo, Senior Designer at NASA
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center gap-6 relative top-[500px]">
+          <div class="w-[18%] bg-[#37627E] rounded-md absolute left-80">
+            <img src="assets/people.png" alt="" />
+            <div class="px-2 py-3">
+              <p class="text-[#FFFFFF] mb-4">
+                “Ensure people don't make the same mistake”
+              </p>
+              <p class="text-[#F9ED7B] text-[14px]">
+                Adebayo Adetayo, Senior Designer at NASA
+              </p>
+            </div>
+          </div>
+          <div class="w-[18%] bg-[#37627E] rounded-md absolute mt-10">
+            <img src="assets/people.png" alt="" />
+            <div class="px-2 py-3">
+              <p class="text-[#FFFFFF] mb-4">
+                “Ensure people don't make the same mistake”
+              </p>
+              <p class="text-[#F9ED7B] text-[14px]">
+                Adebayo Adetayo, Senior Designer at NASA
+              </p>
+            </div>
+          </div>
+          <div class="w-[18%] bg-[#37627E] rounded-md a absolute right-80">
+            <img src="assets/people.png" alt="" />
+            <div class="px-2 py-3">
+              <p class="text-[#FFFFFF] mb-4">
+                “Ensure people don't make the same mistake”
+              </p>
+              <p class="text-[#F9ED7B] text-[14px]">
+                Adebayo Adetayo, Senior Designer at NASA
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-screen  flex items-center bg-[#EEF8F8]">
+      <div class="w-[70%] m-auto">
+        <h1 class="text-[#172A46] text-[40px] text-center">
+          “I had several calls with mentees this week, and every single one of
+          them has been insightful, cheerful, uplifting, and full of ideas
+          being exchanged.”
+        </h1>
+        <div class="flex justify-center items-center gap-4">
+          <img src="assets/salami.png" alt="" />
+          <div class="flex gap-6 text-[36px] text-[#112034]">
+            <p>Kadiri Salami</p>
+            <p>/</p>
+            <p>Serial Entrepreneur</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-[70%] m-auto">
+      <div class="text-center">
+        <h1 class="text-[#222C2C]  text-[60px] font-bold">Let's hit the ground running, we're here to support you</h1>
+        <p class="text-[#112034] text-[30px] font-semibold py-10">You Get To :</p>
+      </div>
+      <div class="grid  grid-cols-2 grid-rows-2 gap-5">
+        <div class="flex gap-4">
+          <div class="bg-[#DAE5EB] h-10 px-4 py-2">
+            <i class="fa-regular fa-clock text-[#172A46] text-[20px]"></i>
+          </div>
+          <div>
+            <h1 class="text-[#112034] text-[30px]">
+              Empower Others
+            </h1>
+            <p>
+              You have the opportunity to inspire and guide individuals on their career journey.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-[#DAE5EB] h-10 px-4 py-2">
+            <i class="fa-regular fa-clock text-[#172A46] text-[20px]"></i>
+          </div>
+          <div>
+            <h1 class="text-[#112034] text-[30px]">
+              Expand Your Professional Network
+            </h1>
+            <p>
+              Connect with like-minded professionals and grow your circle.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-[#DAE5EB] h-10 px-4 py-2">
+            <i class="fa-regular fa-clock text-[#172A46] text-[20px]"></i>
+          </div>
+          <div>
+            <h1 class="text-[#112034] text-[30px]">
+              Enhance Your Leadership Skills
+            </h1>
+            <p>
+              Mentorship cultivates your leadership abilities.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-[#DAE5EB] h-10 px-4 py-2">
+            <i class="fa-regular fa-clock text-[#172A46] text-[20px]"></i>
+          </div>
+          <div>
+            <h1 class="text-[#112034] text-[30px]">
+              Experience Deep Fulfillment
+            </h1>
+            <p>
+              Witnessing the success of your mentees is profoundly satisfying.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="flex gap-4 justify-center mt-20">
+        <a href="mentorForm.html" class="text-white font-semibold border bg-secondary-06 border-secondary-06 text-center rounded px-12 py-2  block active:bg-secondary-07 hover:shadow-btn">
+          Become A Mentor
+        </a>
+        <a href="mentors.html"
+        class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">
+          FAQs
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-primary-05  text-white ">
+    <div class="px-4 py-11 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div>
+        <h2 class="uppercase mb-4 font-bold tracking-[2px]">Legal</h2>
+        <ul>
+          <li><a class="hover:underline" href="termsAndConditions.html">Terms & Conditions</a></li>
+          <li><a class="hover:underline" href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="uppercase mb-4 font-bold tracking-[2px]">Support</h2>
+        <ul>
+          <li><a class="hover:underline" href="#">Help & Support</a></li>
+          <li><a class="hover:underline" href="team.html">Our Team</a></li>
+          <li><a class="hover:underline" href="faq.html">FAQ</a></li>
+          <li><a class="hover:underline" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="uppercase mb-4 font-bold tracking-[2px]">Our Site</h2>
+        <ul>
+          <li><a class="hover:underline" href="#">About Us</a></li>
+          <li><a class="hover:underline" href="#">Find a mentor</a></li>
+          <li><a class="hover:underline" href="mentorForm.html">Become a mentor</a></li>
+          <li><a class="hover:underline" href="#">Post a job</a></li>
+          <li><a class="hover:underline" href="#">Find a job</a></li>
+          <li><a class="hover:underline" href="#">Courses</a></li>
+          <li><a class="hover:underline" href="#">Resources</a></li>
+          <li><a class="hover:underline" href="#">Articles</a></li>
+          <li><a class="hover:underline" href="#">Community</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="uppercase mb-4 font-bold tracking-[2px]">Follow Us</h2>
+        <ul class="flex space-x-4">
+          <li><a aria-label="facebook" class="hover:underline" href="#"><i><i class="fa-brands fa-facebook"></i></i></a>
+          </li>
+          <li><a aria-label="twitter" class="hover:underline" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a aria-label="instagram" class="hover:underline" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white">
+      <div class="container mx-auto px-4 py-5 flex justify-between items-center">
+        <a aria-label="logo" href="#">
+          <img class="w-20 sm:w-full" src="assets/inno-connect-1.svg" alt="">
+        </a>
+        <p class="text-xs sm:text-sm text-center">Copyright © 2022. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
