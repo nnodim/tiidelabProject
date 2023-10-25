@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/e27ec5c147.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="sticky top-0 z-50 bg-white">
+        <nav class="relative z-50 py-5">
+          <div class="max-w-[1440px] mx-auto px-4 sm:px-10 flex justify-between">
+            <a href="index.html"><img class="w-40 md:w-full" src="assets/logo.svg" alt="innoConnect logo"></a>
+            <div id="navMenu"
+              class="mx-auto bg-white hidden absolute top-0 right-0 lg:static lg:flex flex-col lg:flex-row h-screen w-56 lg:h-auto lg:w-auto">
+              <button aria-label="Close" id="close" type="button" class="mb-8 p-4 lg:hidden"><i
+                  class="text-2xl text-primary-06 fa-solid fa-close"></i></button>
+              <div class="flex flex-col lg:flex-row">
+                <div class="dropdown group item relative">
+                  <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                    Mentorship <i class="ml-1 text-xs transition-all duration-100 fa-solid fa-chevron-down"></i>
+                  </div>
+                  <div
+                    class="menu hidden shadow  absolute z-10 bg-white w-40 mt-1 rounded-b transition ease-linear duration-100">
+                    <a href="#" class="text-gray-800 px-4 py-2 block">Find a mentor</a>
+                    <a href="mentor.html" class="text-gray-800 px-4 py-2 block">Become a mentor</a>
+                  </div>
+                </div>
+                <div class="dropdown group relative">
+                  <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                    Jobs<i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i>
+                  </div>
+                  <div
+                    class="menu hidden transition ease-linear duration-100 absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+                    <a href="postJobForm.html" class="text-gray-800 px-4 py-2 block">Post a job</a>
+                    <a href="jobSearch.html" class="text-gray-800 px-4 py-2 block">Find a job</a>
+                  </div>
+                </div>
+                <div class="group relative">
+                  <a href="course.html" class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                    Courses
+                  </a>
+                </div>
+                <div class="group relative">
+                  <a href="pricing.html" class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                    Pricing
+                  </a>
+                </div>
+                <div class="dropdown group relative">
+                  <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                    More <i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i>
+                  </div>
+                  <div
+                    class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+                    <a href="community-page.html" class="text-gray-800 px-4 py-2 block">Community</a>
+                    <a href="blog.html" class="text-gray-800 px-4 py-2 block">Articles</a>
+                    <a href="About.html" class="text-gray-800 px-4 py-2 block">About us</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col lg:hidden px-4 mt-4 gap-4">
+                <a href="login.html"
+                  class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
+                <a href="register.html"
+                  class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
+              </div>
+            </div>
+            <div class="lg:flex lg:px-0 hidden gap-4">
+              <a href="login.html"
+                class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
+              <a href="register.html"
+                class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
+            </div>
+            <div class="lg:hidden">
+              <button id="mobile-menu-button" class="" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <!-- about us -->
+    <section class="">
+        <div class="flex w-full h-80 justify-center  text-white bg-[#1c2434] flex-col text-center ">
+            <h1 class="m-1 text-4xl font-extrabold"> About Us</h1>
+            <p class="m-2 p-4 text-xl sm:max-w-3xl lg:max-w-5xl mx-auto text-justify"> Innoconnect provides easy access to mentoring
+                for your employees who are working remotely
+                and mentoring employees in different offices and locations.
+                Employees can use the app to enroll, get matched,
+                engage in their mentoring relationship, and
+                measure their mentoring success.</p>
+        </div>
+
+        <div  class="py-8 max-w-[1440px] mx-auto px-4 sm:px-10">
+
+            <div class="flex justify-center flex-col text-center mt-10 rounded-lg  md:w-2/3  bg-[#DCF0F1] mr-auto py-5 md:py-8 px-8">
+                <div class="text-slate-950">
+                    <h1 class="my-2 text-3xl font-bold"> Mission</h1>
+                    <p class="md:text-xl my-2 text-justify">
+                        At Innoconnect, our mission is to empower individuals on their journey to career success.
+                        We strive to provide a dynamic and user-friendly platform
+                        that connects users with experienced mentors, guiding them towards fulfilling careers.
+                        We are committed to fostering a supportive community
+                        that facilitates meaningful interactions, knowledge sharing, and growth.
+                        Our mission is to equip users with the skills, resources, and connections
+                        necessary to excel in their chosen paths.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class=" flex justify-center flex-col text-center mt-10 rounded-lg md:w-2/3   bg-[#1c2434] ml-auto py-5 px-8 md:py-8">
+                <div class="text-white">
+                    <h1 class="my-2 text-3xl font-bold"> Vision</h1>
+                    <p class="md:text-xl my-2 text-justify">
+                        To revolutionize career advancement,
+                        we envision a world where our Career Placement
+                        and Mentorship Support App is the catalyst for professional success.
+                        We are committed to providing individuals with the tools and guidance
+                        to navigate their career paths effectively.
+                        <br> Our vision is a future
+                        where mentorship is easily accessible, connecting aspiring professionals
+                        with experienced mentors who guide them toward meaningful careers.
+
+                </div>
+            </div>
+
+            <span class="text-4xl flex justify-center mt-24 font-extrabold">OUR TEAM</span>
+            <h3 class="text-2xl flex justify-center mt-1">Meet the entire team</h3>
+
+            <div>
+                <div id="image-grid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 my-10 mx-20">
+                    <div><img src="assets/team/lizzy.jpg" alt="" class="rounded-full mx-auto w-52 h-52">
+                        <p class="mb-1 text-xl text-center">Elizabeth Okwong</p>
+                    </div>
+                    <div><img src="assets/team/obi.jpg" alt="" class="rounded-full mx-auto w-52 h-52">
+                        <p class="mb-1 text-xl text-center">Obinna Nnodim</p>
+                    </div>
+                    <div><img src="assets/team/som.jpg" alt="" class="rounded-full mx-auto w-52 h-52">
+                        <p class="mb-1 text-center text-xl">Ejiba Chisom</p>
+                    </div>
+                    <div><img src="assets/team/pat.jpg" alt="" class="rounded-full mx-auto w-52 h-52">
+                        <p class="mb-1 text-xl text-center">Patience Bassey</p>
+                    </div>
+
+                    <!-- hidden -->
+                    <div class="hidden "><img src="assets/team/edet.jpg" alt="" class="rounded-full mx-auto w-52 h-52">
+                        <p class="mb-1 text-xl text-center">Edet Effiong</p>
+                    </div>
+                    <div class="hidden "><img src="assets/team/glad.jpg" alt="" class="rounded-full mx-auto w-52 h-52">
+                        <p class="mb-1 text-xl text-center">Gladys Luke</p>
+                    </div>
+                    <div class="hidden"><img src="assets/team/dan.jpg" alt="" class="rounded-full mx-auto w-52 h-52">
+                        <p class="mb-1 text-xl text-center">Daniel Omoanon</p>
+                    </div>
+                    <div class="hidden"><img src="assets/team/nofi.jpg" alt="" class="rounded-full mx-auto w-52 h-52">
+                        <p class="mb-1 text-xl text-center">Nofisat Aboidun</p>
+                    </div>
+                    <div class="hidden"><img src="assets/team/efe.jpg" alt="" class="rounded-full mx-auto w-52 h-52">
+                        <p class="mb-1 text-xl text-center">Efe Salubi</p>
+                    </div>
+                    <div class="hidden"><img src="assets/team/anas.jpg" alt="" class="rounded-full mx-auto w-52 h-52">
+                        <p class="mb-1 text-xl text-center">Anas Abdulmalik</p>
+                    </div>
+                    <div class="hidden"><img src="assets/team/abbas.jpg" alt="" class="rounded-full mx-auto w-52 h-52">
+                        <p class="mb-1 text-xl text-center">Abbas Toafeeq</p>
+                    </div>
+                </div>
+                <!-- view all -->
+                <!-- <div class="relative mt-24 mr-36 mb-3 text-right flex flex-row-reverse">
+                <div>
+                <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-[#DCF0F1] px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="image-button" aria-expanded="true" aria-haspopup="true">
+                    View All
+                    <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                </div> -->
+            </div>
+
+            <div class="relative mt-4 mb-4 mr-8 lg:mt-24 text-right flex flex-row-reverse">
+                <div>
+                    <button type="button"
+                        class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-[#DCF0F1] px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                        id="image-button" aria-expanded="true" aria-haspopup="true">
+                        View All
+                        <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- footer -->
+    <footer class="bg-primary-05  text-white ">
+        <div class="px-4 py-11 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div>
+                <h2 class="uppercase mb-4 font-bold tracking-[2px]">Legal</h2>
+                <ul>
+                    <li><a class="hover:underline" href="termsAndConditions.html">Terms & Conditions</a></li>
+                    <li><a class="hover:underline" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="uppercase mb-4 font-bold tracking-[2px]">Support</h2>
+                <ul>
+                    <li><a class="hover:underline" href="#">Help & Support</a></li>
+                    <li><a class="hover:underline" href="team.html">Our Team</a></li>
+                    <li><a class="hover:underline" href="faq.html">FAQ</a></li>
+                    <li><a class="hover:underline" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="uppercase mb-4 font-bold tracking-[2px]">Our Site</h2>
+                <ul>
+                    <li><a class="hover:underline" href="#">About Us</a></li>
+                    <li><a class="hover:underline" href="#">Find a mentor</a></li>
+                    <li><a class="hover:underline" href="mentorForm.html">Become a mentor</a></li>
+                    <li><a class="hover:underline" href="#">Post a job</a></li>
+                    <li><a class="hover:underline" href="#">Find a job</a></li>
+                    <li><a class="hover:underline" href="#">Courses</a></li>
+                    <li><a class="hover:underline" href="#">Resources</a></li>
+                    <li><a class="hover:underline" href="#">Articles</a></li>
+                    <li><a class="hover:underline" href="#">Community</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="uppercase mb-4 font-bold tracking-[2px]">Follow Us</h2>
+                <ul class="flex space-x-4">
+                    <li><a aria-label="facebook" class="hover:underline" href="#"><i><i
+                                    class="fa-brands fa-facebook"></i></i></a>
+                    </li>
+                    <li><a aria-label="twitter" class="hover:underline" href="#"><i
+                                class="fa-brands fa-twitter"></i></a></li>
+                    <li><a aria-label="instagram" class="hover:underline" href="#"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white">
+            <div class="container mx-auto px-4 py-5 flex justify-between items-center">
+                <a aria-label="logo" href="#">
+                    <img class="w-20 sm:w-full" src="assets/inno-connect-1.svg" alt="">
+                </a>
+                <p class="text-xs sm:text-sm text-center">Copyright © 2022. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     // Get the "View All" button
+        //     const viewAllButton = document.getElementById('image-button');
+
+        //     // Get the image grid container
+        //     const imageGrid = document.getElementById('image-grid');
+
+        //     // Add a click event listener to the "View All" button
+        //     viewAllButton.addEventListener('click', () => {
+        //         // Toggle the visibility of the image grid
+        //         imageGrid.classList.toggle('hidden');
+        //     });
+        // });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get the "View All" button
+            const viewAllButton = document.getElementById('image-button');
+
+            // Get the hidden images
+            const hiddenImages = document.querySelectorAll('#image-grid .hidden');
+
+            // Add a click event listener to the "View All" button
+            viewAllButton.addEventListener('click', () => {
+                // Toggle the visibility of hidden images
+                hiddenImages.forEach((img) => {
+                    img.classList.toggle('hidden');
+                });
+                viewAllButton.style.display = 'none';
+            });
+        });
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('navMenu');
+            const closeMenuButton = document.getElementById('close');
+            const dropdownElements = document.querySelectorAll('.dropdown');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            closeMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+
+            dropdownElements.forEach((dropdown) => {
+                const dropdownButton = dropdown.querySelector('.dropdownbtn');
+                const dropdownMenu = dropdown.querySelector('.menu');
+                const dropdownIcon = dropdownButton.querySelector('i');
+
+                dropdownButton.addEventListener('click', () => {
+                    dropdownMenu.classList.toggle('hidden');
+                    dropdownIcon.classList.toggle('rotate-180');
+                });
+            });
+
+            document.addEventListener('click', (e) => {
+                dropdownElements.forEach((dropdown) => {
+                    const dropdownMenu = dropdown.querySelector('.menu');
+                    const dropdownIcon = dropdown.querySelector('i');
+
+                    if (!dropdown.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                        dropdownMenu.classList.add('hidden');
+                        dropdownIcon.classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

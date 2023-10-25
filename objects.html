@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Two Sections</title>
+</head>
+<body>
+    <!-- Section 1 -->
+    <div class="w-1/2 h-screen bg-blue-200 p-4" id="section1">
+        <h1 class="text-3xl font-semibold">Section 1</h1>
+        <button id="toggleInputBtn" class="bg-blue-500 text-white px-4 py-2 rounded-md mt-4">Add</button>
+        <input id="textInput" class="hidden border border-gray-400 mt-4 p-2 rounded-md">
+        <ul id="appendedText1" class="mt-4 list-disc pl-4">
+            <!-- Appended text will appear here for Section 1 -->
+        </ul>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="w-1/2 h-screen bg-green-200 p-4" id="section2">
+        <h1 class="text-3xl font-semibold">Section 2</h1>
+        <ul id="appendedText2" class="mt-4 list-disc pl-4">
+            <!-- Appended text will appear here for Section 2 -->
+        </ul>
+    </div>
+
+    <script>
+        // JavaScript to handle the interaction
+        const toggleInputBtn = document.getElementById('toggleInputBtn');
+        const textInput = document.getElementById('textInput');
+        const appendedText1 = document.getElementById('appendedText1');
+        const appendedText2 = document.getElementById('appendedText2');
+
+        toggleInputBtn.addEventListener('click', () => {
+            textInput.classList.toggle('hidden');
+        });
+
+        textInput.addEventListener('change', () => {
+            const inputText = textInput.value;
+            if (inputText) {
+                const li1 = document.createElement('li');
+                li1.textContent = inputText;
+                appendedText1.appendChild(li1);
+
+                const li2 = document.createElement('li');
+                li2.textContent = inputText;
+                appendedText2.appendChild(li2);
+
+                textInput.value = '';
+                textInput.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
