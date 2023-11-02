@@ -17,6 +17,24 @@
     <!-- fontawesome link -->
     <script src="https://kit.fontawesome.com/3fff25e001.js" crossorigin="anonymous">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <style>
+        #todo-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        li.completed {
+            text-decoration: line-through;
+        }
+    </style>
 
 
 </head>
@@ -296,30 +314,36 @@
                 </div>
 
                 <!-- chart container -->
-                <div class="bg-card py-3 rounded-sm hidden md:flex ">
+                <div class="bg-card py-3 rounded-sm flex ">
                     <!-- chart -->
-                    <div class="md:w-4/6 pl-2">
-                        <img src="./assets/charts.png" class="w-full h-full" alt="chart-img">
+                    <div class=" w-full md:w-3/5 bg-white shadow-md">
+                        <div class="flex items-center p-4">
+                            <i class="fa-solid fa-eye text-gray-700"></i>
+                            <h2 class="text-primary-05 font-bold ml-2">Profile views</h2>
+                        </div>
+                        <hr class="border-slate-300">
+                        <canvas id="myChart" class="w-full p-4"></canvas>
                     </div>
 
 
                     <!-- to do -->
-                    <div class="w-2/6 bg-zinc-100 mx-3 p-4 divide-y divide-slate-300 flex flex-col">
-                        <h2 class="text-heading text-lg font-bold text-start py-2">To-Do</h2>
+                    <div class=" md:w-2/5 relative bg-card text-zinc-700 rounded-md p-4 divide-y divide-slate-300">
 
-                        <div class="text-zinc-500 px-3 py-3">
-                            <p class="text-sm font-semibold">Submit UI/UX Assignment</p>
+                        <!-- to-do items -->
+
+                        <div class="flex justify-between flex-col">
+                            <div class="flex items-center">
+                                <h2 class="text-primary-05 font-bold">Todo List</h2>
+                            </div>
+                            <div class="flex justify-between items-center gap-4">
+                                <input type="text" id="new-todo" class="border-b border-b-black mt-2 w-full"
+                                    placeholder="Add a new to-do item...">
+                                <button type="button" id="add-todo" class="bg-gray-300 w-10 h-10 rounded-full"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <ul id="todo-list"></ul>
                         </div>
-                        <div class="text-zinc-500 px-3 py-3">
-                            <p class="text-sm font-semibold">Build style guild Components for Jewelry e-Commerse Website
-                            </p>
-                        </div>
-                        <div class="text-zinc-500 px-3 py-3">
-                            <p class="text-sm font-semibold">Watch a Movie and sleep</p>
-                        </div>
-                        <div class="text-zinc-500 px-3 py-3">
-                            <p class="text-sm font-semibold">Watch a React tutorial</p>
-                        </div>
+
                     </div>
                 </div>
 
@@ -351,6 +375,78 @@
     <!-- <custon script!--  -->
     <script src="./JS/index.js"></script>
 
+    <script>
+        // Get the input element where the user enters new to-do items.
+        const newTodoInput = document.querySelector("#new-todo");
+
+        // Get the button that the user clicks to add new to-do items.
+        const addTodoButton = document.querySelector("#add-todo");
+
+        // Get the list element where the to-do items are displayed.
+        const todoList = document.querySelector("#todo-list");
+
+        // Add an event listener to the add to-do button.
+        addTodoButton.addEventListener("click", function () {
+            // Create a new to-do item.
+            const todoItem = {
+                id: Date.now(),
+                text: newTodoInput.value,
+                completed: false
+            };
+
+            // Add the new to-do item to the to-do list.
+            todoList.appendChild(createTodoItemElement(todoItem));
+
+            // Clear the input field.
+            newTodoInput.value = "";
+        });
+
+        // Create a to-do item element from a to-do item object.
+        function createTodoItemElement(todoItem) {
+            // Create a list item element.
+            const li = document.createElement("li");
+
+            // Set the to-do item's text as the list item's text.
+            li.textContent = todoItem.text;
+
+            // Add a checkbox to the list item.
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            li.appendChild(checkbox);
+
+            // Add a click event listener to the checkbox.
+            checkbox.addEventListener("click", function () {
+                // Mark the to-do item as completed or incomplete.
+                todoItem.completed = !todoItem.completed;
+
+                // Update the list item's class to reflect the to-do item's completed status.
+                if (todoItem.completed) {
+                    li.classList.add("completed");
+                } else {
+                    li.classList.remove("completed");
+                }
+            });
+
+            return li;
+        }
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: days,
+                datasets: [{
+                    data: [300, 700, 2000, 5000, 6000, 4000, 2000],
+                    borderColor: "blue",
+                    fill: false
+                }]
+            },
+            options: {
+                legend: { display: false }
+            }
+        });
+
+    </script>
 </body>
 
 </html>
