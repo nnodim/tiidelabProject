@@ -72,16 +72,22 @@
 
     function validateForm() {
       const users = JSON.parse(localStorage.getItem("users")) || [];
+      const mentors = JSON.parse(localStorage.getItem('mentor')) || [] 
       const employers = JSON.parse(localStorage.getItem("Employers")) || [];
       const existingUser = users.find(user => user.email === email.value && user.password === password.value);
 
+      const existingMentor = mentors.find(mentor => mentor.email === email.value && mentor.password === password.value)
+       
       const existingEmployer = employers.find(employer => employer.email === email.value && employer.password === password.value);
 
-      if (!existingUser && !existingEmployer) {
+      if (!existingUser && !existingEmployer && !existingMentor) {
         loginerrorMessage.style.display = "block";
         return;
       }
       if (existingUser) {
+        window.location = "dashboard.html";
+      }
+      if (existingMentor) {
         window.location = "dashboard.html";
       }
 

@@ -191,6 +191,7 @@
                                     autocomplete="family-name"
                                     class="block w-full rounded-md border input py-1.5 px-4 text-gray-900 shadow-sm bg-gray-200
                              placeholder:text-accent-03 focus:ring-1 focus:ring-inset focus:ring-primary-05 sm:text-sm sm:leading-6">
+                             <p class="hidden   " id="error">Password does not match</p>
                             </div>
                         </div>
 
@@ -201,6 +202,7 @@
                                     autocomplete="family-name"
                                     class="block w-full rounded-md border input py-1.5 px-4 text-gray-900 shadow-sm bg-gray-200
                              placeholder:text-accent-03 focus:ring-1 focus:ring-inset focus:ring-primary-05 sm:text-sm sm:leading-6">
+                             <p class="hidden " id="error-email">Email has already been taken</p>
                             </div>
                         </div>
                         <div class="sm:col-span-3">
@@ -373,6 +375,21 @@
             </form>
         </section>
     </main>
+    <div id="success-modal" class="fixed hidden inset-0 items-center justify-center z-50 bg-gray-800 bg-opacity-50">
+        <div class="container w-[464px] bg-white p-8 rounded-3xl text-center hover:shadow-lg">
+            <div class="content">
+                <div class="flex justify-center items-center">
+                    <img src="./assets/partypopper.png" alt="">
+                </div>
+                <div class="px-10">
+                    <h1 class="text-xl font-bold my-3">Thank you</p>
+                    <p class="text-[#777676] ">Your details has been submitted and will be reviewed</p>
+                </div>
+                <a href="login.html"
+                    class="bg-[#234270] inline-block text-white w-full font-semibold rounded p-3 mt-5 hover:bg-[#0d304c] transition duration-300">login</a>
+            </div>
+        </div>
+    </div>
     <footer class="bg-primary-05  text-white ">
         <div class="px-4 py-11 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <div>
@@ -431,6 +448,7 @@
             showTab(currentIndex);
         });
 
+        const form = document.getElementById('form');
         function showTab(index) {
             const tabs = document.querySelectorAll('.tab');
             const prevBtn = document.getElementById('prevBtn');
@@ -455,10 +473,54 @@
             if (currentIndex >= tabs.length) {
                 nextBtn = document.getElementById('nextBtn');
                 nextBtn.type = 'submit';
-                return false;
             }
 
             showTab(currentIndex);
+        }
+
+        function submitForm() {
+            const name = document.getElementById("first-name").value;
+            const last = document.getElementById("last-name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm-password").value;
+
+            const created = new Date().toLocaleDateString();
+            let data = JSON.parse(localStorage.getItem('mentor')) || [];
+            const id = data.length + 1;
+            const formData = {
+                id: id,
+                name: name,
+                last: last,
+                email: email,
+                password: password,
+                created: created
+            }
+            
+            if (!name || !last || !email || !password || !confirmPassword) {
+                alert("Please fill in all fields");
+                return;
+            }
+
+            if (password !== confirmPassword || !password || !confirmPassword) {
+                alert("Passwords do not match");
+                return;
+            }
+            const checkEmail = data.find((c)=>c.email === user.email)
+            if(checkEmail){
+                alert("Email already exists");
+                return;
+            }
+
+            data.push(formData);
+            localStorage.setItem('mentor', JSON.stringify(data));
+            showModal();
+        }
+
+        function showModal() {
+            const modal = document.getElementById("success-modal");
+            modal.classList.remove("hidden");
+            modal.style.display = "flex"
         }
 
         function validateForm() {
@@ -500,6 +562,11 @@
 
             current[index].classList.remove('hidden');
         }
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            submitForm();
+        })
 
         
     </script>
