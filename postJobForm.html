@@ -88,7 +88,7 @@
     <hr>
     <main>
         <!-- section ADD Employer Account [section 1]-->
-        <section class="px-4 sm:px-6 md:px-8 mb-10 w-full max-w-[900px] mx-auto" id="formpage-1">
+        <section class="px-4 sm:px-6 md:px-8 mb-10 w-full max-w-[900px] mx-auto" id="tabs">
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <div class="text-slate-900 text-2xl font-medium font-Mada tracking-wide">Job Post Progress</div>
                 <div class="w-full h-2.5 relative rounded-md bg-slate-800 mt-2"></div>
@@ -193,7 +193,7 @@
                         </div>
 
                         <div class="mt-4 flex justify-end">
-                            <!-- <a href="#formpage-2"
+                            <!-- <a href=""tabs"
                                   class="text-white text-base font-bold bg-cyan-800 font-['Mada'] py-3 px-8 rounded-lg">Continue</a> -->
 
                             <button id="continue-1"
@@ -207,7 +207,7 @@
         </section>
 
         <!-- section ADD JOB BASICS [section 2]-->
-        <section class="px-4 sm:px-6 md:px-8 mb-10 w-full max-w-[900px] mx-auto hidden" id="formpage-2">
+        <section class="px-4 sm:px-6 md:px-8 mb-10 w-full max-w-[900px] mx-auto hidden" id="tabs">
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <div class="text-slate-900 text-2xl font-medium font-Mada tracking-wide">Job Post Progress</div>
                 <div class="w-full h-2.5 relative rounded-md bg-slate-800 mt-2"></div>
@@ -325,7 +325,7 @@
         </section>
 
         <!-- section AddJobDetails [section 3]-->
-        <section class="px-4 sm:px-6 md:px-8 mb-10 w-full max-w-[900px] mx-auto hidden" id="formpage-3">
+        <section class="px-4 sm:px-6 md:px-8 mb-10 w-full max-w-[900px] mx-auto hidden" id="tabs">
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <div class="text-slate-900 text-2xl font-medium font-Mada tracking-wide">Job Post Progress</div>
                 <div class="w-full h-2.5 relative rounded-md bg-slate-800 mt-2"></div>
@@ -458,7 +458,7 @@
         </section>
 
         <!-- section Add Pay Benefit [section 4]-->
-        <section class="px-4 sm:px-6 md:px-8 mb-10 w-full max-w-[900px] mx-auto hidden" id="formpage-4">
+        <section class="px-4 sm:px-6 md:px-8 mb-10 w-full max-w-[900px] mx-auto hidden" id="tabs">
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <div class="text-slate-900 text-2xl font-medium font-Mada tracking-wide">Job Post Progress</div>
                 <div class="w-full h-2.5 relative rounded-md bg-slate-800 mt-2"></div>
@@ -530,7 +530,7 @@
         </section>
 
         <!-- section Describe Job [section 5]-->
-        <section class="px-4 sm:px-6 md:px-8 mb-10 w-full max-w-[900px] mx-auto hidden" id="formpage-5">
+        <section class="px-4 sm:px-6 md:px-8 mb-10 w-full max-w-[900px] mx-auto hidden" id="tabs">
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <div class="text-slate-900 text-2xl font-medium font-Mada tracking-wide">Job Post Progress</div>
                 <div class="w-full h-2.5 relative rounded-md bg-slate-800 mt-2"></div>
@@ -590,7 +590,7 @@
         </section>
 
         <!-- Section set preference [section 6]-->
-        <section class="px-4 sm:px-6 md:px-8 mb-10 w-full max-w-[900px] mx-auto hidden" id="formpage-6">
+        <section class="px-4 sm:px-6 md:px-8 mb-10 w-full max-w-[900px] mx-auto hidden" id="tabs">
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <div class="text-slate-900 text-2xl font-medium font-Mada tracking-wide">Job Post Progress</div>
                 <div class="w-full h-2.5 relative rounded-md bg-slate-800 mt-2"></div>
@@ -761,40 +761,81 @@
             document.getElementById('fileName').textContent = fileName;
         });
 
-        const formPages = document.querySelectorAll('[id^="formpage-"]');
-        const continueButtons = ['continue-1', 'continue-2', 'continue-3', 'continue-4', 'continue-5'];
-        const backButton = ['back-1', 'back-2', 'back-3', 'back-4'];;
+        let currentIndex = 0;
 
-        let currentPage = 0;
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab(currentIndex);
+        });
 
-        function showPage(pageIndex) {
-            formPages.forEach((page, index) => {
-                if (index === pageIndex) {
-                    page.style.display = 'block';
-                } else {
-                    page.style.display = 'none';
-                }
-            });
+        function showTab(index) {
+            const tabs = document.querySelectorAll('#tabs');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
 
+            tabs[currentIndex].classList.remove('hidden');
+
+            prevBtn.classList.toggle('hidden', currentIndex === 0);
+            nextBtn.innerHTML = currentIndex === tabs.length - 1 ? 'Submit' : 'Next';
+
+            fixStepIndicator(currentIndex);
         }
 
-        continueButtons.forEach((button, index) => {
-            document.getElementById(button).addEventListener('click', () => {
-                currentPage = index + 1;
-                showPage(currentPage);
-            });
-        });
+        function nextPrev(n) {
+            const tabs = document.querySelectorAll('.tab');
+            if (n == 1 && !validateForm()) return false;
 
-        backButton.forEach((button, index) => {
-            document.getElementById(backButton).addEventListener('click', () => {
-                console.log('clicked'.index);
-                currentPage = index - 1;
-                console.log(currentPage);
-                showPage(currentPage);
-            });
-        });
+            tabs[currentIndex].classList.add('hidden');
 
-        showPage(currentPage);
+            currentIndex += n;
+
+            if (currentIndex >= tabs.length) {
+                nextBtn = document.getElementById('nextBtn');
+                nextBtn.type = 'submit';
+                return false;
+            }
+
+            showTab(currentIndex);
+        }
+
+        function validateForm() {
+            const tabs = document.querySelectorAll('.tab');
+            const inputs = tabs[currentIndex].querySelectorAll('.input');
+            const steps = document.querySelectorAll('.step');
+            const finish = document.querySelectorAll('.finish');
+
+            let valid = true;
+
+            for (const input of inputs) {
+                if (input.value === '') {
+                    input.classList.add('border-error-04');
+                    valid = false;
+                }
+            }
+            addEventListener('input', (e) => {
+                if (e.target.classList.contains('border-error-04')) {
+                    e.target.classList.remove('border-error-04');
+                }
+            });
+            
+
+            if (valid) {
+                steps[currentIndex].classList.remove('after:border-primary-06');
+                steps[currentIndex].classList.add('after:border-success-06');
+                finish[currentIndex].classList.remove('hidden');
+            };
+            return valid;
+        }
+
+        function fixStepIndicator(index) {
+            const steps = document.querySelectorAll('.step');
+            const current = document.querySelectorAll('.current');
+
+            for (let i = 0; i < steps.length; i++) {
+                current[i].classList.add('hidden');
+            }
+
+            current[index].classList.remove('hidden');
+        }
     </script>
     <script src="script.js"></script>
 </body>

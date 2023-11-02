@@ -1,4 +1,5 @@
-const form = document.getElementById("form")
+const form1 = document.getElementById("tab1")
+const form2 = document.getElementById("tab2")
 const formLogin = document.getElementById("form-login")
 const fullName = document.getElementById("fullname")
 const email = document.getElementById("email")
@@ -11,7 +12,7 @@ const loginerrorMessage = document.getElementById("login-error")
 const loginButton = document.getElementById("login-button");
 const forgotForm = document.getElementById("forgot-form")
 
-function validateForm() {
+function mentorValidateForm() {
   const user = {
     fullName: fullName.value,
     email: email.value,
@@ -30,15 +31,53 @@ function validateForm() {
     emailError.style.color = "red"
     return
   }
+
   users.push(user)
   localStorage.setItem("users", JSON.stringify(users) )
   showModal();
   // window.location = "success.html"
   // alert("successful")
 }
-form.addEventListener("submit", function(event){
+form1.addEventListener("submit", function(event){
   event.preventDefault()
   validateForm()
+})
+function EmployerValidateForm() {
+  const companyName = document.getElementById("company-name")
+  const email = document.getElementById("company-email")
+  const number = document.getElementById("company-number")
+  const password = document.getElementById("company-password")
+  const confirmPassword = document.getElementById("company-confirm-password")
+  const aboutUs = document.getElementById("hear-about-us")
+  const employer = {
+    companyName: companyName.value,
+    email: email.value,
+    number: number.value,
+    password: password.value,
+    confirmPassword: confirmPassword.value
+  }
+  let employers = JSON.parse(localStorage.getItem('Employers')) || []
+  if(confirmPassword.value !== password.value){
+    errorMessage.style.display = "block"
+    errorMessage.style.color = "red"
+    return
+  }
+  const checkEmail = employers.find((c)=>c.email === employer.email)
+  if(checkEmail){
+    emailError.style.display ="block"
+    emailError.style.color = "red"
+    return
+  }
+
+  employers.push(employer)
+  localStorage.setItem("Employers", JSON.stringify(employers) )
+  showModal();
+  // window.location = "success.html"
+  // alert("successful")
+}
+form2.addEventListener("submit", function(event){
+  event.preventDefault()
+  EmployerValidateForm()
 })
 
 function showModal() {

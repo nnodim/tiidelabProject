@@ -72,14 +72,22 @@
 
     function validateForm() {
       const users = JSON.parse(localStorage.getItem("users")) || [];
+      const employers = JSON.parse(localStorage.getItem("Employers")) || [];
       const existingUser = users.find(user => user.email === email.value && user.password === password.value);
 
-      if (!existingUser) {
+      const existingEmployer = employers.find(employer => employer.email === email.value && employer.password === password.value);
+
+      if (!existingUser && !existingEmployer) {
         loginerrorMessage.style.display = "block";
         return;
       }
-      sessionStorage.setItem("user", JSON.stringify({ email: email.value }));
-      window.location = "dashboard.html";
+      if (existingUser) {
+        window.location = "dashboard.html";
+      }
+
+      if (existingEmployer) {
+        window.location = "employerDashboard.html";
+      }
     }
     formLogin.addEventListener("submit", (e) => {
       e.preventDefault();

@@ -1,4 +1,3 @@
-
 function dropdown(){
    var drop =  document.addEventListener('DOMContentLoaded', () => {
       const dropdownElements = document.querySelectorAll('.dropdown');

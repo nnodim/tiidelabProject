@@ -19,69 +19,91 @@
 
 <body>
   <div class="flex relative ">
-    <aside class="sticky top-0 left-0 w-1/5 z-10 bg-[#1c2434] h-screen text-[#d2d8e2] md:flex flex-col p-4 hidden ">
-      <!-- brand logo -->
-      <div class=" my-3">
-        <div class="m-1 p-2">
-          <span class=" text-2xl">
-            <a href="index.html">
-              <img src="./assets/logo.png" alt="">
-            </a>
-          </span>
-        </div>
-      </div>
-      <!-- side buttons -->
-      <div class="p-3 flex flex-col h-full">
-        <div>
-          <ul>
-            <li class="p-2 mb-3 text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
-              <a href="dashboard.html">
-                <i class="fa-solid fa-house pr-1"></i>
-                <span class="font-semibold"> Overview</span>
-              </a>
-            </li>
+    <aside
+            class="sticky top-0 left-0 w-1/5 z-10 bg-[#1c2434] h-screen text-[#d2d8e2] items-center justify-around p-4 hidden lg:block">
+            <!-- brand logo -->
+            <div class=" my-3">
+                <div class="m-1 p-2">
+                    <span class="">
+                        <a href="index.html">
+                            <img src="./assets/inno-connect-1.svg" alt="brand-logo">
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- side buttons -->
+            <div class="mt-7 p-3">
+                <div>
+                    <ul>
+                        <li
+                            class="p-2 m-2 mb-3 text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
+                            <a href="employerDashboard.html">
+                                <i class="fa-solid fa-house pr-2 text-xl"></i>
+                                <span class="font-semibold text-xl">Dashboard</span>
+                            </a>
+                        </li>
 
 
-            <li
-              class="p-2 my-7 text-white justify-center items-center hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
-              <a href="" class="flex">
-                <i class="fa-solid fa-book-open pr-2"></i>
-                <span class="font-semibold">Courses</span>
-              </a>
-            </li>
-            <li class="p-2 my-7  text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
-              <a href="message.html">
-                <i class="fa-regular fa-comments pr-1"></i>
-                <span class="font-semibold">Messages</span>
-              </a>
-            </li>
-            <li class="p-2 my-7  text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
-              <a href="">
-                <i class="fa-solid fa-graduation-cap pr-1"></i>
-                <span class="font-semibold"> Mentorship</span>
-              </a>
-            </li>
-            <li class="p-2 my-7  text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
-              <a href="">
-                <i class="fa-solid fa-user-group pr-1"></i>
-                <span class="font-semibold"> Community</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+                        <li
+                            class="p-2 m-2 my-7 text-white justify-center items-center hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
+                            <a href="myJobs.html" class="flex">
+                                <i class="fa-solid fa-book-open pr-3 text-xl"></i>
+                                <span class="font-semibold text-xl">My jobs</span>
+                            </a>
+                        </li>
+                        <li
+                            class="p-2 m-2 my-7  text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
+                            <a href="postJob.html">
+                                <i class="fa-regular fa-comments pr-2 text-xl"></i>
+                                <span class="font-semibold text-xl">Post a job</span>
+                            </a>
+                        </li>
+                        <li
+                            class="p-2 m-2 my-7  text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
+                            <a href="message.html">
+                                <i class="fa-solid fa-graduation-cap pr-2 text-xl"></i>
+                                <span class="font-semibold text-xl">Messages</span>
+                            </a>
+                        </li>
+                        <li
+                            class="p-2 m-2 my-7  text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2">
+                            <a href="applicants.html">
+                                <i class="fa-solid fa-user-group pr-2 text-xl"></i>
+                                <span class="font-semibold text-xl">Applicants</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- subscription box -->
+            <div class="m-2 p-7 bg-[#2c3850] text-center">
+                <div class="justify-center">
+                    <h3 class="text-xl font-bold ">Go Premium</h3>
+                    <p class="text-slate-100 font-thin text-sm max-w-lg py-1">Get all recent courses and personalized
+                        mentorship</p>
 
-        <div class="mt-auto">
-          <a href=""
-            class="text-center justify-center  text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2 hover:pr-5">
-            <i class="fa-regular fa-circle-left pr-1"></i>
-            <span class="font-semibold">Logout</span>
-          </a>
-        </div>
-      </div>
+                    <a href="./pricing.html">
+                        <button
+                            class="mt-3 py-2 m-auto px-12 items-center rounded-md bg-[#3c50e0] lg:text-[1rem] md:text-[1.2rem] font-semibold ease-in-out  hover:-translate-y-1 hover:scale-105 duration-300">
+                            PURCHASE NOW
+                        </button>
+                    </a>
+                </div>
+            </div>
 
-      <!-- sign out button -->
 
-    </aside>
+            <!-- sign out button -->
+            <div>
+                <button
+                    class="p-2 m-2 text-center justify-center  text-white hover:bg-white hover:text-blue-950 hover:rounded-lg hover:p-2 hover:pr-9">
+                    <a href="">
+                        <i class="fa-regular fa-circle-left pr-3 text-xl"></i>
+                        <span class="font-semibold text-xl">Logout</span>
+                    </a>
+                </button>
+            </div>
+        </aside>
     <!-- dashbaord body -->
     <main class="relative flex flex-col w-full md:w-4/5 bg-zinc-100 h-screen">
       <header class="sticky top-0 index flex py-2 items-center justify-between drop-shadow-sm bg-white">
