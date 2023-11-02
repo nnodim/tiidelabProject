@@ -32,15 +32,10 @@
                     <a href="mentor.html" class="text-gray-800 px-4 py-2 block">Become a mentor</a>
                   </div>
                 </div>
-                <div class="dropdown group relative">
-                  <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
-                    Jobs<i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i>
-                  </div>
-                  <div
-                    class="menu hidden transition ease-linear duration-100 absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
-                    <a href="postJobForm.html" class="text-gray-800 px-4 py-2 block">Post a job</a>
-                    <a href="jobSearch.html" class="text-gray-800 px-4 py-2 block">Find a job</a>
-                  </div>
+                <div class="group relative">
+                  <a href="jobSearch.html" class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                    Job Search
+                  </a>
                 </div>
                 <div class="group relative">
                   <a href="course.html" class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
@@ -175,6 +170,24 @@
                                 name</label>
                             <div class="mt-2">
                                 <input type="text" placeholder="Last Name" name="last-name" id="last-name"
+                                    autocomplete="family-name"
+                                    class="block w-full rounded-md border input py-1.5 px-4 text-gray-900 shadow-sm bg-gray-200
+                             placeholder:text-accent-03 focus:ring-1 focus:ring-inset focus:ring-primary-05 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-3">
+                            <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                            <div class="mt-2">
+                                <input type="password" placeholder="xxxxxx" name="password" id="password"
+                                    autocomplete="family-name"
+                                    class="block w-full rounded-md border input py-1.5 px-4 text-gray-900 shadow-sm bg-gray-200
+                             placeholder:text-accent-03 focus:ring-1 focus:ring-inset focus:ring-primary-05 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-3">
+                            <label for="confirm-password" class="block text-sm font-medium leading-6 text-gray-900">Confirm Password</label>
+                            <div class="mt-2">
+                                <input type="password" placeholder="xxxxxx" name="confirm-password" id="confirm-password"
                                     autocomplete="family-name"
                                     class="block w-full rounded-md border input py-1.5 px-4 text-gray-900 shadow-sm bg-gray-200
                              placeholder:text-accent-03 focus:ring-1 focus:ring-inset focus:ring-primary-05 sm:text-sm sm:leading-6">
@@ -456,12 +469,12 @@
 
             let valid = true;
 
-            for (const input of inputs) {
-                if (input.value === '') {
-                    input.classList.add('border-error-04');
-                    valid = false;
-                }
-            }
+            // for (const input of inputs) {
+            //     if (input.value === '') {
+            //         input.classList.add('border-error-04');
+            //         valid = false;
+            //     }
+            // }
             addEventListener('input', (e) => {
                 if (e.target.classList.contains('border-error-04')) {
                     e.target.classList.remove('border-error-04');
@@ -487,6 +500,8 @@
 
             current[index].classList.remove('hidden');
         }
+
+        
     </script>
     <script src="script.js"></script>
 

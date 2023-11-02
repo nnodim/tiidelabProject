@@ -2308,6 +2308,11 @@ video {
   background-repeat: no-repeat;
 }
 
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -2485,6 +2490,11 @@ video {
 .py-\[10px\]{
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pb-10{
