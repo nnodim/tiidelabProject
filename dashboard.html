@@ -27,8 +27,12 @@
         }
 
         li {
-            padding: 10px;
+            padding: 4px;
             border-bottom: 1px solid #ccc;
+        }
+        li > input {
+            margin-left: auto;
+            display: block;
         }
 
         li.completed {
@@ -330,18 +334,19 @@
                     <div class=" md:w-2/5 relative bg-card text-zinc-700 rounded-md p-4 divide-y divide-slate-300">
 
                         <!-- to-do items -->
+                        
 
                         <div class="flex justify-between flex-col">
                             <div class="flex items-center">
                                 <h2 class="text-primary-05 font-bold">Todo List</h2>
                             </div>
                             <div class="flex justify-between items-center gap-4">
-                                <input type="text" id="new-todo" class="border-b border-b-black mt-2 w-full"
+                                <input type="text" id="taskInput" class="border-b border-b-black mt-2 w-full"
                                     placeholder="Add a new to-do item...">
-                                <button type="button" id="add-todo" class="bg-gray-300 w-10 h-10 rounded-full"><i
+                                <button type="button" onclick="addTask()" class=""><i
                                         class="fa-solid fa-plus"></i></button>
                             </div>
-                            <ul id="todo-list"></ul>
+                            <ul id="taskList"></ul>
                         </div>
 
                     </div>
@@ -376,59 +381,73 @@
     <script src="./JS/index.js"></script>
 
     <script>
-        // Get the input element where the user enters new to-do items.
-        const newTodoInput = document.querySelector("#new-todo");
+        document.addEventListener('DOMContentLoaded', () => {
+    const taskInput = document.getElementById('taskInput');
+    const taskList = document.getElementById('taskList');
 
-        // Get the button that the user clicks to add new to-do items.
-        const addTodoButton = document.querySelector("#add-todo");
+    // Load tasks from local storage
+    loadTasks();
 
-        // Get the list element where the to-do items are displayed.
-        const todoList = document.querySelector("#todo-list");
+    // Add task to the list
+    window.addTask = function() {
+        const taskText = taskInput.value.trim();
+        if (taskText !== '') {
+            const taskItem = document.createElement('li');
+            taskItem.innerHTML = `
+            <div class="flex items-center justify-between">
+                    <span>${taskText}</span>
+                    <button onclick="removeTask(this)"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            `;
+            taskList.appendChild(taskItem);
 
-        // Add an event listener to the add to-do button.
-        addTodoButton.addEventListener("click", function () {
-            // Create a new to-do item.
-            const todoItem = {
-                id: Date.now(),
-                text: newTodoInput.value,
-                completed: false
-            };
+            // Save tasks to local storage
+            saveTasks();
 
-            // Add the new to-do item to the to-do list.
-            todoList.appendChild(createTodoItemElement(todoItem));
-
-            // Clear the input field.
-            newTodoInput.value = "";
-        });
-
-        // Create a to-do item element from a to-do item object.
-        function createTodoItemElement(todoItem) {
-            // Create a list item element.
-            const li = document.createElement("li");
-
-            // Set the to-do item's text as the list item's text.
-            li.textContent = todoItem.text;
-
-            // Add a checkbox to the list item.
-            const checkbox = document.createElement("input");
-            checkbox.type = "checkbox";
-            li.appendChild(checkbox);
-
-            // Add a click event listener to the checkbox.
-            checkbox.addEventListener("click", function () {
-                // Mark the to-do item as completed or incomplete.
-                todoItem.completed = !todoItem.completed;
-
-                // Update the list item's class to reflect the to-do item's completed status.
-                if (todoItem.completed) {
-                    li.classList.add("completed");
-                } else {
-                    li.classList.remove("completed");
-                }
-            });
-
-            return li;
+            // Clear input field
+            taskInput.value = '';
         }
+    };
+
+    // Remove task from the list
+    window.removeTask = function(button) {
+        const taskItem = button.parentNode;
+        taskList.removeChild(taskItem);
+
+        // Save tasks to local storage
+        saveTasks();
+    };
+
+    // Save tasks to local storage
+    function saveTasks() {
+        const tasks = [];
+        const taskItems = taskList.getElementsByTagName('li');
+        for (const taskItem of taskItems) {
+            const taskText = taskItem.querySelector('span').innerText;
+            tasks.push(taskText);
+        }
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+
+    // Load tasks from local storage
+    function loadTasks() {
+        const storedTasks = localStorage.getItem('tasks');
+        if (storedTasks) {
+            const tasks = JSON.parse(storedTasks);
+            for (const taskText of tasks) {
+                const taskItem = document.createElement('li');
+                taskItem.innerHTML = `
+                <div class="flex items-center justify-between">
+                    <span>${taskText}</span>
+                    <button onclick="removeTask(this)"><i class="fa-solid fa-trash"></i></button>
+                </div>
+                `;
+                taskList.appendChild(taskItem);
+            }
+        }
+    }
+});
+
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
         new Chart("myChart", {
