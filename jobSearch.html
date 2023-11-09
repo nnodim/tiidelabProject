@@ -17,85 +17,91 @@
 <body class="font-Mada">
   <header class="sticky top-0 z-50 bg-white">
     <nav class="relative z-50 py-5">
-      <div class="max-w-[1440px] mx-auto px-4 sm:px-10 flex justify-between">
-        <a href="index.html"><img class="w-40 md:w-full" src="assets/logo.svg" alt="innoConnect logo"></a>
-        <div id="navMenu"
-          class="mx-auto bg-white hidden absolute top-0 right-0 lg:static lg:flex flex-col lg:flex-row h-screen w-56 lg:h-auto lg:w-auto">
-          <button aria-label="Close" id="close" type="button" class="mb-8 p-4 lg:hidden"><i
-              class="text-2xl text-primary-06 fa-solid fa-close"></i></button>
-          <div class="flex flex-col lg:flex-row">
-            <div class="dropdown group item relative">
-              <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
-                Mentorship <i class="ml-1 text-xs transition-all duration-100 fa-solid fa-chevron-down"></i>
-              </div>
-              <div
-                class="menu hidden shadow  absolute z-10 bg-white w-40 mt-1 rounded-b transition ease-linear duration-100">
-                <a href="#" class="text-gray-800 px-4 py-2 block">Find a mentor</a>
-                <a href="mentor.html" class="text-gray-800 px-4 py-2 block">Become a mentor</a>
-              </div>
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-10 flex justify-between">
+            <a href="index.html"><img class="w-40 md:w-full" src="assets/logo.svg" alt="innoConnect logo"></a>
+            <div id="navMenu"
+                class="mx-auto bg-white hidden absolute top-0 right-0 lg:static lg:flex flex-col lg:flex-row h-screen w-56 lg:h-auto lg:w-auto">
+                <button aria-label="Close" id="close" type="button" class="mb-8 p-4 lg:hidden"><i
+                        class="text-2xl text-primary-06 fa-solid fa-close"></i></button>
+                <div class="flex flex-col lg:flex-row">
+                    <div class="dropdown group item relative">
+                        <div href="#"
+                            class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Mentorship <i
+                                class="ml-1 text-xs transition-all duration-100 fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div
+                            class="menu hidden shadow  absolute z-10 bg-white w-40 mt-1 rounded-b transition ease-linear duration-100">
+                            <a href="smartMatch.html" class="text-gray-800 px-4 py-2 block">Find a mentor</a>
+                            <a href="mentor.html" class="text-gray-800 px-4 py-2 block">Become a mentor</a>
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <a href="jobSearch.html"
+                            class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Job Search
+                        </a>
+                    </div>
+                    <div class="group relative">
+                        <a href="course.html"
+                            class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Courses
+                        </a>
+                    </div>
+                    <div class="group relative">
+                        <a href="pricing.html"
+                            class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Pricing
+                        </a>
+                    </div>
+                    <div class="dropdown group relative">
+                        <div href="#"
+                            class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            More <i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div
+                            class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+                            <a href="community-page.html" class="text-gray-800 px-4 py-2 block">Community</a>
+                            <a href="blog.html" class="text-gray-800 px-4 py-2 block">Articles</a>
+                            <a href="About.html" class="text-gray-800 px-4 py-2 block">About us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:hidden px-4 mt-4 gap-4">
+                    <a href="login.html"
+                        class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
+                    <a href="register.html"
+                        class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
+                </div>
             </div>
-            <div class="group relative">
-              <a href="jobSearch.html" class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
-                Job Search
-              </a>
+            <div class="lg:flex lg:px-0 hidden gap-4">
+                <a href="login.html"
+                    class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
+                <a href="register.html"
+                    class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
             </div>
-            <div class="group relative">
-              <a href="course.html" class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
-                Courses
-              </a>
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <div class="group relative">
-              <a href="pricing.html" class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
-                Pricing
-              </a>
-            </div>
-            <div class="dropdown group relative">
-              <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
-                More <i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i>
-              </div>
-              <div
-                class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
-                <a href="community-page.html" class="text-gray-800 px-4 py-2 block">Community</a>
-                <a href="blog.html" class="text-gray-800 px-4 py-2 block">Articles</a>
-                <a href="About.html" class="text-gray-800 px-4 py-2 block">About us</a>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col lg:hidden px-4 mt-4 gap-4">
-            <a href="login.html"
-              class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
-            <a href="register.html"
-              class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
-          </div>
         </div>
-        <div class="lg:flex lg:px-0 hidden gap-4">
-          <a href="login.html"
-            class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
-          <a href="register.html"
-            class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
-        </div>
-        <div class="lg:hidden">
-          <button id="mobile-menu-button" class="" aria-label="Open Menu">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </div>
     </nav>
-  </header>
+</header>
   <section class="bg-primary-05 px-4 py-5 mt-7">
     <div class="container mx-auto">
       <h1 class="text-4xl font-semibold text-white">Find a Job</h1>
       <p class="text-lg text-white pt-3">Find your dream job and apply</p>
 
-      <form action="" class="flex gap-x-2 items-center mt-5 over">
+      <form action="" id="searchForm" class="flex gap-x-2 items-center mt-5 over">
         <div class="relative inline-block">
           <input class="w-full md:max-w-sm rounded px-2 py-1 placeholder:text-base focus:outline-none" type="text"
-            placeholder="Search jobs" aria-label="Search">
+            placeholder="Search jobs" aria-label="Search" id="search">
           <i class="absolute right-2 top-[0.4rem] text-sm text-primary-06 fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="relative inline-block">
           <input class="w-full md:max-w-sm rounded px-2 py-1 placeholder:text-base focus:outline-none" type="text"
-            placeholder="Location" aria-label="Search">
+            placeholder="Location" aria-label="Search" id="location">
           <i class="absolute right-2 top-[0.4rem] text-primary-06 text-sm fa-solid fa-location-dot"></i>
         </div>
         <button type="submit"
@@ -108,22 +114,22 @@
       <button aria-label="Filter" type="button" class="md:hidden mb-3" id="filterbutton"><i
           class="fa-solid fa-filter mr-2"></i> Filters <i class="ml-2 text-xs transition-all fa-solid fa-chevron-down"
           id="chevron"></i></button>
-      <div id="filter" class="px-6 hidden absolute md:relative md:block rounded-lg shadow border z-10 h-fit bg-white ">
+      <div id="filter" class="px-4 hidden absolute md:relative md:block rounded-lg shadow border z-10 h-fit bg-white ">
         <p class="text-base font-bold tracking-wider text-black uppercase my-2">Filters</p>
         <hr>
-        <form action="">
+        <form action="" id="filterForm">
           <div>
             <p class="text-base font-bold tracking-wider text-black my-4">Date Posted</p>
             <label for="24hr" class="block  my-2 text-sm">
-              <input type="checkbox" name="24hr" id="24hr" class="mr-2">
+              <input type="checkbox" name="24hr" value="24hr" id="24hr" class="mr-2">
               Past 24 hours
             </label>
             <label for="week" class="block  my-2 text-sm">
-              <input type="checkbox" name="week" id="week" class="mr-2">
+              <input type="checkbox" name="week"  value="week" id="week" class="mr-2">
               Past week
             </label>
             <label for="month" class="block  my-2 text-sm">
-              <input type="checkbox" name="month" id="month" class="mr-2">
+              <input type="checkbox" name="month"  value="month" id="month" class="mr-2">
               Past month
             </label>
             <label for="any" class="block  my-2 text-sm">
@@ -134,75 +140,52 @@
           <div>
             <p class="text-base font-bold tracking-wider text-black my-4">Job type</p>
             <label for="full" class="block  my-2 text-sm">
-              <input type="checkbox" name="full" id="full" class="mr-2">
+              <input type="checkbox" name="full" value="Full-time" id="full" class="mr-2">
               Full-time
             </label>
             <label for="part" class="block  my-2 text-sm">
-              <input type="checkbox" name="part" id="part" class="mr-2">
+              <input type="checkbox" value="Part-time" name="part" id="part" class="mr-2">
               Part-time
             </label>
             <label for="contract" class="block  my-2 text-sm">
-              <input type="checkbox" name="contract" id="contract" class="mr-2">
+              <input type="checkbox" value="contract" name="contract" id="contract" class="mr-2">
               Contract
             </label>
             <label for="internship" class="block  my-2 text-sm">
-              <input type="checkbox" name="internship" id="internship" class="mr-2">
+              <input type="checkbox" value="internship" name="internship" id="internship" class="mr-2">
               Internship
             </label>
             <label for="anyType" class="block  my-2 text-sm">
-              <input type="checkbox" name="anyType" id="anyType" class="mr-2">
+              <input type="checkbox" value="anyType" name="anyType" id="anyType" class="mr-2">
               Any
             </label>
           </div>
           <div>
             <p class="text-base font-bold tracking-wider text-black my-4">on-site/remote</p>
-            <label for="on-site" class="block  my-2 text-sm">
-              <input type="checkbox" name="on-site" id="on-site" class="mr-2">
+            <label for="onSite" class="block  my-2 text-sm">
+              <input type="checkbox" name="on-site" value="on-site" id="onSite" class="mr-2">
               On-site
             </label>
             <label for="remote" class="block  my-2 text-sm">
-              <input type="checkbox" name="remote" id="remote" class="mr-2">
+              <input type="checkbox" name="remote" value="remote" id="remote" class="mr-2">
               Remote
             </label>
-            <label for="Hybrid" class="block  my-2 text-sm">
-              <input type="checkbox" name="Hybrid" id="Hybrid" class="mr-2">
+            <label for="hybrid" class="block  my-2 text-sm">
+              <input type="checkbox" name="Hybrid" value="Hybrid" id="hybrid" class="mr-2">
               Hybrid
             </label>
           </div>
+          <button type="submit"
+            class="bg-primary-06 px-8 py-1 inline-flex items-center text-white  rounded-sm shadow my-4">Apply</button>
         </form>
       </div>
     </div>
     <!-- Job Search Column -->
-    <div class="border shadow rounded-lg py-3 px-6">
+    <div class="border shadow rounded-lg py-3 px-6 w-full">
       <h2 class="u text-primary-06 text-lg mb-2 font-bold">Recommended Jobs</h2>
       <hr>
-      <div class="job-cards">
-        <div class="relative bg-white flex items-center gap-4 my-4 text-primary-05">
-          <div class="hidden  md:block h-32 w-32">
-            <img src="./assets/flutter.jpg" alt="job_brand-image" class="w-full object-cover rounded-full">
-          </div>
-          <div class="w-full rounded-md leading-8 ">
-            <h2 class="font-bold text-xl">Fullstack Developer</h2>
-            <p>Fliqpay Technologies</p>
-            <div class="my-2">
-              <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">Part Time</button>
-              <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">Remote</button>
-              
-            </div>
-            <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
-            <p class="text-[#1D3557] text-sm my-3"><i class="fas fa-clock mr-1"></i> Job posted: <span>24hr ago</span>
-            </p>
-            <a href="jobDetails.html"
-              class="bg-primary-06 px-8 py-1 inline-flex items-center text-white  rounded-sm shadow">Details</a>
-          </div>
-          <div class="p-4 flex gap-3 absolute top-0 right-0 lg:relative">
-            <i class="fas fa-bookmark text-primary-06"></i>
-            <i class="fas fa-share-alt text-primary-06"></i>
-          </div>
-        </div>
-
-        <hr />
-        <div class="relative bg-white flex items-center gap-4 my-4 text-primary-05">
+      <div id="dynamicContent" class="w-full h-full"></div>
+      <!-- <div class="relative bg-white flex items-center gap-4 my-4 text-primary-05">
           <div class="hidden  md:block h-32 w-32">
             <img src="./assets/flutter.jpg" alt="job_brand-image" class="w-full object-cover rounded-full">
           </div>
@@ -212,7 +195,7 @@
             <div class="my-2">
               <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">Part Time</button>
               <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">Remote</button>
-              
+
             </div>
             <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
             <p class="text-[#1D3557] text-sm my-3"><i class="fas fa-clock mr-1"></i> Job posted: <span>24hr ago</span>
@@ -237,7 +220,7 @@
             <div class="my-2">
               <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">Part Time</button>
               <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">Remote</button>
-              
+
             </div>
             <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
             <p class="text-[#1D3557] text-sm my-3"><i class="fas fa-clock mr-1"></i> Job posted: <span>24hr ago</span>
@@ -262,7 +245,7 @@
             <div class="my-2">
               <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">Part Time</button>
               <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">Remote</button>
-              
+
             </div>
             <p class="font-medium">Skills Required: Front-end, back-end, databases, Git, DevOps, problem-solving</p>
             <p class="text-[#1D3557] text-sm my-3"><i class="fas fa-clock mr-1"></i> Job posted: <span>24hr ago</span>
@@ -276,7 +259,7 @@
           </div>
         </div>
         <hr>
-      </div>
+      </div> -->
     </div>
 
     <!-- Job Ads Column -->
@@ -348,6 +331,336 @@
 </body>
 
 <script>
+  const jobs = [
+    {
+      id: 1,
+      title: 'Software Developer',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quia.',
+      location: 'Lagos, Nigeria',
+      type: 'Full-time',
+      company: 'MTN',
+      site: 'Hybrid',
+      date: '2022-01-01',
+      companyLogo: './assets/mtn.png',
+      salary: '10,000 - 20,000',
+      skills: ['HTML', 'CSS', 'JavaScript'],
+    },
+    {
+      id: 2,
+      title: 'UI/UX designer',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quia.',
+      location: 'Lagos, Nigeria',
+      type: 'Part-time',
+      site: 'Remote',
+      company: 'Airtel',
+      date: '2022-01-01',
+      companyLogo: './assets/airtel.png',
+      salary: '10,000 - 20,000',
+      skills: ['UI/UX', 'Prototyping', 'Wireframing'],
+    },
+    {
+      id: 3,
+      title: "Frontend Developer",
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quia.',
+      location: 'Lagos, Nigeria',
+      type: 'contract',
+      site: 'On-site',
+      company: 'Fliqpay ',
+      date: '2023-11-09',
+      companyLogo: './assets/flutter.jpg',
+      salary: '10,000 - 20,000',
+      skills: ['HTML', 'CSS', 'JavaScript'],
+    },
+    {
+      id: 4,
+      type: 'contract',
+      title: "Data Scientist",
+      companyLogo: "./assets/airtel.png",
+      company: "Insights Analytics Ltd.",
+      location: "Seattle, WA",
+      salary: "$120,000 - $140,000",
+      description: "Join our data science team to work on cutting-edge projects using machine learning and data analysis...",
+      site: "On-site",
+      skills: ["Python", "Machine learning", "Data analysis"],
+      requirements: ["Master's or PhD in a relevant field", "Experience with Python and data science libraries", "Strong analytical and problem-solving skills"],
+      date: "2023-01-17"
+    },
+  ]
+
+  const dynamicCards = document.getElementById('dynamicContent')
+  jobs.forEach((job) => {
+    dynamicCards.innerHTML += `
+    <div class="job-cards">
+        <div class="relative bg-white flex items-center gap-4 my-4 text-primary-05">
+          <div class="hidden  md:block h-32 w-32">
+            <img src="${job.companyLogo}" alt="job_brand-image" class="w-full object-cover rounded-full">
+          </div>
+          <div class="w-full rounded-md leading-8 ">
+            <h2 class="font-bold text-xl">${job.title}</h2>
+            <p class="font-medium">${job.company}</p>
+            <div class="my-2">
+              <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">${job.type}</button>
+              <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">${job.site}</button>
+
+            </div>
+            <p class="font-medium">Skills Required: ${job.skills}</p>
+            <p class="text-[#1D3557] text-sm my-3"><i class="fas fa-clock mr-1"></i> Job posted: <span>${job.date}</span>
+            </p>
+            <a href="jobDetails.html"
+              class="bg-primary-06 px-8 py-1 inline-flex items-center text-white  rounded-sm shadow">Details</a>
+          </div>
+          <div class="p-4 flex gap-3 absolute top-0 right-0 lg:relative">
+            <i class="fas fa-bookmark text-primary-06"></i>
+            <i class="fas fa-share-alt text-primary-06"></i>
+          </div>
+        </div>
+
+        <hr />
+    `
+  })
+
+  const searchInput = document.getElementById('search')
+  const locationInput = document.getElementById('location')
+
+  function search() {
+    const searchValue = searchInput.value
+    const locationValue = locationInput.value
+    const filteredJobs = jobs.filter((job) => job.title.toLowerCase().includes(searchValue.toLowerCase()) && job.location.toLowerCase().includes(locationValue.toLowerCase()))
+    dynamicCards.innerHTML = ''
+    filteredJobs.forEach((job) => {
+      dynamicCards.innerHTML += `
+      <div class="job-cards">
+        <div class="relative bg-white flex items-center gap-4 my-4 text-primary-05">
+          <div class="hidden  md:block h-32 w-32">
+            <img src="${job.companyLogo}" alt="job_brand-image" class="w-full object-cover rounded-full">
+          </div>
+          <div class="w-full rounded-md leading-8 ">
+            <h2 class="font-bold text-xl">${job.title}</h2>
+            <p class="font-medium">${job.company}</p>
+            <div class="my-2">
+              <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">${job.type}</button>
+              <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">${job.site}</button>
+
+            </div>
+            <p class="font-medium">Skills Required: ${job.skills}</p>
+            <p class="text-[#1D3557] text-sm my-3"><i class="fas fa-clock mr-1"></i> Job posted: <span>${job.date}</span>
+            </p>
+            <a href="jobDetails.html"
+              class="bg-primary-06 px-8 py-1 inline-flex items-center text-white  rounded-sm shadow">Details</a>
+          </div>
+          <div class="p-4 flex gap-3 absolute top-0 right-0 lg:relative">
+            <i class="fas fa-bookmark text-primary-06"></i>
+            <i class="fas fa-share-alt text-primary-06"></i>
+          </div>
+        </div>
+        <hr />
+    `
+    })
+  }
+
+  const searchForm = document.getElementById('searchForm')
+  searchForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    search()
+  })
+
+  const form = document.getElementById('filterForm');
+  const jobsList = document.getElementById('jobsList');
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const filteredJobs = filterJobs();
+    displayJobs(filteredJobs);
+  });
+
+  function filterJobs() {
+    const selectedDateOptions = getSelectedDateOptions();
+    const selectedJobTypes = getSelectedJobTypes();
+    const selectedSites = getSelectedSites();
+
+    let filteredJobs = jobs;
+
+    if (selectedDateOptions.length > 0) {
+      filteredJobs = filteredJobs.filter((job) => {
+        const jobDate = new Date(job.date);
+        return selectedDateOptions.some((dateOption) => {
+          const currentDate = new Date();
+          const daysAgo = currentDate.getDate() - jobDate.getDate();
+
+          switch (dateOption) {
+            case '24hr':
+              return daysAgo === 0;
+            case 'week':
+              return daysAgo <= 7;
+            case 'month':
+              return daysAgo <= 30;
+            default:
+              return true;
+          }
+        });
+      });
+    }
+
+    if (selectedJobTypes.length > 0) {
+      filteredJobs = filteredJobs.filter((job) => {
+        return selectedJobTypes.some((jobType) => {
+          return job.type === jobType;
+        });
+      });
+    }
+
+    if (selectedSites.length > 0) {
+      filteredJobs = filteredJobs.filter((job) => {
+        return selectedSites.some((site) => {
+          return job.site.toLowerCase() === site;
+        });
+      });
+    }
+
+    return filteredJobs;
+  }
+
+  function getSelectedDateOptions() {
+    const dateInputs = document.querySelectorAll('input[name="24hr"], input[name="week"], input[name="month"], input[name="any"]');
+    const selectedDateOptions = [];
+    console.log(selectedDateOptions);
+
+    for (const dateInput of dateInputs) {
+      if (dateInput.checked) {
+        selectedDateOptions.push(dateInput.value);
+      }
+    }
+
+    return selectedDateOptions;
+  }
+
+  function getSelectedJobTypes() {
+    const jobTypeInputs = document.querySelectorAll('input[name="full"], input[name="part"], input[name="contract"], input[name="internship"], input[name="anyType"]');
+    const selectedJobTypes = [];
+
+    for (const jobTypeInput of jobTypeInputs) {
+      if (jobTypeInput.checked) {
+        selectedJobTypes.push(jobTypeInput.value);
+      }
+    }
+
+    return selectedJobTypes;
+  }
+
+  function getSelectedSites() {
+    const siteInputs = document.querySelectorAll('input[name="on-site"], input[name="remote"], input[name="Hybrid"]');
+    const selectedSites = [];
+
+    for (const siteInput of siteInputs) {
+      if (siteInput.checked) {
+        selectedSites.push(siteInput.value);
+      }
+    }
+
+    return selectedSites;
+  }
+
+  function displayJobs(jobs) {
+  console.log(jobs);
+    if (jobs.length === 0) {
+      dynamicCards.innerHTML = `
+      <div class="w-full h-full flex items-center justify-center">
+      <p class="text-center text-3xl font-bold text-primary-05">No jobs found</p>
+      </div>`;
+      return
+    }
+    dynamicCards.innerHTML = '';
+
+    jobs.forEach((job) => {
+      dynamicCards.innerHTML += `
+      <div class="job-cards">
+        <div class="relative bg-white flex items-center gap-4 my-4 text-primary-05">
+          <div class="hidden  md:block h-32 w-32">
+            <img src="${job.companyLogo}" alt="job_brand-image" class="w-full object-cover rounded-full">
+          </div>
+          <div class="w-full rounded-md leading-8 ">
+            <h2 class="font-bold text-xl">${job.title}</h2>
+            <p class="font-medium">${job.company}</p>
+            <div class="my-2">
+              <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">${job.type}</button>
+              <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">${job.site}</button>
+
+            </div>
+            <p class="font-medium">Skills Required: ${job.skills}</p>
+            <p class="text-[#1D3557] text-sm my-3"><i class="fas fa-clock mr-1"></i> Job posted: <span>${job.date}</span>
+            </p>
+            <a href="jobDetails.html"
+              class="bg-primary-06 px-8 py-1 inline-flex items-center text-white  rounded-sm shadow">Details</a>
+          </div>
+          <div class="p-4 flex gap-3 absolute top-0 right-0 lg:relative">
+            <i class="fas fa-bookmark text-primary-06"></i>
+            <i class="fas fa-share-alt text-primary-06"></i>
+          </div>
+        </div>
+        <hr />
+    `
+    })
+  }
+
+
+  // const filter = () => {
+  //   const fulltime = document.getElementById('full')
+  //   const parttime = document.getElementById('part')
+  //   const contract = document.getElementById('contract')
+  //   const remote = document.getElementById('remote')
+  //   const hybrid = document.getElementById('hybrid')
+  //   const onSite = document.getElementById('onSite')
+
+
+  //   const filteredJobs = jobs.filter((job) => {
+  //     return (
+  //       job.type.toLowerCase().includes(fulltime.value.toLowerCase()) || job.site.toLowerCase().includes(remote.value.toLowerCase()) || job.site.toLowerCase().includes(hybrid.value.toLowerCase()) || job.site.toLowerCase().includes(onSite.value.toLowerCase()) || job.type.toLowerCase().includes(parttime.value.toLowerCase()) || job.type.toLowerCase().includes(contract.value.toLowerCase()) 
+  //     )
+  //   })
+  //   console.log(filteredJobs);
+  //   if(!filteredJobs.length) {
+  //     dynamicCards.innerHTML = `<h1 class="text-3xl text-center text-primary-05">No Jobs Found</h1>`
+  //     return
+  //   }
+  //   dynamicCards.innerHTML = ''
+  //   filteredJobs.forEach((job) => {
+  //     dynamicCards.innerHTML += `
+  //     <div class="job-cards">
+  //       <div class="relative bg-white flex items-center gap-4 my-4 text-primary-05">
+  //         <div class="hidden  md:block h-32 w-32">
+  //           <img src="${job.companyLogo}" alt="job_brand-image" class="w-full object-cover rounded-full">
+  //         </div>
+  //         <div class="w-full rounded-md leading-8 ">
+  //           <h2 class="font-bold text-xl">${job.title}</h2>
+  //           <p class="font-medium">${job.company}</p>
+  //           <div class="my-2">
+  //             <button class="w-20 bg-red-400 px-2 py-1 text-white rounded-sm text-sm">${job.type}</button>
+  //             <button class="w-20 bg-green-400 px-2 py-1 text-white rounded-sm text-sm">${job.site}</button>
+
+  //           </div>
+  //           <p class="font-medium">Skills Required: ${job.skills}</p>
+  //           <p class="text-[#1D3557] text-sm my-3"><i class="fas fa-clock mr-1"></i> Job posted: <span>${job.date}</span>
+  //           </p>
+  //           <a href="jobDetails.html"
+  //             class="bg-primary-06 px-8 py-1 inline-flex items-center text-white  rounded-sm shadow">Details</a>
+  //         </div>
+  //         <div class="p-4 flex gap-3 absolute top-0 right-0 lg:relative">
+  //           <i class="fas fa-bookmark text-primary-06"></i>
+  //           <i class="fas fa-share-alt text-primary-06"></i>
+  //         </div>
+  //       </div>
+  //       <hr />
+  //   `
+  //   })
+  // }
+
+  // const filterForm = document.getElementById('filterForm')
+  // filterForm.addEventListener('submit', (e) => {
+  //   e.preventDefault()
+  //   filter()
+  // })
+
   document.addEventListener('DOMContentLoaded', () => {
     const filterButton = document.getElementById('filterbutton')
     const filter = document.getElementById('filter')

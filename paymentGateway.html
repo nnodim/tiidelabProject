@@ -4,15 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Price</title>
-  <link rel="stylesheet" href="output.css">
-  <script src="https://kit.fontawesome.com/e27ec5c147.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mada:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Payment Gateway</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="output.css" rel="stylesheet">
 </head>
 
-<body class="font-Mada">
+<body>
   <header class="sticky top-0 z-50 bg-white">
     <nav class="relative z-50 py-5">
       <div class="max-w-[1440px] mx-auto px-4 sm:px-10 flex justify-between">
@@ -80,68 +78,60 @@
       </div>
     </nav>
   </header>
-  <main class="">
-    <section class="text-white bg-primary-05 ">
-      <div class="py-8 container mx-auto px-4">
-        <h1 class="text-center text-3xl lg:text-5xl font-bold my-3">Our Pricing</h1>
-        <p class="text-center text-lg font-medium my-3">Our pricing plans are designed to suit your needs</p>
-      </div>
-    </section>
-    <div class="py-8 container mx-auto px-4 flex flex-col lg:flex-row justify-center items-center gap-10 min-h-[40rem]">
-      <div class="border border-primary-05 shadow-btn rounded-xl p-8 w-11/12 sm:w-80">
-        <div class="text-center text-primary-05">
-          <h3 class="text-xl font-semibold">Free</h3>
-          <p class="text-2xl font-semibold my-2 ">$0</p>
-          <p class="text-lg mt-4 mb-14 font-semibold">Basic Plan</p>
+  <hr>
+  <div class="w-[100%] my-10">
+    <div class="justify-center items-center flex w-[100%] h-full">
+      <form action="" class="">
+        <h2 class="text-emerald-950 text-4xl font-bold font-font text-justify leading-normal ml-2 px-3 pb-3">Upgrade to
+          InnoConnect Premium</h2>
+        <div class="m-2 px-3 pb-3">
+          <label class="text-emerald-950 text-xl font-medium font-font" for="cardNumber">Card Number</label>
+          <p class="opacity-40 text-gray-600 text-xs font-medium font-font mb-3">Enter the 20 digit number in front of
+            your card</p>
+          <input class="w-[350px] p-[8px] rounded-[8px] bg-[#F3F3F3] outline-primary-04 block" type="text" name="number"
+            id="number" placeholder="123 - 123 - 123 - 123" required>
         </div>
-        <hr>
-        <ul class="my-4 text-sm w-fit mx-auto">
-          <li class="font-medium"><i class="fas fa-check mr-2"></i>1 mentor</li>
-          <li class="font-medium"><i class="fas fa-check mr-2"></i>1 job</li>
-          <li class="font-medium"><i class="fas fa-check mr-2"></i>1 course</li>
-        </ul>
-        <hr>
-        <button
-          class="my-4 w-full text-gray-500 font-semibold border border-secondary-06 text-center rounded-lg px-4 py-2 block  transition-all cursor-not-allowed">Current
-          plan</button>
-      </div>
-      <div class="border border-primary-05 shadow-btn rounded-xl p-8 w-11/12 sm:w-80">
-        <div class="text-center text-primary-05">
-          <h3 class="text-xl font-semibold">Premium</h3>
-          <p class="text-gray-500 font-semibold mt-4">Billed Annually $99.99</p>
-          <p class="text-2xl font-semibold my-2">$9.99/month</p>
-          <p class="text-lg my-4 font-semibold">14 days free trial</p>
+
+        <div class="m-2 px-3 pb-3">
+          <label class="text-emerald-950 text-xl font-medium font-font" for="">CVV Number</label>
+          <p class="opacity-40 text-gray-600 text-xs font-medium font-font mb-3">Enter the 3 digit number behind your
+            card</p>
+          <input class="w-[350px] p-[8px] rounded-[8px] bg-[#F3F3F3] outline-primary-04 block" type="text" name="" id=""
+            placeholder="CVV" required>
         </div>
-        <hr>
-        <ul class="my-4 text-sm w-fit mx-auto">
-          <li class="font-medium"><i class="fas fa-check mr-2"></i>Unlimited mentorship</li>
-          <li class="font-medium"><i class="fas fa-check mr-2"></i>Unlimited jobs</li>
-          <li class="font-medium"><i class="fas fa-check mr-2"></i>Unlimited courses</li>
-        </ul>
-        <hr>
-        <button onclick="window.location.href='paymentGateway.html'" type="button"
-          class="text-center text-white w-full block my-4 font-semibold border bg-secondary-06 border-secondary-06 rounded-lg px-4 py-2 active:bg-secondary-07 hover:shadow-btn">Get
-          started</button>
-      </div>
-      <div class="border border-primary-05 shadow-btn rounded-xl p-8 w-11/12 sm:w-80">
-        <div class="text-center text-primary-05">
-          <h3 class="text-xl font-semibold">Enterprise</h3>
-          <p class="text-gray-500 font-semibold mt-4">Billed Monthly</p>
-          <p class="text-2xl font-semibold mt-2 mb-14">$12.99/month</p>
+
+        <div class="m-2 px-3 pb-3">
+          <label class="text-emerald-950 text-xl  font-medium font-font" for="">Expiry Date</label>
+          <p class="opacity-40 text-gray-600 text-xs font-medium font-font mb-3">Enter the expiration date of your card
+          </p>
+          <input class="w-[70px] p-[8px] rounded-[8px] bg-[#F3F3F3] outline-primary-04 mr-[5px]" type="text" name=""
+            id="" placeholder="Month" required> /
+          <input class="w-[70px] p-[8px] rounded-[8px] bg-[#F3F3F3] outline-primary-04 ml-[5px]" type="text" name=""
+            id="" required placeholder="  Year">
         </div>
-        <hr>
-        <ul class="my-4 text-sm w-fit mx-auto">
-          <li class="font-medium"><i class="fas fa-check mr-2"></i>Unlimited mentorship</li>
-          <li class="font-medium"><i class="fas fa-check mr-2"></i>Unlimited jobs</li>
-          <li class="font-medium"><i class="fas fa-check mr-2"></i>Unlimited courses</li>
-        </ul>
-        <hr>
-        <button onclick="window.location.href='paymentGateway.html'" type="button"
-          class="my-4 w-full text-primary-05 font-semibold border border-secondary-06 text-center rounded-lg px-4 py-2 block  transition-all hover:bg-[#6A95B1] hover:bg-opacity-20">Get
-          started</button>
+
+        <div class="m-2 px-3 pb-3">
+          <label class="text-emerald-950 text-xl  font-medium font-font" for="">Password</label>
+          <p class="opacity-40 text-gray-600 text-xs font-medium font-font mb-3">Enter your card password</p>
+          <input class="w-[350px] p-[8px] rounded-[8px] bg-[#F3F3F3] outline-primary-04 block" type="password" name=""
+            id="" required placeholder="********* ">
+        </div>
+        <div class="m-2 px-3 pb-3 mt-3">
+          <button
+            class="bg-primary-05 rounded-[4px] w-[350px] p-[8px] font-font text-lg font-medium leading-6 block text-white"
+            type="submit">Upgrade Now</button>
+        </div>
+      </form>
+      <div class="">
+        <img class="w-[300px] h-[400px]" src="./assets/Frame 108.png" alt="Card">
+        <div class="flex space-x-2">
+          <img class="w-[80px] h-[50px] ml-5" src="./assets/Frame 371.png" alt="">
+          <img class="w-[80px] h-[50px] rounded-md" src="./assets/visa logo.png" alt="">
+          <img class="w-[80px] h-[50px] mr-" src="./assets/verve logo.png" alt="">
+        </div>
       </div>
     </div>
-  </main>
+  </div>
   <footer class="bg-primary-05  text-white ">
     <div class="px-4 py-11 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       <div>
@@ -193,7 +183,57 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script>
+    function makePayment() {
+      if (this.noemail) {
+        // alert("Please enter your email address.");
+        return;
+      }
+
+      const amount = this.calculateOverallTotal * 100; // Paystack requires the amount in kobo (multiply by 100)
+
+      const handler = PaystackPop.setup({
+        key: this.public_api_key,
+        email: this.email,
+        amount: amount,
+        currency: "NGN",
+        callback: (response) => {
+          // Payment was successful, handle the response
+          console.log(response);
+        },
+        onClose: () => {
+          // Payment was canceled or closed
+          console.log("Payment closed");
+        }
+      });
+
+      handler.openIframe();
+    }
+
+    const paymentForm = document.getElementById('paymentForm');
+    paymentForm.addEventListener("submit", payWithPaystack, false);
+
+    function payWithPaystack(e) {
+      e.preventDefault();
+
+      let handler = PaystackPop.setup({
+        key: 'pk_test_xxxxxxxxxx', // Replace with your public key
+        email: document.getElementById("email-address").value,
+        amount: document.getElementById("amount").value * 100,
+        ref: '' + Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+        // label: "Optional string that replaces customer email"
+        onClose: function () {
+          alert('Window closed.');
+        },
+        callback: function (response) {
+          let message = 'Payment complete! Reference: ' + response.reference;
+          alert(message);
+        }
+      });
+
+      handler.openIframe();
+    }
+  </script>
 </body>
 
 </html>

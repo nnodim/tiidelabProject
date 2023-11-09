@@ -25,71 +25,77 @@
 <body>
   <header class="sticky top-0 z-50 bg-white">
     <nav class="relative z-50 py-5">
-      <div class="max-w-[1440px] mx-auto px-4 sm:px-10 flex justify-between">
-        <a href="index.html"><img class="w-40 md:w-full" src="assets/logo.svg" alt="innoConnect logo"></a>
-        <div id="navMenu"
-          class="mx-auto bg-white hidden absolute top-0 right-0 lg:static lg:flex flex-col lg:flex-row h-screen w-56 lg:h-auto lg:w-auto">
-          <button aria-label="Close" id="close" type="button" class="mb-8 p-4 lg:hidden"><i
-              class="text-2xl text-primary-06 fa-solid fa-close"></i></button>
-          <div class="flex flex-col lg:flex-row">
-            <div class="dropdown group item relative">
-              <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
-                Mentorship <i class="ml-1 text-xs transition-all duration-100 fa-solid fa-chevron-down"></i>
-              </div>
-              <div
-                class="menu hidden shadow  absolute z-10 bg-white w-40 mt-1 rounded-b transition ease-linear duration-100">
-                <a href="#" class="text-gray-800 px-4 py-2 block">Find a mentor</a>
-                <a href="mentor.html" class="text-gray-800 px-4 py-2 block">Become a mentor</a>
-              </div>
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-10 flex justify-between">
+            <a href="index.html"><img class="w-40 md:w-full" src="assets/logo.svg" alt="innoConnect logo"></a>
+            <div id="navMenu"
+                class="mx-auto bg-white hidden absolute top-0 right-0 lg:static lg:flex flex-col lg:flex-row h-screen w-56 lg:h-auto lg:w-auto">
+                <button aria-label="Close" id="close" type="button" class="mb-8 p-4 lg:hidden"><i
+                        class="text-2xl text-primary-06 fa-solid fa-close"></i></button>
+                <div class="flex flex-col lg:flex-row">
+                    <div class="dropdown group item relative">
+                        <div href="#"
+                            class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Mentorship <i
+                                class="ml-1 text-xs transition-all duration-100 fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div
+                            class="menu hidden shadow  absolute z-10 bg-white w-40 mt-1 rounded-b transition ease-linear duration-100">
+                            <a href="smartMatch.html" class="text-gray-800 px-4 py-2 block">Find a mentor</a>
+                            <a href="mentor.html" class="text-gray-800 px-4 py-2 block">Become a mentor</a>
+                        </div>
+                    </div>
+                    <div class="group relative">
+                        <a href="jobSearch.html"
+                            class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Job Search
+                        </a>
+                    </div>
+                    <div class="group relative">
+                        <a href="course.html"
+                            class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Courses
+                        </a>
+                    </div>
+                    <div class="group relative">
+                        <a href="pricing.html"
+                            class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            Pricing
+                        </a>
+                    </div>
+                    <div class="dropdown group relative">
+                        <div href="#"
+                            class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
+                            More <i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div
+                            class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
+                            <a href="community-page.html" class="text-gray-800 px-4 py-2 block">Community</a>
+                            <a href="blog.html" class="text-gray-800 px-4 py-2 block">Articles</a>
+                            <a href="About.html" class="text-gray-800 px-4 py-2 block">About us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:hidden px-4 mt-4 gap-4">
+                    <a href="login.html"
+                        class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
+                    <a href="register.html"
+                        class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
+                </div>
             </div>
-            <div class="group relative">
-              <a href="jobSearch.html" class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
-                Job Search
-              </a>
+            <div class="lg:flex lg:px-0 hidden gap-4">
+                <a href="login.html"
+                    class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
+                <a href="register.html"
+                    class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
             </div>
-            <div class="group relative">
-              <a href="course.html" class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
-                Courses
-              </a>
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <div class="group relative">
-              <a href="pricing.html" class="block cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
-                Pricing
-              </a>
-            </div>
-            <div class="dropdown group relative">
-              <div href="#" class="dropdownbtn cursor-pointer font-medium text-lg text-[#1D3557] px-4 py-2">
-                More <i class="ml-1 transition-all duration-100 text-xs fa-solid fa-chevron-down"></i>
-              </div>
-              <div
-                class="menu hidden transition ease-linear duration-100   absolute z-10 bg-white w-40 mt-1 shadow rounded-b">
-                <a href="community-page.html" class="text-gray-800 px-4 py-2 block">Community</a>
-                <a href="blog.html" class="text-gray-800 px-4 py-2 block">Articles</a>
-                <a href="About.html" class="text-gray-800 px-4 py-2 block">About us</a>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col lg:hidden px-4 mt-4 gap-4">
-            <a href="login.html"
-              class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
-            <a href="register.html"
-              class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
-          </div>
         </div>
-        <div class="lg:flex lg:px-0 hidden gap-4">
-          <a href="login.html"
-            class="text-primary-05 font-semibold w-28 border border-secondary-06 text-center rounded-lg px-4 py-2 block hover:bg-[#6A95B1] hover:bg-opacity-20 transition-all">login</a>
-          <a href="register.html"
-            class="text-white font-semibold w-28 border bg-secondary-06 border-secondary-06 text-center rounded-lg px-4 py-2 block active:bg-secondary-07 hover:shadow-btn">signup</a>
-        </div>
-        <div class="lg:hidden">
-          <button id="mobile-menu-button" class="" aria-label="Open Menu">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </div>
     </nav>
-  </header>
+</header>
 
 
   <main>
@@ -100,12 +106,18 @@
             <h1 class="text-3xl md:text-5xl text-white font-bold font-sans">Our Blog</h1>
             <p class="text-xl text-white my-4 max-w-lg">A center for all our Resources and insights.Get the best of
               mentorship and career news, internship and land the dream job</p>
-            <div class="relative inline-block w-80">
-              <input class="w-full md:max-w-sm rounded px-2 py-1 placeholder:text-base focus:outline-none" type="text"
-                placeholder="Search" aria-label="Search">
-              <i
-                class="absolute right-2 top-[0.4rem] text-primary-06 opacity-70 text-sm fa-solid fa-magnifying-glass"></i>
-            </div>
+            <!-- <div class="inline-block w-full">
+              <form action="" id="search-form" class="w-full flex gap-4">
+                <div class="relative inline-block ">
+                  <input class="md:max-w-sm rounded px-2 py-1 placeholder:text-base focus:outline-none" type="text"
+                    placeholder="Search" aria-label="Search" id="search-input">
+                  <i
+                    class="absolute right-2 top-[0.4rem] text-primary-06 opacity-70 text-sm fa-solid fa-magnifying-glass"></i>
+                </div>
+                <button type="submit"
+                  class="bg-white inline-block rounded-3xl text-sm hover:text-white text-primary-06 py-1 px-4 hover:bg-[#6A95B1] transition-all">Search</button>
+              </form>
+            </div> -->
           </div>
         </div>
         <div class="w-full md:w-[30rem]">
@@ -113,58 +125,27 @@
         </div>
       </div>
     </section>
-    <section class="mt-8">
-      <div class="flex flex-col md:flex-row items-center justify-center gap-10 px-4">
-        <div class="">
-          <img src="./assets/carr.jpg" class="rounded-xl" alt="thumbnail">
-        </div>
-        <div class="w-full md:w-2/5">
-          <div class="flex items-center text-error-04 font-medium">
-            <p class="">Internship</p>
-            <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50"></i>
-            <p class="">4 mins read</p>
+    <div id="content">
+      <section class="mt-8" id="featured">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-10 px-4">
+          <div class="">
+            <img src="./assets/carr.jpg" class="rounded-xl" alt="thumbnail">
           </div>
-          <h2 class="text-3xl lg:text-5xl font-bold text-primary-06 mt-4">Are unpaid internships <br> worth it?</h2>
-          <p class="mt-4">In the fast-paced, ever-evolving landscape of the modern workplace,
-            the importance of employee connections and team member connections
-            cannot be overstated. These connections play a pivotal role in
-            facilitating engagement, which, in turn, contributes significantly
-            to individual and organizational growth...<span><a href="blogDetails.html" class="text-error-04 font-medium">Read more</a>
-            </span></p>
-          <div class="flex items-center mt-8 font-medium">
-            <img src="./assets/team/lizzy.jpg" class="rounded-full h-10 w-10" alt="">
-            <p class="ml-2">Elizbeth Okwong</p>
-            <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50 text-primary-05"></i>
-            <p class="">20th July, 2022</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="mt-20">
-      <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
-        <div class="flex flex-col gap-4">
-          <div>
-            <img src="./assets/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg" alt="thumbnail"
-              class="w-full rounded-lg object-cover">
-          </div>
-          <div>
-            <div class="flex items-center text-error-04 font-medium mb-3">
-              <p class="">Explore</p>
+          <div class="w-full md:w-2/5">
+            <div class="flex items-center text-error-04 font-medium">
+              <p class="">Internship</p>
               <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50"></i>
               <p class="">4 mins read</p>
             </div>
-            <h2 class="text-2xl md:text-3xl font-bold text-primary-06">The best Cities in Africa in 2023</h2>
-            <p class="my-4">
-              Tanzania's capital is also one of the most developed cities, which
-              will probably surprise many people. Dar Es Salaam, however, has
-              experienced significant growth over the past few years, culminating
-              in its emergence as one of Africa's most impressive cities.
-              Beautiful Dar Es Salaam is situated around a body of water...<span><a href="#"
-                  class="text-error-04 font-medium"> Read more</a>
-              </span>
-            </p>
-            <hr>
-            <div class="flex items-center mt-4 font-medium">
+            <h2 class="text-3xl lg:text-5xl font-bold text-primary-06 mt-4">Are unpaid internships <br> worth it?</h2>
+            <p class="mt-4">In the fast-paced, ever-evolving landscape of the modern workplace,
+              the importance of employee connections and team member connections
+              cannot be overstated. These connections play a pivotal role in
+              facilitating engagement, which, in turn, contributes significantly
+              to individual and organizational growth...<span><a href="blogDetails.html"
+                  class="text-error-04 font-medium">Read more</a>
+              </span></p>
+            <div class="flex items-center mt-8 font-medium">
               <img src="./assets/team/lizzy.jpg" class="rounded-full h-10 w-10" alt="">
               <p class="ml-2">Elizbeth Okwong</p>
               <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50 text-primary-05"></i>
@@ -172,67 +153,101 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col gap-4">
-          <div>
-            <img src="./assets/blog_illustration1.svg" alt="thumbnail"
-              class="w-full rounded-lg object-cover">
-          </div>
-          <div>
-            <div class="flex items-center text-error-04 font-medium mb-3">
-              <p class="">Explore</p>
-              <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50"></i>
-              <p class="">4 mins read</p>
+      </section>
+      <section class="mt-20">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4" id="blogList">
+          <!-- <div class="flex flex-col gap-4">
+            <div>
+              <img src="./assets/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg" alt="thumbnail"
+                class="w-full rounded-lg object-cover">
             </div>
-            <h2 class="text-2xl md:text-3xl font-bold text-primary-06">The best Cities in Africa in 2023</h2>
-            <p class="my-4">
-              Tanzania's capital is also one of the most developed cities, which
-              will probably surprise many people. Dar Es Salaam, however, has
-              experienced significant growth over the past few years, culminating
-              in its emergence as one of Africa's most impressive cities.
-              Beautiful Dar Es Salaam is situated around a body of water...<span><a href="#"
-                  class="text-red-400 font-medium"> Read more</a>
-              </span>
-            </p>
-            <hr>
-            <div class="flex items-center mt-4 font-medium">
-              <img src="./assets/team/lizzy.jpg" class="rounded-full h-10 w-10" alt="">
-              <p class="ml-2">Elizbeth Okwong</p>
-              <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50 text-primary-05"></i>
-              <p class="">20th July, 2022</p>
+            <div>
+              <div class="flex items-center text-error-04 font-medium mb-3">
+                <p class="">Explore</p>
+                <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50"></i>
+                <p class="">4 mins read</p>
+              </div>
+              <h2 class="text-2xl md:text-3xl font-bold text-primary-06">The best Cities in Africa in 2023</h2>
+              <p class="my-4">
+                Tanzania's capital is also one of the most developed cities, which
+                will probably surprise many people. Dar Es Salaam, however, has
+                experienced significant growth over the past few years, culminating
+                in its emergence as one of Africa's most impressive cities.
+                Beautiful Dar Es Salaam is situated around a body of water...<span><a href="#"
+                    class="text-error-04 font-medium"> Read more</a>
+                </span>
+              </p>
+              <hr>
+              <div class="flex items-center mt-4 font-medium">
+                <img src="./assets/team/lizzy.jpg" class="rounded-full h-10 w-10" alt="">
+                <p class="ml-2">Elizbeth Okwong</p>
+                <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50 text-primary-05"></i>
+                <p class="">20th July, 2022</p>
+              </div>
             </div>
           </div>
+          <div class="flex flex-col gap-4">
+            <div>
+              <img src="./assets/blog_illustration1.svg" alt="thumbnail"
+                class="w-full rounded-lg object-cover">
+            </div>
+            <div>
+              <div class="flex items-center text-error-04 font-medium mb-3">
+                <p class="">Explore</p>
+                <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50"></i>
+                <p class="">4 mins read</p>
+              </div>
+              <h2 class="text-2xl md:text-3xl font-bold text-primary-06">The best Cities in Africa in 2023</h2>
+              <p class="my-4">
+                Tanzania's capital is also one of the most developed cities, which
+                will probably surprise many people. Dar Es Salaam, however, has
+                experienced significant growth over the past few years, culminating
+                in its emergence as one of Africa's most impressive cities.
+                Beautiful Dar Es Salaam is situated around a body of water...<span><a href="#"
+                    class="text-red-400 font-medium"> Read more</a>
+                </span>
+              </p>
+              <hr>
+              <div class="flex items-center mt-4 font-medium">
+                <img src="./assets/team/lizzy.jpg" class="rounded-full h-10 w-10" alt="">
+                <p class="ml-2">Elizbeth Okwong</p>
+                <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50 text-primary-05"></i>
+                <p class="">20th July, 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div>
+              <img src="./assets/technology-customer-support1.jpg" alt="thumbnail" class="w-full rounded-lg object-cover">
+            </div>
+            <div>
+              <div class="flex items-center text-error-04 font-medium mb-3">
+                <p class="">Explore</p>
+                <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50"></i>
+                <p class="">4 mins read</p>
+              </div>
+              <h2 class="text-2xl md:text-3xl font-bold text-primary-06">Resources to help you prepare for interviews</h2>
+              <p class="my-4">
+                Prepare for interviews jobs internships Interviews are only really
+                stressful when you're starting out. Eventually, with the help of
+                some experience and light reading, you start seeing the patterns and
+                making improvements to how you handle interviews...<span><a href="#"
+                    class="text-error-04 font-medium">Read
+                    more</a>
+                </span>
+              </p>
+              <hr>
+              <div class="flex items-center mt-4 font-medium">
+                <img src="./assets/team/dan.jpg" class="rounded-full h-10 w-10" alt="">
+                <p class="ml-2">Omoanon Daniel</p>
+                <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50 text-primary-05"></i>
+                <p class="">20th July, 2022</p>
+              </div>
+            </div>
+          </div> -->
         </div>
-        <div class="flex flex-col gap-4">
-          <div>
-            <img src="./assets/technology-customer-support1.jpg" alt="thumbnail" class="w-full rounded-lg object-cover">
-          </div>
-          <div>
-            <div class="flex items-center text-error-04 font-medium mb-3">
-              <p class="">Explore</p>
-              <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50"></i>
-              <p class="">4 mins read</p>
-            </div>
-            <h2 class="text-2xl md:text-3xl font-bold text-primary-06">Resources to help you prepare for interviews</h2>
-            <p class="my-4">
-              Prepare for interviews jobs internships Interviews are only really
-              stressful when you're starting out. Eventually, with the help of
-              some experience and light reading, you start seeing the patterns and
-              making improvements to how you handle interviews...<span><a href="#"
-                  class="text-error-04 font-medium">Read
-                  more</a>
-              </span>
-            </p>
-            <hr>
-            <div class="flex items-center mt-4 font-medium">
-              <img src="./assets/team/dan.jpg" class="rounded-full h-10 w-10" alt="">
-              <p class="ml-2">Omoanon Daniel</p>
-              <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50 text-primary-05"></i>
-              <p class="">20th July, 2022</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <div class="max-w-fit mx-auto my-20" aria-label="Page navigation">
@@ -307,6 +322,137 @@
   </footer>
   <script src="blog.js"></script>
   <script src="script.js"></script>
+  <script>
+    const articles = [
+      {
+        title: 'Are unpaid internships worth it?',
+        content: 'In the fast-paced, ever-evolving landscape of the modern workplace, the importance of employee connections and team member connections cannot be overstated. These connections play a pivotal role in facilitating engagement, which, in turn, contributes significantly to individual and organizational growth',
+        author: 'Elizbeth Okwong',
+        authorImg: './assets/team/lizzy.jpg',
+        date: '20th July, 2022',
+        thumbnail: './assets/carr.jpg',
+        link: 'blogDetails.html',
+        category: 'Internship',
+        reads: '5',
+        featured: true
+      },
+      {
+        title: 'The best Cities in Africa in 2023',
+        content: "Tanzania's capital is also one of the most developed cities, which will probably surprise many people. Dar Es Salaam, however, has experienced significant growth over the past few years, culminating in its emergence as one of Africa's most impressive cities. Beautiful Dar Es Salaam is situated around a body of water",
+        author: 'Elizbeth Okwong',
+        authorImg: './assets/team/lizzy.jpg',
+        date: '20th July, 2022',
+        thumbnail: "./assets/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
+        link: 'blogDetails.html',
+        category: 'Explore',
+        reads: '5',
+        featured: false
+      },
+      {
+        title: 'The best Cities in Africa in 2023',
+        content: 'In the fast-paced, ever-evolving landscape of the modern workplace, the importance of employee connections and team member connections cannot be overstated. These connections play a pivotal role in facilitating engagement, which, in turn, contributes significantly to individual and organizational growth',
+        author: 'Elizbeth Okwong',
+        authorImg: './assets/team/lizzy.jpg',
+        date: '20th July, 2022',
+        thumbnail: "./assets/blog_illustration1.svg",
+        link: 'blogDetails.html',
+        category: 'Explore',
+        reads: '5',
+        featured: false
+      },
+      {
+        title: 'Resources to help you prepare for interviews',
+        content: "Prepare for interviews jobs internships Interviews are only really stressful when you're starting out. Eventually, with the help of some experience and light reading, you start seeing the patterns and making improvements to how you handle interviews.",
+        author: 'Omoanon Daniel',
+        authorImg: './assets/team/dan.jpg',
+        date: '20th July, 2022',
+        thumbnail: "./assets/technology-customer-support1.jpg",
+        link: 'blogDetails.html',
+        category: 'Interview',
+        reads: '5',
+        featured: false
+      },
+    ]
+
+    const content = document.getElementById('content');
+    const blogList = document.getElementById('blogList');
+
+    const Notfeatured = articles.filter((article) => !article.featured);
+    Notfeatured.forEach((article) => {
+      blogList.innerHTML += `
+    <div class="flex flex-col gap-4">
+          <div>
+            <img src="${article.thumbnail}"
+              class="w-full rounded-lg object-cover">
+          </div>
+          <div>
+            <div class="flex items-center text-error-04 font-medium mb-3">
+              <p class="">${article.category}</p>
+              <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50"></i>
+              <p class="">${article.reads} mins read</p>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold text-primary-06">${article.title}</h2>
+            <p class="my-4">
+              ${article.content}...<span><a href="${article.link}"
+                  class="text-error-04 font-medium"> Read more</a>
+              </span>
+            </p>
+            <hr>
+            <div class="flex items-center mt-4 font-medium">
+              <img src="${article.authorImg}" class="rounded-full h-10 w-10" alt="">
+              <p class="ml-2">${article.author}</p>
+              <p class="ml-2">${article.date}</p>
+            </div>
+          </div>
+        </div>`
+    })
+
+    function search() {
+      const searchInput = document.getElementById('search-input').value;
+
+      const filteredArticles = articles.filter((article) =>
+        article.category.toLowerCase().includes(searchInput.toLowerCase()) ||
+        article.title.toLowerCase().includes(searchInput.toLowerCase())
+      );
+      content.innerHTML = '';
+      filteredArticles.forEach((article) => {
+        content.innerHTML += `
+    <div class="flex flex-col gap-4">
+          <div>
+            <img src="${article.thumbnail}"
+              class="w-full rounded-lg object-cover">
+          </div>
+          <div>
+            <div class="flex items-center text-error-04 font-medium mb-3">
+              <p class="">${article.category}</p>
+              <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50"></i>
+              <p class="">${article.reads} mins read</p>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold text-primary-06">${article.title}</h2>
+            <p class="my-4">
+              ${article.content}...<span><a href="#"
+                  class="text-error-04 font-medium"> Read more</a>
+              </span>
+            </p>
+            <hr>
+            <div class="flex items-center mt-4 font-medium">
+              <img src="${article.authorImg}" class="rounded-full h-10 w-10" alt="">
+              <p class="ml-2">${article.author}</p>
+              <i class="fa-solid fa-circle text-[0.4rem] mx-2 opacity-50 text-primary-05"></i>
+              <p class="">${article.date}</p>
+            </div>
+          </div>
+        </div>`
+      })
+
+      const searchForm = document.getElementById('search-form');
+      searchForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        search();
+      });
+
+    }
+  </script>
 </body>
 
 </html>

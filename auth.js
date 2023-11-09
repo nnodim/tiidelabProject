@@ -1,7 +1,8 @@
 const form1 = document.getElementById("tab1")
 const form2 = document.getElementById("tab2")
 const formLogin = document.getElementById("form-login")
-const fullName = document.getElementById("fullname")
+const fname = document.getElementById("fname")
+const lname = document.getElementById("lname")
 const email = document.getElementById("email")
 const password = document.getElementById("password")
 const confirmPassword = document.getElementById("confirm-password")
@@ -12,9 +13,10 @@ const loginerrorMessage = document.getElementById("login-error")
 const loginButton = document.getElementById("login-button");
 const forgotForm = document.getElementById("forgot-form")
 
-function mentorValidateForm() {
+function ValidateForm() {
   const user = {
-    fullName: fullName.value,
+    fname: fname.value,
+    lname: lname.value,
     email: email.value,
     password: password.value,
     confirmPassword: confirmPassword.value
@@ -38,10 +40,12 @@ function mentorValidateForm() {
   // window.location = "success.html"
   // alert("successful")
 }
+
 form1.addEventListener("submit", function(event){
   event.preventDefault()
-  validateForm()
+  ValidateForm()
 })
+
 function EmployerValidateForm() {
   const companyName = document.getElementById("company-name")
   const email = document.getElementById("company-email")
