@@ -426,6 +426,14 @@
     const searchValue = searchInput.value
     const locationValue = locationInput.value
     const filteredJobs = jobs.filter((job) => job.title.toLowerCase().includes(searchValue.toLowerCase()) && job.location.toLowerCase().includes(locationValue.toLowerCase()))
+
+    if (filteredJobs.length === 0) {
+      dynamicCards.innerHTML = `
+      <div class="w-full h-full flex items-center justify-center">
+        <p class="text-center text-3xl font-bold text-primary-05">No jobs found</p>
+      </div>`
+      return
+    }
     dynamicCards.innerHTML = ''
     filteredJobs.forEach((job) => {
       dynamicCards.innerHTML += `
